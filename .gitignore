@@ -1,0 +1,9 @@
+release/*
+*.cache
+*.pbo
+!additionals/*.pbo
+texHeaders.bin
+*.swp
+*.swo
+*.biprivatekey
+Thumbs.db

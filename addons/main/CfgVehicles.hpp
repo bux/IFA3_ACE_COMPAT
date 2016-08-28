@@ -195,7 +195,7 @@ class CfgVehicles
 	class LIB_Li2: LIB_SU_Plane_base {
         EGVAR(refuel,fuelCapacity) = 3043;
     };	
-		class LIB_Tank_base;
+	class LIB_Tank_base;
 	class LIB_JS2_43: LIB_Tank_base {
         ace_repair_hitpointPositions[] = {{"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}}};
 		EGVAR(refuel,fuelCapacity) = 820;		
@@ -252,8 +252,8 @@ class CfgVehicles
     };
 	class LIB_SU85: LIB_Tank_base {
         ace_repair_hitpointPositions[] = {{"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}}};
-		EGVAR(refuel,fuelCapacity) = 540;
-		GVAR(ammoLocation) = "HitTurret";
+		EGVAR(refuel,fuelCapacity) = 510;
+        GVAR(ammoLocation) = "HitTurret";
         GVAR(cookoffSelections)[] = {"osa_poklop_commander_back"};
     };
 	class LandVehicle;
@@ -342,9 +342,8 @@ class CfgVehicles
         MACRO_REFUEL_ACTIONS
         GVAR(hooks)[] = {{.28,-4.99,-.3},{-.25,-4.99,-.3}};
         GVAR(fuelCargo) = 10000;
-    };.
-	class Wheeled_APC_F;
-	class LIB_Wheeled_APC_base: Wheeled_APC_F {};
+    };
+	class LIB_Wheeled_APC_base;
 	class LIB_SdKfz251_base: LIB_Wheeled_APC_base {
         EGVAR(refuel,fuelCapacity) = 160;
     };

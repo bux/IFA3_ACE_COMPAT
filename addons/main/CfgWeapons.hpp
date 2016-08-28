@@ -21,24 +21,6 @@ class CfgWeapons
         ACE_barrelTwist = 406.4;
         ACE_barrelLength = 127.0;
     };
-	class LIB_SMG;
-	    ACE_Overheating_Dispersion[] = {0, 0.001, 0.002, 0.004};
-        ACE_Overheating_SlowdownFactor[] = {1, 1, 1, 0.9};
-        ACE_Overheating_JamChance[] = {0, 0.0003, 0.0015, 0.0075};
-		ACE_overheating_mrbs = 3000;
-	};
-	class LIB_MP40: LIB_SMG	{
-		ACE_barrelTwist = 392; //unknown set same as thompson
-        ACE_barrelLength = 251;
-	};
-	class LIB_PPSh41_m: LIB_SMG	{
-		ACE_barrelTwist = 392; //unknown set same as thompson
-        ACE_barrelLength = 269;
-	};
-	class LIB_M1A1_Thompson: LIB_SMG	{
-		ACE_barrelTwist = 392;
-        ACE_barrelLength = 270;
-	};
 	class Rifle_Base_F;
 	class LIB_RIFLE: Rifle_Base_F{
 		ACE_Overheating_Dispersion[] = {0, 0.001, 0.002, 0.004};
@@ -74,7 +56,26 @@ class CfgWeapons
 		ACE_barrelTwist = 254; //unknown set to 1:10
         ACE_barrelLength = 460;
 	};
-	class Rifle_Long_Base_F;
+	class Rifle_Short_Base_F: Rifle_Base_F	{};
+	class LIB_SMG: Rifle_Short_Base_F {
+	    ACE_Overheating_Dispersion[] = {0, 0.001, 0.002, 0.004};
+        ACE_Overheating_SlowdownFactor[] = {1, 1, 1, 0.9};
+        ACE_Overheating_JamChance[] = {0, 0.0003, 0.0015, 0.0075};
+		ACE_overheating_mrbs = 3000;
+	};
+	class LIB_MP40: LIB_SMG	{
+		ACE_barrelTwist = 392; //unknown set same as thompson
+        ACE_barrelLength = 251;
+	};
+	class LIB_PPSh41_m: LIB_SMG	{
+		ACE_barrelTwist = 392; //unknown set same as thompson
+        ACE_barrelLength = 269;
+	};
+	class LIB_M1A1_Thompson: LIB_SMG	{
+		ACE_barrelTwist = 392;
+        ACE_barrelLength = 270;
+	};
+	class Rifle_Long_Base_F: Rifle_Base_F {};
 	class LIB_LMG: Rifle_Long_Base_F	{
         ACE_Overheating_dispersion = 0.75;
         ACE_Overheating_SlowdownFactor[] = {1, 1, 1, 0.9};
@@ -99,7 +100,12 @@ class CfgWeapons
         ACE_barrelLength = 610;
 		ACE_overheating_allowSwapBarrel = 0;
 	};
-	class LIB_SRIFLE: Rifle_Long_Base_F
+	class LIB_SRIFLE: Rifle_Long_Base_F	{
+		ACE_Overheating_Dispersion[] = {0, 0.001, 0.002, 0.004};
+        ACE_Overheating_SlowdownFactor[] = {1, 1, 1, 0.9};
+        ACE_Overheating_JamChance[] = {0, 0.0003, 0.0015, 0.0075};
+		ACE_overheating_mrbs = 3000;
+	};
 	class LIB_K98ZF39: LIB_SRIFLE {
 		ACE_barrelTwist = 240;
         ACE_barrelLength = 600;
@@ -169,6 +175,7 @@ class CfgWeapons
         ace_hearing_protection = 0.50;
         ace_hearing_lowerVolume = 0.60;
 	};
+	class CannonCore;
 	class LIB_D25T_AP: CannonCore {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;

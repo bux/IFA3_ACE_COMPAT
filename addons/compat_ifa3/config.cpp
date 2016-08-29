@@ -7,7 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = { "IFA3_Core" };
         author = CSTRING(Team);
-        authors[] = { "bux" };
+        authors[] = { "bux", "El Tyranos" };
         authorUrl = CSTRING(Url);
         url = CSTRING(Url);
         VERSION_CONFIG;
@@ -17,6 +17,5 @@ class CfgPatches {
 #include "ACE_Triggers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
-#include "CfgMods.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"

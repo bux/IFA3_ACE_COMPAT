@@ -598,174 +598,62 @@ class CfgVehicles
 	class ACE_Explosives_Place;
 	class ACE_Explosives_Place_LIB_SMI_35_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_SMI_35";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_SMI35.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_SMI35_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_SMI_SMi35_1_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_SMI_35_1";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Smi35_1.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Smi35_1_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_STMI_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_STMI";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_StMi.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_StMi_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_pomzec_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_POMZ_2";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Pomzec.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Pomzec_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_M3_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_M3";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_M3_geom.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_M3_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_US_M3_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_DN_US_M3";
-		model = "\WW2\Assets_m\Weapons\Mines_m\WW2_M3_ap.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_M3_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_shumine42_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_shumine42";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Shumine42.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Shumine42_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_PMD6_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_PMD6";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_PMD6.p3d";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_PMD6_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_TMI_42_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_TMI_42";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Tmi_42.p3d";
-		/*class EventHandlers
-		{
-			Init = "if(isServer) then {(_this select 0) execFSM '\z\ace\addons\explosives\scripts\fsm\boom.fsm';}";
-		};*/
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Tmi_42_inv.p3d";
 	};
 	class ACE_Explosives_Place_LIB_TM_44_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_TM_44";
-		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Tm_44.p3d";		
-		/*class EventHandlers
-		{
-			Init = "if(isServer) then {(_this select 0) execFSM '\z\ace\addons\explosives\scripts\fsm\boom.fsm';}";
-		};*/
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Tm_44_inv.p3d";		
 	};
 	class ACE_Explosives_Place_LIB_US_M1A1_ATMINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_DN_US_M1A1_ATMINE";
 		model = "\WW2\Assets_m\Weapons\Mines_m\WW2_M1a1_at.p3d";
-		/*class EventHandlers
-		{
-			Init = "if(isServer) then {(_this select 0) execFSM '\z\ace\addons\explosives\scripts\fsm\boom.fsm';}";
-		};*/
 	};
 	class ACE_Explosives_Place_LIB_US_TNT: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_DN_US_TNT_4POUND";
 		model = "\WW2\Assets_m\Weapons\Mines_m\WW2_Tnt_4pound.p3d";		
-		/*class EventHandlers
-		{
-			Init = "if(isServer) then {(_this select 0) execFSM '\z\ace\addons\explosives\scripts\fsm\boom.fsm';}";
-		};*/
 	};	
 	class ACE_Explosives_Place_LIB_MARKER_MINE: ACE_Explosives_Place	{
 		displayName = "$STR_LIB_MARKER";
 		model = "\WW2\Assets_m\Weapons\Mines_m\WW2_Marker_mine.p3d";
 	};	
-	/*class ACE_Explosives_Place_LIB_Ladung_Small: ACE_Explosives_Place	{
-
-		class EventHandlers
-		{
-			Init = "if(isServer) then {(_this select 0) execFSM '\z\ace\addons\explosives\scripts\fsm\boom.fsm';}";
-		};
+	class ACE_Explosives_Place_LIB_Ladung_Small: ACE_Explosives_Place	{
+		displayName = "$STR_LIB_Ladung_Small";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_inv.p3d";	
 	};
 	class ACE_Explosives_Place_LIB_Ladung_Big: ACE_Explosives_Place	{
-		class EventHandlers
-		{
-			Init = "if(isServer) then {(_this select 0) execFSM '\z\ace\addons\explosives\scripts\fsm\boom.fsm';}";
-		};
+		displayName = "$STR_LIB_Ladung_Big";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_big_provod_inv.p3d";	
 	};
-	class ACE_Explosives_Place_LIB_TROTIL: ACE_Explosives_Place	{
-		class EventHandlers
-		{
-			Init = "if(isServer) then {(_this select 0) execFSM '\z\ace\addons\explosives\scripts\fsm\boom.fsm';}";
-		};
-	};
-	class ACE_Explosives_Place_LIB_SIGN_MINES: ACE_Explosives_Place	{
-
-	};
-	class ACE_Explosives_Place_LIB_SIGN_MINEN: ACE_Explosives_Place	{
-
-	};*/
-	
-	
-	
-	/*class StaticWeapon: LandVehicle	{
-		class Turrets	{
-			class MainTurret: NewTurret	{
-				class ViewOptics	{};
-				class HitPoints	{
-					class HitGun	{};
-					class HitTurret: HitGun	{
-						class DestructionEffects{
-						class Smoke	{};
-						};
-					};
-				};
-			};
-			class ViewOptics{};
-		};
-	};	
-	class StaticMortar: StaticWeapon
-	{
-		class Turrets: Turrets	{
-			class MainTurret: MainTurret	{};
-		};
-	class Mortar_01_base_F: StaticMortar	{
-		class Turrets: Turrets	{
-			class MainTurret: MainTurret	{};
-		};
-	};
-	class Mortar_01_base_F;
-	class LIB_Mortar_ACE: Mortar_01_base_F
-	{
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				turretInfoType = "ACE_Mk6_RscWeaponRangeArtillery";
-			};
-		};
-		class ACE_Actions
-		{
-			class ACE_ifa3reload_loadStaticAmmo	{
-				icon = "\z\ace\addons\ifa3reload\ui\icon_load_interact.paa";
-				insertChildren = "_this call ACE_ifa3reload_fnc_loadStaticAmmo";
-			};
-			class ACE_ifa3reload_unloadStaticAmmo	{
-				condition = "_this call ace_ifa3reload_fnc_canUnloadStaticAmmo";
-				statement = "[_target,_player,2] call ace_ifa3reload_fnc_unloadStaticAmmoTimer";
-				icon = "\z\ace\addons\ifa3reload\ui\icon_unload_interact.paa";
-			};
-			class ace_mk6mortar_unloadMagazine	{
-				condition = "_this call ace_mk6mortar_fnc_canUnloadMagazine";
-				statement = "[_target,_player,5] call ace_mk6mortar_fnc_unloadMagazineTimer";
-			};
-			class ace_mk6mortar_LoadActions		{
-				condition = "[_target,_player] call ace_mk6mortar_fnc_canLoadMagazine";
-				class ace_mk6mortar_loadMagazine_Illum	{
-					condition = "[_target,_player,'ACE_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,5,'ACE_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
-				};
-				class ace_mk6mortar_loadMagazine_Smoke	{
-					condition = "[_target,_player,'ACE_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'ACE_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
-				};
-				class ace_mk6mortar_loadMagazine_HE		{
-					condition = "[_target,_player,'ACE_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'ACE_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
-				};
-			};
-		};
-	};
-	class LIB_Mortar_SU_ACE: LIB_Mortar_ACE {};
-	class LIB_Mortar_GER_ACE: LIB_Mortar_ACE {};	
-	class LIB_BM37_ACE: LIB_Mortar_SU_ACE	{
-		displayname = "BM-37 (ACE)";
-	};
-	class LIB_GrWr34_ACE: LIB_Mortar_GER_ACE	{
-		displayname = "GrWr 34 (ACE)";
-	};*/
 };

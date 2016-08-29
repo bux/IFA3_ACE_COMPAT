@@ -194,6 +194,7 @@ class CfgMagazines
 		ace_explosives_Placeable = 1;
 		ace_explosives_DelayTime = 2.5;
 		ace_explosives_SetupObject = "ACE_Explosives_Place_LIB_US_M1A1_ATMINE";
+		model = "\WW2\Assets_m\Weapons\Mines_m\WW2_M1a1_at_mag.p3d";
 		class ACE_Triggers
 		{
 			SupportedTriggers[] = {"PressurePlate"};

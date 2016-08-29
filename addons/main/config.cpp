@@ -14,6 +14,7 @@ class CfgPatches {
     };
 };
 
+#include "ACE_Triggers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgMods.hpp"

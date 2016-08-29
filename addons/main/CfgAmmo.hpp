@@ -404,9 +404,6 @@ class CfgAmmo {
 		ace_frag_gurney_c = 2027;
 		ace_frag_gurney_k = "1/2";
 	};
-	/*
-//	MINES
-// TODO : check empty
 	class LIB_MAIN_mine;
 	class LIB_TMI42_ammo: LIB_MAIN_mine	{
 		ace_explosives_defuseObjectPosition[] = {0,0,0.07};
@@ -483,8 +480,8 @@ class CfgAmmo {
 	};
 //	class LIB_US_BM10_PM_ammo: LIB_MAIN_mine {};
 
-//	TODO : delete + disable script when ACE is running	
-	class LIB_boom: ShellBase
+//	TODO : set frag values
+/*	class LIB_boom: ShellBase
 	class LIB_boom_PP: LIB_boom
 	class LIB_boom_TMI42: LIB_boom
 	class LIB_boom_Ladung_Small: LIB_boom
@@ -499,56 +496,5 @@ class CfgAmmo {
 	class LIB_boom_TROTIL: LIB_boom_Ladung_Small
 	class LIB_boom_US_M1A1_ATMINE: LIB_boom
 	class LIB_boom_US_M3: LIB_boom
-	class LIB_boom_US_TNT_4pound: LIB_boom
-	*/
+	class LIB_boom_US_TNT_4pound: LIB_boom*/
 };
-/*
-class ACE_Triggers
-{
-	class LIB_LadungPM_Ger: Command
-	{
-		isAttachable = 1;
-		displayName = "Detonator";
-		picture = "\LIB\LIB_mines\equip\Ladung_charger_icon_ca.paa";
-		requires[] = {"ACE_LIB_LadungPM_Ger"};
-		onPlace = "(_this select 1) call ace_explosives_fnc_minePos;_this call ace_explosives_fnc_AddClacker;false";
-	};
-	class LIB_LadungPM_Sov: Command
-	{
-		isAttachable = 1;
-		displayName = "Detonator";
-		picture = "\LIB\LIB_mines\equip\detonator_sov_icon_ca.paa";
-		requires[] = {"ACE_LIB_LadungPM_Sov"};
-		onPlace = "(_this select 1) call ace_explosives_fnc_minePos;_this call ace_explosives_fnc_AddClacker;false";
-	};
-	class LIB_LadungPM_Us: Command
-	{
-		isAttachable = 1;
-		displayName = "Detonator";
-		picture = "\z\ace\addons\explosives\Data\UI\pm_us_ico.paa";
-		requires[] = {"ACE_LIB_LadungPM_Us"};
-		onPlace = "(_this select 1) call ace_explosives_fnc_minePos;_this call ace_explosives_fnc_AddClacker;false";
-	};
-	class FireCord
-	{
-		isAttachable = 1;
-		displayName = "Fuse";
-		picture = "\z\ace\addons\explosives\Data\UI\fitil_ico.paa";
-		onPlace = "(_this select 1) call ace_explosives_fnc_minePos;[_this select 1,(_this select 3) select 0] call ace_explosives_fnc_cordFired;false";
-		onSetup = "_this call ace_explosives_fnc_openTimerSetUI;true";
-		requires[] = {"ACE_LIB_FireCord"};
-	};
-};
-
-class ACE_D30_RangeTable_Dialog
-{
-	onLoad = "uiNamespace setVariable ['ACE_D30_RangeTable_Dialog', _this select 0];";
-	class controls
-	{
-		class ChargeListBox: RscListBox
-		{
-			onLBSelChanged = "_this call ace_ifa3mortar_fnc_rangeTablePageChange";
-		};
-	};
-};
-*/

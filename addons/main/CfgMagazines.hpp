@@ -1,6 +1,5 @@
 class CfgMagazines
 {
-	class LIB_Mine_Magazine;
 	class CA_Magazine;
 	class LIB_50Rnd_792x57: CA_Magazine	{
 		ACE_isBelt = 1;
@@ -8,7 +7,11 @@ class CfgMagazines
 	class LIB_250Rnd_792x57: LIB_50Rnd_792x57	{
 		ACE_isBelt = 1;
 	};
-/*
+	class LIB_Mine_Magazine: CA_Magazine
+	{
+		useAction = 0;
+		useActionTitle = "";
+	};
 	class LIB_TMI_42_MINE_mag: LIB_Mine_Magazine	{
 		ace_explosives_Placeable = 1;
 		ace_explosives_DelayTime = 2.5;
@@ -97,22 +100,13 @@ class CfgMagazines
 		ace_explosives_Placeable = 1;
 		ace_explosives_SetupObject = "ACE_Explosives_Place_LIB_Ladung_Small";
 		ace_explosives_DelayTime = 1;
-		class ACE_Triggers
-		{
-			SupportedTriggers[] = {"FireCord","LIB_LadungPM_Ger","LIB_LadungPM_Sov","LIB_LadungPM_Us"};
-			class FireCord
-			{
-				FuseTime = 0.5;
+		class ACE_Triggers	{
+			SupportedTriggers[] = {"FireCord","LIB_LadungPM"};
+			class FireCord	{
+				FuseTime = 0.5;		
 			};
-			class LIB_LadungPM_Ger
-			{
-				FuseTime = 0.5;
-			};
-			class LIB_LadungPM_Sov: LIB_LadungPM_Ger
-			{
-			};
-			class LIB_LadungPM_Us: LIB_LadungPM_Ger
-			{
+			class LIB_LadungPM	{
+				FuseTime = 0.5;			
 			};
 		};
 		mass = 15;
@@ -121,24 +115,15 @@ class CfgMagazines
 		ace_explosives_Placeable = 1;
 		ace_explosives_SetupObject = "ACE_Explosives_Place_LIB_Ladung_Big";
 		ace_explosives_DelayTime = 1;
-		class ACE_Triggers
-		{
-			SupportedTriggers[] = {"FireCord","LIB_LadungPM_Ger","LIB_LadungPM_Sov","LIB_LadungPM_Us"};
-			class FireCord
-			{
+		class ACE_Triggers	{
+			SupportedTriggers[] = {"FireCord","LIB_LadungPM"};
+			class FireCord	{
 				FuseTime = 0.5;
-				digDistance = -0.16;
+				digDistance = -0.16;			
 			};
-			class LIB_LadungPM_Ger
-			{
+			class LIB_LadungPM	{
 				FuseTime = 0.5;
-				digDistance = -0.16;
-			};
-			class LIB_LadungPM_Sov: LIB_LadungPM_Ger
-			{
-			};
-			class LIB_LadungPM_Us: LIB_LadungPM_Ger
-			{
+				digDistance = -0.16;			
 			};
 		};
 		mass = 20;
@@ -189,22 +174,13 @@ class CfgMagazines
 		ace_explosives_Placeable = 1;
 		ace_explosives_SetupObject = "ACE_Explosives_Place_LIB_TROTIL";
 		ace_explosives_DelayTime = 1;
-		class ACE_Triggers
-		{
-			SupportedTriggers[] = {"FireCord","LIB_LadungPM_Ger","LIB_LadungPM_Sov","LIB_LadungPM_Us"};
-			class FireCord
-			{
+		class ACE_Triggers	{
+			SupportedTriggers[] = {"FireCord","LIB_LadungPM"};
+			class FireCord	{
 				FuseTime = 0.5;
 			};
-			class LIB_LadungPM_Ger
-			{
+			class LIB_LadungPM	{
 				FuseTime = 0.5;
-			};
-			class LIB_LadungPM_Sov: LIB_LadungPM_Ger
-			{
-			};
-			class LIB_LadungPM_Us: LIB_LadungPM_Ger
-			{
 			};
 		};
 		mass = 15;
@@ -232,24 +208,15 @@ class CfgMagazines
 		ace_explosives_Placeable = 1;
 		ace_explosives_SetupObject = "ACE_Explosives_Place_LIB_US_TNT";
 		ace_explosives_DelayTime = 1;
-		class ACE_Triggers
-		{
-			SupportedTriggers[] = {"FireCord","LIB_LadungPM_Ger","LIB_LadungPM_Sov","LIB_LadungPM_Us"};
-			class FireCord
-			{
+		class ACE_Triggers	{
+			SupportedTriggers[] = {"FireCord","LIB_LadungPM"};
+			class FireCord	{
 				FuseTime = 0.5;
-				digDistance = -0.09;
+				digDistance = -0.09;				
 			};
-			class LIB_LadungPM_Ger
-			{
+			class LIB_LadungPM	{
 				FuseTime = 0.5;
-				digDistance = -0.09;
-			};
-			class LIB_LadungPM_Sov: LIB_LadungPM_Ger
-			{
-			};
-			class LIB_LadungPM_Us: LIB_LadungPM_Ger
-			{
+				digDistance = -0.09;				
 			};
 		};
 		mass = 20;
@@ -278,12 +245,16 @@ class CfgMagazines
 		ace_explosives_SetupObject = "ACE_Explosives_Place_LIB_SIGN_MINEN";
 		ace_explosives_DelayTime = 1;
 	};
-
-//	Investigate
-	class LIB_Ladung_PM_MINE_mag: LIB_Mine_Magazine
-	class LIB_PM_Provod_50: LIB_Mine_Magazine
-	class LIB_PM_Provod_75: LIB_PM_Provod_50
-	class LIB_PM_Provod_100: LIB_PM_Provod_50
-	class LIB_PM_MINE_mag: LIB_Mine_Magazine
-	class LIB_US_BM10_PM_mag: LIB_Mine_Magazine*/
+	class LIB_Ladung_PM_MINE_mag: LIB_Mine_Magazine	{
+		scope = 1;
+	};
+	class LIB_US_BM10_PM_mag: LIB_Mine_Magazine	{
+		scope = 1;
+	};
+	class LIB_PM_Provod_50: LIB_Mine_Magazine		{
+		scope = 1;
+	};
+	class LIB_PM_MINE_mag: LIB_Mine_Magazine		{
+		scope = 1;
+	};
 };

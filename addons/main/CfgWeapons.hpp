@@ -386,13 +386,15 @@ class CfgWeapons
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
-	/*class ACE_LIB_DefusalKit: ACE_ItemCore	{
+	class ACE_ItemCore;
+	class ACE_ExplosiveItem;
+	class ACE_LIB_DefusalKit: ACE_ItemCore	{
 		author = "ACE Iron Front";
 		scope = 2;
 		displayName = "Defusal Kit";
 		descriptionShort = "Allows defusing of explosives";
-		picture = "\LIB\LIB_mines\equip\sapper_instruments_icon_ca.paa";
-		model = "\A3\Structures_F\Items\Tools\Pliers_F.p3d";
+		picture = "\WW2\Assets_t\Weapons\Misc_t\Equipment\Weapons\Mines\gear_Sapper_instruments_ca.paa";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
 		class ItemInfo: ACE_ExplosiveItem
 		{
 			mass = 5;
@@ -403,55 +405,21 @@ class CfgWeapons
 	class LIB_ToolKit: ToolKit	{
 		scope = 1;
 	};
-	class ACE_LIB_LadungPM_Ger: ACE_ItemCore	{
+	class ACE_LIB_LadungPM: ACE_ItemCore	{
 		author = "ACE Iron Front";
 		scope = 2;
 		displayName = "Detonator";
 		descriptionShort = "Used to remotely trigger explosives";
-		picture = "\LIB\LIB_mines\equip\Ladung_charger_icon_ca.paa";
-		model = "\LIB\LIB_mines\inv\Ladung_pm_inv.p3d";
+		picture = "\WW2\Assets_t\Weapons\Misc_t\Equipment\Mines\gear_Ladung_charger_ca.paa";
+		model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_pm_inv.p3d";
 		ace_explosives_Range = 100;
 		ace_explosives_Detonator = 1;
-		ace_explosives_triggerType = "LIB_LadungPM_Ger";
+		ace_explosives_triggerType = "LIB_LadungPM";
 		class ItemInfo: ACE_ExplosiveItem
 		{
 			allowedSlots[] = {901};
 			mass = 20;
-			uniformModel = "\LIB\LIB_mines\inv\Ladung_pm_inv.p3d";
-		};
-	};
-	class ACE_LIB_LadungPM_Sov: ACE_ItemCore	{
-		author = "ACE Iron Front";
-		scope = 2;
-		displayName = "Detonator";
-		descriptionShort = "Used to remotely trigger explosives";
-		picture = "\LIB\LIB_mines\equip\detonator_sov_icon_ca.paa";
-		model = "\LIB\LIB_mines\inv\pm1_inv.p3d";
-		ace_explosives_Range = 100;
-		ace_explosives_Detonator = 1;
-		ace_explosives_triggerType = "LIB_LadungPM_Sov";
-		class ItemInfo: ACE_ExplosiveItem
-		{
-			allowedSlots[] = {901};
-			mass = 20;
-			uniformModel = "\LIB\LIB_mines\inv\Ladung_pm_inv.p3d";
-		};
-	};
-	class ACE_LIB_LadungPM_Us: ACE_ItemCore	{
-		author = "ACE Iron Front";
-		scope = 2;
-		displayName = "Detonator";
-		descriptionShort = "Used to remotely trigger explosives";
-		picture = "\z\ace\addons\explosives\Data\UI\pm_us_ico.paa";
-		model = "\LIB\LIB_DLC_1\LIB_US_Weapons\mines\lib_bm10_PM.p3d";
-		ace_explosives_Range = 100;
-		ace_explosives_Detonator = 1;
-		ace_explosives_triggerType = "LIB_LadungPM_Us";
-		class ItemInfo: ACE_ExplosiveItem
-		{
-			allowedSlots[] = {901};
-			mass = 20;
-			uniformModel = "\LIB\LIB_mines\inv\Ladung_pm_inv.p3d";
+			uniformModel = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_pm_inv.p3d";
 		};
 	};
 	class ACE_LIB_FireCord: ACE_ItemCore	{
@@ -459,7 +427,7 @@ class CfgWeapons
 		scope = 2;
 		displayName = "Fuse";
 		descriptionShort = "Used to remotely trigger explosives";
-		picture = "\z\ace\addons\explosives\Data\UI\fitil_ico.paa";
+		picture = "\z\ace\addons\explosives\Data\UI\Tripwire.paa";
 		model = "\z\ace\addons\captives\models\ace_cabletie.p3d";
 		ace_explosives_Range = 10000;
 		ace_explosives_Detonator = 1;
@@ -471,12 +439,4 @@ class CfgWeapons
 			uniformModel = "\z\ace\addons\captives\models\ace_cabletie.p3d";
 		};
 	};
-	class ACE_RangeTable_BM37: ACE_ItemCore	{
-		author = "ACE-Team";
-		picture = "\z\ace\addons\ifa3mortar\UI\icon_rangeTable.paa";
-	};
-	class ACE_RangeTable_GrWr34: ACE_ItemCore	{
-		author = "ACE-Team";
-		picture = "\z\ace\addons\ifa3mortar\UI\icon_rangeTable.paa";
-	};*/
 };

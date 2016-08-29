@@ -5,7 +5,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "IFA3_Core" };
+        requiredAddons[] = { "IFA3_Core","cba_ui","cba_xeh","cba_jr" };
         author = CSTRING(Team);
         authors[] = { "bux", "El Tyranos" };
         authorUrl = CSTRING(Url);

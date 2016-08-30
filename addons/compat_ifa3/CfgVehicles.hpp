@@ -94,7 +94,7 @@ class CfgVehicles {
 
     class LIB_Boat_base;
     class LIB_LCVP: LIB_Boat_base {
-        EGVAR(refuel, fuelCapacity) = 500;
+        ace_refuel_fuelCapacity = 500;
     };
 
     class LIB_StaticCannon_base;
@@ -192,99 +192,99 @@ class CfgVehicles {
     class LIB_GER_Plane_base: LIB_Plane_base {};
     class LIB_US_Plane_base: LIB_Plane_base {};
     class LIB_P47: LIB_US_Plane_base {
-        EGVAR(refuel, fuelCapacity) = 776;
+        ace_refuel_fuelCapacity = 776;
     };
 
     class LIB_FW190F8: LIB_GER_Plane_base {
-        EGVAR(refuel, fuelCapacity) = 523.9;
+        ace_refuel_fuelCapacity = 523.9;
     };
 
     class LIB_Ju87: LIB_GER_Plane_base {
-        EGVAR(refuel, fuelCapacity) = 1155;
+        ace_refuel_fuelCapacity = 1155;
     };
 
     class LIB_P39: LIB_SU_Plane_base {
-        EGVAR(refuel, fuelCapacity) = 454;
+        ace_refuel_fuelCapacity = 454;
     };
 
     class LIB_Pe2: LIB_SU_Plane_base {
-        EGVAR(refuel, fuelCapacity) = 1086;
+        ace_refuel_fuelCapacity = 1086;
     };
 
     class LIB_Li2: LIB_SU_Plane_base {
-        EGVAR(refuel, fuelCapacity) = 3043;
+        ace_refuel_fuelCapacity = 3043;
     };
 
 
     class LIB_Tank_base;
     class LIB_JS2_43: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 820;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander_back" };
+        ace_refuel_fuelCapacity = 820;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
     };
 
     class LIB_PzKpfwIV_H_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 470;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander" };
+        ace_refuel_fuelCapacity = 470;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
     };
 
     class LIB_PzKpfwV_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 720;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander" };
+        ace_refuel_fuelCapacity = 720;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
     };
 
     class LIB_PzKpfwVI_B_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 860;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander" };
+        ace_refuel_fuelCapacity = 860;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
     };
 
     class LIB_PzKpfwVI_E_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 540;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander" };
+        ace_refuel_fuelCapacity = 540;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
     };
 
     class LIB_StuG_III_G_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 320;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander","osa_poklop_loader_back" };
+        ace_refuel_fuelCapacity = 320;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander","osa_poklop_loader_back" };
     };
 
     class LIB_T34_76: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 610;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander_back" };
+        ace_refuel_fuelCapacity = 610;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
     };
 
     class LIB_T34_85: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 810;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander_back" };
+        ace_refuel_fuelCapacity = 810;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
     };
 
     class LIB_M4A3_75: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 660;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander_left" };
+        ace_refuel_fuelCapacity = 660;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_left" };
     };
 
     class LIB_SU85: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
-        EGVAR(refuel, fuelCapacity) = 510;
-        GVAR(ammoLocation) = "HitTurret";
-        GVAR(cookoffSelections)[] = { "osa_poklop_commander_back" };
+        ace_refuel_fuelCapacity = 510;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
     };
 
 
@@ -304,19 +304,19 @@ class CfgVehicles {
     class LIB_Car_base: Car_F {};
     class LIB_Kfz1_base: LIB_Car_base {
         ace_cargo_space = 3;
-        EGVAR(refuel, fuelCapacity) = 50;
+        ace_refuel_fuelCapacity = 50;
     };
 
     class LIB_Willys_MB_base: LIB_Car_base {
         ace_cargo_space = 3;
-        EGVAR(refuel, fuelCapacity) = 56.8;
+        ace_refuel_fuelCapacity = 56.8;
     };
 
 
     class Truck_F: Car_F {};
     class LIB_Truck_base: Truck_F {};
     class LIB_opelblitz_base: LIB_Truck_base {
-        EGVAR(refuel, fuelCapacity) = 82;
+        ace_refuel_fuelCapacity = 82;
     };
 
 
@@ -324,13 +324,13 @@ class CfgVehicles {
     class LIB_opelblitz_fuel: LIB_opelblitz_base {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
-        GVAR(hooks)[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
-        GVAR(fuelCargo) = 10000;
+        ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
+        ace_refuel_fuelCargo = 10000;
     };
 
     class LIB_opelblitz_parm: LIB_opelblitz_base {
         MACRO_REPAIRVEHICLE
-        GVAR(canRepair) = 1;
+        ace_repair_canRepair = 1;
         transportRepair = 0;
     };
 
@@ -340,11 +340,11 @@ class CfgVehicles {
     };
 
     class LIB_Scout_M3_base: LIB_Truck_base {
-        EGVAR(refuel, fuelCapacity) = 110;
+        ace_refuel_fuelCapacity = 110;
     };
 
     class LIB_US6_base: LIB_Truck_base {
-        EGVAR(refuel, fuelCapacity) = 151;
+        ace_refuel_fuelCapacity = 151;
     };
 
 
@@ -370,46 +370,46 @@ class CfgVehicles {
 
     class LIB_US_GMC_Parm: LIB_US6_Tent {
         MACRO_REPAIRVEHICLE
-            GVAR(canRepair) = 1;
+		ace_repair_canRepair = 1;
         transportRepair = 0;
     };
 
     class LIB_US_GMC_Fuel: LIB_US6_Tent {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
-        GVAR(hooks)[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
-        GVAR(fuelCargo) = 10000;
+        ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
+        ace_refuel_fuelCargo = 10000;
     };
 
     class LIB_zis5v_base: LIB_Truck_base {
-        EGVAR(refuel, fuelCapacity) = 60;
+        ace_refuel_fuelCapacity = 60;
     };
 
     class LIB_zis6_parm: LIB_zis5v_base {
         MACRO_REPAIRVEHICLE
-        GVAR(canRepair) = 1;
+        ace_repair_canRepair = 1;
         transportRepair = 0;
     };
 
     class LIB_zis5v_fuel: LIB_zis5v_base {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
-            GVAR(hooks)[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
-        GVAR(fuelCargo) = 10000;
+        ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
+        ace_refuel_fuelCargo = 10000;
     };
 
 
     class LIB_Wheeled_APC_base;
     class LIB_SdKfz251_base: LIB_Wheeled_APC_base {
-        EGVAR(refuel, fuelCapacity) = 160;
+        ace_refuel_fuelCapacity = 160;
     };
 
     class LIB_SdKfz_7_base: LIB_SdKfz251_base {
-        EGVAR(refuel, fuelCapacity) = 215;
+        ace_refuel_fuelCapacity = 215;
     };
 
     class LIB_US_M3_Halftrack: LIB_SdKfz251_base {
-        EGVAR(refuel, fuelCapacity) = 230;
+        ace_refuel_fuelCapacity = 230;
     };
 
 

@@ -5,7 +5,11 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = { "IFA3_Core","cba_ui","cba_xeh","cba_jr" };
+        requiredAddons[] = { 
+            "IFA3_Core",
+            "cba_ui","cba_xeh","cba_jr",
+            "ace_main","ace_interaction","ace_repair","ace_refuel","ace_frag" // TODO: add more ace addons that are required
+        };
         author = CSTRING(Team);
         authors[] = { "bux", "El Tyranos" };
         authorUrl = CSTRING(Url);

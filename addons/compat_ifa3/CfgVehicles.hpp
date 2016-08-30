@@ -1,7 +1,7 @@
 #define MACRO_REARM_TRUCK_ACTIONS \
         class ACE_Actions: ACE_Actions { \
             class ACE_MainActions: ACE_MainActions { \
-                class EGVAR(rearm,TakeAmmo) { \
+                class ace_rearm_TakeAmmo { \
                     displayName = ECSTRING(rearm,TakeAmmo); \
                     distance = 7; \
                     condition = QUOTE(_this call EFUNC(rearm,canTakeAmmo)); \
@@ -11,7 +11,7 @@
                     priority = 2; \
                     icon = QPATHTOEF(rearm,ui\icon_rearm_interact.paa); \
                 }; \
-                class EGVAR(rearm,StoreAmmo) { \
+                class ace_rearm_StoreAmmo { \
                     displayName = ECSTRING(rearm,StoreAmmo); \
                     distance = 7; \
                     condition = QUOTE(_this call EFUNC(rearm,canStoreAmmo)); \
@@ -25,7 +25,7 @@
 #define MACRO_REFUEL_ACTIONS \
     class ACE_Actions: ACE_Actions { \
         class ACE_MainActions: ACE_MainActions { \
-            class EGVAR(refuel,Refuel) { \
+            class ace_refuel_Refuel { \
                 displayName = ECSTRING(refuel,Refuel); \
                 distance = 7; \
                 condition = "true"; \
@@ -33,35 +33,35 @@
                 showDisabled = 0; \
                 priority = 2; \
                 icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
-                class EGVAR(refuel,TakeNozzle) { \
+                class ace_refuel_TakeNozzle { \
                     displayName = ECSTRING(refuel,TakeNozzle); \
                     condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canTakeNozzle)); \
                     statement = QUOTE([ARR_3(_player,_target,objNull)] call EFUNC(refuel,TakeNozzle)); \
                     exceptions[] = {"isNotInside"}; \
                     icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
                 }; \
-                class EGVAR(refuel,CheckFuelCounter) { \
+                class ace_refuel_CheckFuelCounter { \
                     displayName = ECSTRING(refuel,CheckFuelCounter); \
                     condition = "true"; \
                     statement = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,readFuelCounter)); \
                     exceptions[] = {"isNotInside"}; \
                     icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
                 }; \
-                class EGVAR(refuel,CheckFuel) { \
+                class ace_refuel_CheckFuel { \
                     displayName = ECSTRING(refuel,CheckFuel); \
                     condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canCheckFuel)); \
                     statement = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,checkFuel)); \
                     exceptions[] = {"isNotInside"}; \
                     icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
                 }; \
-                class EGVAR(refuel,Connect) { \
+                class ace_refuel_Connect { \
                     displayName = ECSTRING(refuel,Connect); \
                     condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canConnectNozzle)); \
                     statement = QUOTE([ARR_2(_player,_target)] call DEFUNC(refuel,connectNozzle)); \
                     exceptions[] = {"isNotInside"}; \
                     icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
                 }; \
-                class EGVAR(refuel,Return) { \
+                class ace_refuel_Return { \
                     displayName = ECSTRING(refuel,Return); \
                     condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canReturnNozzle)); \
                     statement = QUOTE([ARR_2(_player,_target)] call DEFUNC(refuel,returnNozzle)); \
@@ -76,8 +76,8 @@
 #define MACRO_REPAIRVEHICLE \
     class ACE_Actions { \
         class ACE_MainActions { \
-            class GVAR(Repair) { \
-                displayName = CSTRING(Repair); \
+            class ace_repair_Repair { \
+                displayName = ECSTRING(repair,Repair); \
                 condition = "true"; \
                 statement = ""; \
                 runOnHover = 1; \

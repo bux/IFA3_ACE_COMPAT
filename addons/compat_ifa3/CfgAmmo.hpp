@@ -466,6 +466,27 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
+    class LIB_MAIN_pipebomb;
+    class LIB_Ladung_Small_ammo: LIB_MAIN_pipebomb {
+        ace_explosives_magazine = "LIB_Ladung_Small_MINE_mag";
+        ace_explosives_Explosive = "LIB_Ladung_Small_ammo";
+        ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
+        digDistance = 0;
+    };
+
+    class LIB_Ladung_Big_ammo: LIB_MAIN_pipebomb {
+        ace_explosives_magazine = "LIB_Ladung_Big_MINE_mag";
+        ace_explosives_Explosive = "LIB_Ladung_Big_ammo";
+        ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
+        digDistance = 0.14;
+    };
+
+    class LIB_US_TNT_4pound_ammo: LIB_MAIN_pipebomb {
+        ace_explosives_magazine = "LIB_US_TNT_4pound_mag";
+        ace_explosives_Explosive = "LIB_US_TNT_4pound_ammo";
+        ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
+        digDistance = 0.05;
+    };
 
     class LIB_MAIN_mine;
     class LIB_TMI42_ammo: LIB_MAIN_mine {
@@ -498,19 +519,6 @@ class CfgAmmo {
         digDistance = 0.01;
     };
 
-    class LIB_Ladung_Small_ammo: LIB_MAIN_mine {
-        ace_explosives_magazine = "LIB_Ladung_Small_MINE_mag";
-        ace_explosives_Explosive = "LIB_Ladung_Small_ammo";
-        ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
-        digDistance = 0;
-    };
-
-    class LIB_Ladung_Big_ammo: LIB_MAIN_mine {
-        ace_explosives_magazine = "LIB_Ladung_Big_MINE_mag";
-        ace_explosives_Explosive = "LIB_Ladung_Big_ammo";
-        ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
-        digDistance = 0.14;
-    };
 
     //	class LIB_Ladung_PM_ammo: LIB_MAIN_mine {};
     class LIB_M3_ammo: LIB_MAIN_mine {

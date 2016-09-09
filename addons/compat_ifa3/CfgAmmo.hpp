@@ -547,32 +547,4 @@ class CfgAmmo {
         digDistance = 0.05;
     };
 
-    class LIB_US_TNT_4pound_ammo: LIB_MAIN_mine {
-        soundActivation[] = { "", 0, 0, 0 };  // No sound on activation
-        soundDeactivation[] = { "", 0, 0, 0 };  // No sound on deactivation
-        ace_explosives_magazine = "LIB_US_TNT_4pound_mag";
-        ace_explosives_Explosive = "LIB_US_TNT_4pound_ammo";
-        ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
-        digDistance = 0.05;
-    };
-
-    //	class LIB_US_BM10_PM_ammo: LIB_MAIN_mine {};
-
-    //	TODO : set frag values
-    /*	class LIB_boom: ShellBase
-        class LIB_boom_PP: LIB_boom
-        class LIB_boom_TMI42: LIB_boom
-        class LIB_boom_Ladung_Small: LIB_boom
-        class LIB_boom_Ladung_Big: LIB_boom
-        class LIB_boom_SMI_35: LIB_boom
-        class LIB_boom_pomzec: LIB_boom
-        class LIB_boom_STMI: LIB_boom
-        class LIB_boom_shumine42: LIB_boom
-        class LIB_boom_m3: LIB_boom
-        class LIB_boom_PMD6: LIB_boom
-        class LIB_boom_TM44: LIB_boom_TMI42
-        class LIB_boom_TROTIL: LIB_boom_Ladung_Small
-        class LIB_boom_US_M1A1_ATMINE: LIB_boom
-        class LIB_boom_US_M3: LIB_boom
-        class LIB_boom_US_TNT_4pound: LIB_boom*/
 };

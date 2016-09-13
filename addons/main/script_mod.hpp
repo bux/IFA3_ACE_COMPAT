@@ -1,7 +1,7 @@
 // COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp
 
 #define MAINPREFIX z
-#define PREFIX ace
+#define PREFIX ACE_COMPAT_IFA3
 
 #define MAJOR 11
 #define MINOR 0
@@ -14,9 +14,3 @@
 // MINIMAL required version for the Mod. Components can specify others..
 #define REQUIRED_VERSION 1.62
 #define REQUIRED_CBA_VERSION {2,4,1}
-
-#ifdef COMPONENT_BEAUTIFIED
-    #define COMPONENT_NAME QUOTE(ACE3 - COMPONENT_BEAUTIFIED)
-#else
-    #define COMPONENT_NAME QUOTE(ACE3 - COMPONENT)
-#endif

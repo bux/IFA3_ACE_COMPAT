@@ -1,12 +1,6 @@
-#define COMPONENT signs
-#include "\z\IFA3_ACE_COMPAT\addons\main\script_mod.hpp"
+#define COMPONENT stuff
+#define COMPONENT_BEAUTIFIED Iron Front 1944 Compatibility for stuff
 
-#ifdef DEBUG_ENABLED_signs
-    #define DEBUG_MODE_FULL
-#endif
+#include "\z\ace\addons\main\script_mod.hpp"
 
-#ifdef DEBUG_SETTINGS_signs
-    #define DEBUG_SETTINGS DEBUG_SETTINGS_signs
-#endif
-
-#include "\z\IFA3_ACE_COMPAT\addons\main\script_macros.hpp"
+#include "\z\ace\addons\main\script_macros.hpp"

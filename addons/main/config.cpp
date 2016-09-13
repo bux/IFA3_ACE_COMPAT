@@ -1,5 +1,4 @@
 #include "script_component.hpp"
-#include "script_mod.hpp"
 
 class CfgPatches {
     class ADDON {

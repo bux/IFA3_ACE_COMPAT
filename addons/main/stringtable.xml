@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project name="IFA3_ACE_COMPAT">
-    <Package name="compat_ifa3">
+    <Package name="main">
 
-        <Key ID="STR_IFA3_ACE_COMPAT_compat_ifa3_Team">
+        <Key ID="STR_IFA3_ACE_COMPAT_main_Team">
             <English>IFA3 team</English>
             <German>IFA3 team</German>
         </Key>
-        <Key ID="STR_IFA3_ACE_COMPAT_compat_ifa3_Name">
+        <Key ID="STR_IFA3_ACE_COMPAT_main_Name">
             <English>Iron Front in Arma 3 ACE compatibility</English>
             <German>Iron Front in Arma 3 ACE compatibility</German>
         </Key>
-        <Key ID="STR_IFA3_ACE_COMPAT_compat_ifa3_Url">
+        <Key ID="STR_IFA3_ACE_COMPAT_main_Url">
             <Original>https://github.com/bux578/IFA3_ACE_COMPAT</Original>
         </Key>
 

@@ -73,7 +73,7 @@ dssignfile = ""
 prefix = "IFA3_ACE_COMPAT"
 pbo_name_prefix = "IFA3_ACE_COMPAT_"
 signature_blacklist = [""]
-importantFiles = ["mod.cpp", "README.md", "logo.paa", "meta.cpp"]
+importantFiles = ["mod.cpp", "README.md", "logo.paa"]
 versionFiles = ["mod.cpp"]
 
 ciBuild = False # Used for CI builds

@@ -471,20 +471,6 @@ class CfgWeapons {
 
     class ACE_ItemCore;
     class ACE_ExplosiveItem;
-    class ACE_LIB_DefusalKit: ACE_ItemCore {
-        author = "ACE Iron Front";
-        scope = 2;
-        displayName = "Defusal Kit";
-        descriptionShort = "Allows defusing of explosives";
-        picture = "\WW2\Assets_t\Weapons\Misc_t\Equipment\Weapons\Mines\gear_Sapper_instruments_ca.paa";
-        model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
-        class ItemInfo: ACE_ExplosiveItem {
-            mass = 5;
-            uniformModel = "\A3\Structures_F\Items\Tools\Pliers_F.p3d";
-        };
-    };
-
-
     class ToolKit;
     class LIB_ToolKit: ToolKit {
         scope = 1;
@@ -510,11 +496,11 @@ class CfgWeapons {
     class ACE_LIB_FireCord: ACE_ItemCore {
         author = "ACE Iron Front";
         scope = 2;
-        displayName = "Fuse";
+        displayName = "Black powder fuse";
         descriptionShort = "Used to remotely trigger explosives";
         picture = "\z\ace\addons\explosives\Data\UI\Tripwire.paa";
         model = "\z\ace\addons\captives\models\ace_cabletie.p3d";
-        ace_explosives_Range = 10000;
+        ace_explosives_Range = 100;
         ace_explosives_Detonator = 1;
         ace_explosives_triggerType = "FireCord";
         class ItemInfo: ACE_ExplosiveItem {

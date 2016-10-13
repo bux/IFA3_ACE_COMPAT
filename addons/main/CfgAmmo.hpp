@@ -58,11 +58,10 @@ class CfgAmmo {
         ace_rearm_caliber = 23;
     };
 
-    class LIB_SprGr_FlaK_38: LIB_B_23mm_AA {
+    class LIB_4x_SprGr_FlaK_38: LIB_B_23mm_AA {
         ace_rearm_caliber = 20;
     };
-
-    class LIB_4x_SprGr_FlaK_38: LIB_B_23mm_AA {
+    class LIB_SprGr_FlaK_38: LIB_4x_SprGr_FlaK_38 {
         ace_rearm_caliber = 20;
     };
 
@@ -193,8 +192,8 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class BombCore;
-    class LIB_FAB500_Bomb: BombCore {
+    class LIB_Bomb_base;
+    class LIB_FAB500_Bomb: LIB_Bomb_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -205,27 +204,27 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_SC500_Bomb: LIB_FAB500_Bomb {
+    class LIB_SC500_Bomb: LIB_Bomb_base {
         ace_frag_metal = 500;
         ace_frag_charge = 260;
     };
 
-    class LIB_FAB250_Bomb: LIB_FAB500_Bomb {
+    class LIB_FAB250_Bomb: LIB_Bomb_base {
         ace_frag_metal = 207;
         ace_frag_charge = 113;
     };
 
-    class LIB_SC250_Bomb: LIB_FAB250_Bomb {
+    class LIB_SC250_Bomb: LIB_Bomb_base {
         ace_frag_metal = 250;
         ace_frag_charge = 130;
     };
 
-    class LIB_SC50_Bomb: LIB_SC250_Bomb {
+    class LIB_SC50_Bomb: LIB_Bomb_base {
         ace_frag_metal = 50;
         ace_frag_charge = 30;
     };
 
-    class LIB_US_500lb_Bomb: LIB_FAB500_Bomb {
+    class LIB_US_500lb_Bomb: LIB_Bomb_base {
         ace_frag_metal = 213;
         ace_frag_charge = 63;
     };
@@ -242,7 +241,7 @@ class CfgAmmo {
         ace_rearm_caliber = 82;
     };
 
-    class ARTY_LIB_Sh_82_HE: ShellBase {
+    class ARTY_LIB_Sh_82_HE: LIB_Sh_82_HE {
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
         ace_frag_metal = 3400;
@@ -262,7 +261,7 @@ class CfgAmmo {
         ace_rearm_caliber = 81;
     };
 
-    class ARTY_LIB_Sh_81_HE: ShellBase {
+    class ARTY_LIB_Sh_81_HE: LIB_Sh_81_HE {
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
         ace_frag_metal = 3110;
@@ -276,71 +275,73 @@ class CfgAmmo {
         ace_frag_skip = 1;
     };
 
-    class LIB_BR471_AP: ShellBase {
+    class LIB_Shell_base;
+    class LIB_BR471_AP: LIB_Shell_base {
         ace_rearm_caliber = 122;
     };
 
-    class LIB_PzGr39_KWK40_AP: ShellBase {
+    class LIB_PzGr39_KWK40_AP: LIB_Shell_base {
         ace_rearm_caliber = 75;
         ace_frag_skip = 1;
     };
 
-    class LIB_PzGr40_KWK40_APCR: ShellBase {
+    class LIB_ShellAPCR_base;
+    class LIB_PzGr40_KWK40_APCR: LIB_ShellAPCR_base {
         ace_rearm_caliber = 75;
         ace_frag_skip = 1;
     };
 
-    class LIB_PzGr3942_KwK42_AP: ShellBase {
+    class LIB_PzGr3942_KwK42_AP: LIB_Shell_base {
         ace_rearm_caliber = 75;
         ace_frag_skip = 1;
     };
 
-    class LIB_PzGr4042_KwK42_APCR: ShellBase {
+    class LIB_PzGr4042_KwK42_APCR: LIB_ShellAPCR_base {
         ace_rearm_caliber = 75;
         ace_frag_skip = 1;
     };
 
-    class LIB_PzGr43_AP: ShellBase {
+    class LIB_PzGr43_AP: LIB_Shell_base {
         ace_rearm_caliber = 88;
         ace_frag_skip = 1;
     };
 
-    class LIB_PzGr40_APCR: ShellBase {
+    class LIB_PzGr40_APCR: LIB_ShellAPCR_base {
         ace_rearm_caliber = 75;
         ace_frag_skip = 1;
     };
 
-    class LIB_PzGr39_KwK36_AP: ShellBase {
+    class LIB_PzGr39_KwK36_AP: LIB_Shell_base {
         ace_rearm_caliber = 88;
         ace_frag_skip = 1;
     };
 
-    class LIB_PzGr40_KwK36_APCR: ShellBase {
+    class LIB_PzGr40_KwK36_APCR: LIB_ShellAPCR_base {
         ace_rearm_caliber = 88;
         ace_frag_skip = 1;
     };
 
-    class LIB_BR365_AP: ShellBase {
+    class LIB_BR365_AP: LIB_Shell_base {
         ace_rearm_caliber = 85;
         ace_frag_skip = 1;
     };
 
-    class LIB_BR365P_APCR: ShellBase {
+    class LIB_BR365P_APCR: LIB_ShellAPCR_base {
         ace_rearm_caliber = 85;
         ace_frag_skip = 1;
     };
 
-    class LIB_M61_M1_AP: ShellBase {
+    class LIB_M61_M1_AP: LIB_Shell_base {
         ace_rearm_caliber = 75;
         ace_frag_skip = 1;
     };
 
-    class LIB_T45_M1_APCR: ShellBase {
+    class LIB_T45_M1_APCR: LIB_ShellAPCR_base {
         ace_rearm_caliber = 75;
         ace_frag_skip = 1;
     };
 
-    class LIB_76mm_Shell_Base: ShellBase {
+    class LIB_76mm_Shell_Base: LIB_Shell_base {
         ace_rearm_caliber = 76;
         ace_frag_skip = 1;
     };
@@ -361,8 +362,8 @@ class CfgAmmo {
     };
 
 
-    class ShellBase_HE;
-    class LIB_OF471_HE: ShellBase_HE {
+    class LIB_ShellHE_base;
+    class LIB_OF471_HE: LIB_ShellHE_base {
         ace_rearm_caliber = 122;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -372,7 +373,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_SprGr34_KWK40_HE: ShellBase_HE {
+    class LIB_SprGr34_KWK40_HE: LIB_ShellHE_base {
         ace_rearm_caliber = 75;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -382,7 +383,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_SprGr42_KwK42_HE: ShellBase_HE {
+    class LIB_SprGr42_KwK42_HE: LIB_ShellHE_base {
         ace_rearm_caliber = 75;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -392,7 +393,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_SprGr39_HE: ShellBase_HE {
+    class LIB_SprGr39_HE: LIB_ShellHE_base {
         ace_rearm_caliber = 88;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -402,7 +403,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_SprGr_KwK36_HE: ShellBase_HE {
+    class LIB_SprGr_KwK36_HE: LIB_ShellHE_base {
         ace_rearm_caliber = 88;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -412,7 +413,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_O365_HE: ShellBase_HE {
+    class LIB_O365_HE: LIB_ShellHE_base {
         ace_rearm_caliber = 85;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -422,7 +423,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_M42A1_M1_HE: ShellBase_HE {
+    class LIB_M42A1_M1_HE: LIB_ShellHE_base {
         ace_rearm_caliber = 76;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -455,8 +456,8 @@ class CfgAmmo {
     };
 
 
-    class LIB_Rocket;
-    class LIB_R_M8: LIB_Rocket {
+    class LIB_Rocket_base;
+    class LIB_R_M8: LIB_Rocket_base {
         ace_rearm_caliber = 110;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };

@@ -5,7 +5,8 @@ class CfgMagazines {
         ACE_isBelt = 1;
     };
 
-    class LIB_250Rnd_792x57: LIB_50Rnd_792x57 {
+    class LIB_50Rnd_792x57_Veh;
+    class LIB_250Rnd_792x57: LIB_50Rnd_792x57_Veh {
         ACE_isBelt = 1;
     };
 

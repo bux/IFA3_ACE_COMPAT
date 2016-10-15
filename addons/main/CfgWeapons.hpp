@@ -154,6 +154,7 @@ class CfgWeapons {
 
 
     class MGun;
+    class LIB_MLMG_base;
     class LIB_MLMG: MGun {
         ACE_Overheating_Dispersion = 0.75;
         ACE_Overheating_SlowdownFactor = 1;
@@ -162,12 +163,12 @@ class CfgWeapons {
         ACE_overheating_allowSwapBarrel = 1;
     };
 
-    class LIB_MLMG42: LIB_MLMG {
+    class LIB_MLMG42: LIB_MLMG_base {
         ACE_barrelTwist = 304.8;
         ACE_barrelLength = 533;
     };
 
-    class LIB_Maxim_M30: LIB_MLMG {
+    class LIB_Maxim_M30: LIB_MLMG_base {
         ACE_barrelTwist = 254; //unknown set to 1:10
         ACE_barrelLength = 732;
         ACE_overheating_allowSwapBarrel = 0;
@@ -224,245 +225,253 @@ class CfgWeapons {
 
 
     class CannonCore;
-    class LIB_D25T_AP: CannonCore {
+    class LIB_TankAPCannon_base;
+    class LIB_D25T_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_D25T_HE: CannonCore {
+    class LIB_TankHECannon_base;
+    class LIB_D25T_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_D25T_not_loaded: CannonCore
-    class LIB_D25T: CannonCore {
+    class LIB_TankCannon_base;
+    class LIB_D25T: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK40_L48_AP: CannonCore {
+    class LIB_KwK40_L48_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK40_L48_APCR: CannonCore {
+    class LIB_TankAPCRCannon_base;
+    class LIB_KwK40_L48_APCR: LIB_TankAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK40_L48_HE: CannonCore {
+    class LIB_KwK40_L48_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_KwK40_L48_not_loaded: CannonCore
-    class LIB_KwK40_L48: CannonCore {
+    class LIB_KwK40_L48: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK42_L70_AP: CannonCore {
+    class LIB_KwK42_L70_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK42_L70_APCR: CannonCore {
+    class LIB_KwK42_L70_APCR: LIB_TankAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK42_L70_HE: CannonCore {
+    class LIB_KwK42_L70_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_KwK42_L70_not_loaded: CannonCore
-    class LIB_KwK42_L70: CannonCore {
+    class LIB_KwK42_L70: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK43_L71_AP: CannonCore {
+    class LIB_KwK43_L71_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK43_L71_APCR: CannonCore {
+    class LIB_KwK43_L71_APCR: LIB_TankAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK43_L71_HE: CannonCore {
+    class LIB_KwK43_L71_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_KwK43_L71_not_loaded: CannonCore
-    class LIB_KwK43_L71: CannonCore {
+    class LIB_KwK43_L71: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK36_L56_AP: CannonCore {
+    class LIB_KwK36_L56_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK36_L56_APCR: CannonCore {
+    class LIB_KwK36_L56_APCR: LIB_TankAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_KwK36_L56_HE: CannonCore {
+    class LIB_KwK36_L56_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_KwK36_L56_not_loaded: CannonCore
-    class LIB_KwK36_L56: CannonCore {
+    class LIB_KwK36_L56: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_F34_AP: CannonCore {
+    class LIB_F34_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_F34_APCR: CannonCore {
+    class LIB_F34_APCR: LIB_TankAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_F34_HE: CannonCore {
+    class LIB_F34_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_F34_not_loaded: CannonCore
-    class LIB_F34: CannonCore {
+    class LIB_F34: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_ZIS_S_53_AP: CannonCore {
+    class LIB_ZIS_S_53_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_ZIS_S_53_APCR: CannonCore {
+    class LIB_ZIS_S_53_APCR: LIB_TankAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_ZIS_S_53_HE: CannonCore {
+    class LIB_ZIS_S_53_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_ZIS_S_53_not_loaded: CannonCore
-    class LIB_ZIS_S_53: CannonCore {
+    class LIB_ZIS_S_53: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_ZIS3_AP: CannonCore {
+    class LIB_StaticGunAPCannon_base;
+    class LIB_ZIS3_AP: LIB_StaticGunAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_ZIS3_APCR: CannonCore {
+    class LIB_StaticGunAPCRCannon_base;
+    class LIB_ZIS3_APCR: LIB_StaticGunAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_ZIS3_HE: CannonCore {
+    class LIB_StaticGunHECannon_base;
+    class LIB_ZIS3_HE: LIB_StaticGunHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_ZIS3_not_loaded: CannonCore
-    class LIB_ZIS3: CannonCore {
+    class LIB_StaticGunCannon_base;
+    class LIB_ZIS3: LIB_StaticGunCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_M3_L40_AP: CannonCore {
+    class LIB_M3_L40_AP: LIB_TankAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_M3_L40_APCR: CannonCore {
+    class LIB_M3_L40_APCR: LIB_TankAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_M3_L40_HE: CannonCore {
+    class LIB_M3_L40_HE: LIB_TankHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_M3_L40_not_loaded: CannonCore
-    class LIB_M3_L40: CannonCore {
+    class LIB_M3_L40: LIB_TankCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_Pak40_AP: CannonCore {
+    class LIB_Pak40_AP: LIB_StaticGunAPCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_Pak40_APCR: CannonCore {
+    class LIB_Pak40_APCR: LIB_StaticGunAPCRCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
-    class LIB_Pak40_HE: CannonCore {
+    class LIB_Pak40_HE: LIB_StaticGunHECannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;
     };
 
     //class LIB_Pak40_not_loaded: CannonCore
-    class LIB_Pak40: CannonCore {
+    class LIB_Pak40: LIB_StaticGunCannon_base {
         ace_overpressure_angle = 90;
         ace_overpressure_range = 30;
         ace_overpressure_damage = 0.7;

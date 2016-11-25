@@ -638,7 +638,7 @@ class CfgVehicles {
 
     class ACE_Explosives_Place_LIB_US_M3_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_DN_US_M3";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_M3_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_M3_ap_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_shumine42_MINE: ACE_Explosives_Place {

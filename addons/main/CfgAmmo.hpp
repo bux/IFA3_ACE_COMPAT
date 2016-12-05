@@ -1,7 +1,7 @@
 class CfgAmmo {
 
-    class B_9x18_Ball;
-    class LIB_B_9x19_Ball: B_9x18_Ball {
+    class LIB_B_9x18_Ball;
+    class LIB_B_9x19_Ball: LIB_B_9x18_Ball {
         ACE_caliber = 9.017;
         ACE_bulletLength = 15.494;
         ACE_bulletMass = 8.0352;
@@ -14,8 +14,8 @@ class CfgAmmo {
         ACE_barrelLengths[] = { 101.6,127,228.6 };
     };
 
-    class BulletBase;
-    class LIB_B_45ACP_Ball: BulletBase {
+    class LIB_Bullet_base;
+    class LIB_B_45ACP_Ball: LIB_Bullet_base {
         ACE_caliber = 11.481;
         ACE_bulletLength = 17.272;
         ACE_bulletMass = 14.904;
@@ -28,7 +28,7 @@ class CfgAmmo {
         ACE_barrelLengths[] = { 101.6,127,228.6 };
     };
 
-    class LIB_B_762x54_Ball: BulletBase {
+    class LIB_B_762x54_Ball: LIB_Bullet_base {
         ACE_caliber = 7.925;
         ACE_bulletLength = 28.956;
         ACE_bulletMass = 9.8496;
@@ -41,7 +41,8 @@ class CfgAmmo {
         ACE_barrelLengths[] = { 406.4,508,609.6,660.4 };
     };
 
-    class LIB_B_127x108_Ball: BulletBase {
+    class LIB_Bullet_Vehicle_base;
+    class LIB_B_127x108_Ball: LIB_Bullet_Vehicle_base {
         ACE_caliber = 12.954;
         ACE_bulletLength = 64.516;
         ACE_bulletMass = 48.6;
@@ -54,11 +55,12 @@ class CfgAmmo {
         ACE_barrelLengths[] = { 436.88 };
     };
 
-    class LIB_B_23mm_AA: BulletBase {
+    class LIB_Bullet_AA_base;
+    class LIB_B_23mm_AA: LIB_Bullet_AA_base {
         ace_rearm_caliber = 23;
     };
 
-    class LIB_4x_SprGr_FlaK_38: LIB_B_23mm_AA {
+    class LIB_4x_SprGr_FlaK_38: LIB_Bullet_AA_base {
         ace_rearm_caliber = 20;
     };
     class LIB_SprGr_FlaK_38: LIB_4x_SprGr_FlaK_38 {
@@ -69,8 +71,8 @@ class CfgAmmo {
         ace_rearm_caliber = 37;
     };
 
-    class RocketBase;
-    class LIB_PzFaust_30m: RocketBase {
+    class LIB_Rocket_base;
+    class LIB_PzFaust_30m: LIB_Rocket_base {
         ace_frag_enabled = 1;
         ace_frag_metal = 3200;
         ace_frag_charge = 400;
@@ -81,7 +83,7 @@ class CfgAmmo {
         ace_frag_force = 1;
     };
 
-    class LIB_R_88mm_RPzB: RocketBase {
+    class LIB_R_88mm_RPzB: LIB_Rocket_base {
         ace_frag_enabled = 1;
         ace_frag_metal = 3300;
         ace_frag_charge = 700;
@@ -92,7 +94,7 @@ class CfgAmmo {
         ace_frag_force = 1;
     };
 
-    class LIB_60mm_M6: RocketBase {
+    class LIB_60mm_M6: LIB_Rocket_base {
         ace_frag_enabled = 1;
         ace_frag_metal = 3300;
         ace_frag_charge = 700;
@@ -103,8 +105,8 @@ class CfgAmmo {
         ace_frag_force = 1;
     };
 
-    class GrenadeHand;
-    class LIB_shg24: GrenadeHand {
+    class LIB_GrenadeHand_base;
+    class LIB_shg24: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -115,7 +117,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_shg24x7: GrenadeHand {
+    class LIB_shg24x7: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -126,7 +128,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_m39: GrenadeHand {
+    class LIB_m39: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -137,7 +139,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_f1: GrenadeHand {
+    class LIB_f1: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -148,7 +150,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_rg42: GrenadeHand {
+    class LIB_rg42: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -159,7 +161,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_rpg6: GrenadeHand {
+    class LIB_rpg6: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -170,7 +172,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_pwm: GrenadeHand {
+    class LIB_pwm: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -181,7 +183,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_US_Mk_2: GrenadeHand {
+    class LIB_US_Mk_2: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -230,8 +232,8 @@ class CfgAmmo {
     };
 
 
-    class ShellBase;
-    class LIB_Sh_82_HE: ShellBase {
+    class Sh_82mm_AMOS;
+    class LIB_Sh_82_HE: Sh_82mm_AMOS {
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
         ace_frag_metal = 3400;
@@ -251,7 +253,7 @@ class CfgAmmo {
         ace_rearm_caliber = 82;
     };
 
-    class LIB_Sh_81_HE: ShellBase {
+    class LIB_Sh_81_HE: LIB_Sh_82_HE {
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
         ace_frag_metal = 3110;
@@ -271,6 +273,7 @@ class CfgAmmo {
         ace_rearm_caliber = 81;
     };
 
+    class ShellBase;
     class LIB_FlakExplosion: ShellBase {
         ace_frag_skip = 1;
     };
@@ -356,7 +359,8 @@ class CfgAmmo {
         ace_frag_skip = 1;
     };
 
-    class LIB_B_37mm_AP: ShellBase {
+    class LIB_Bullet_Plane_base;
+    class LIB_B_37mm_AP: LIB_Bullet_Plane_base {
         ace_rearm_caliber = 37;
         ace_frag_skip = 1;
     };
@@ -445,7 +449,8 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_OF471_HE_Arty: ShellBase {
+    class Sh_155mm_AMOS;
+    class LIB_OF471_HE_Arty: Sh_155mm_AMOS {
         ace_rearm_caliber = 122;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
@@ -456,8 +461,8 @@ class CfgAmmo {
     };
 
 
-    class LIB_Rocket_base;
-    class LIB_R_M8: LIB_Rocket_base {
+    class R_60mm_HE;
+    class LIB_R_M8: R_60mm_HE {
         ace_rearm_caliber = 110;
         ace_frag_enabled = 1;
         ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };

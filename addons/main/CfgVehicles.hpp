@@ -363,18 +363,21 @@ class CfgVehicles {
         MACRO_REARM_TRUCK_ACTIONS
     };
 
-    class LIB_US_GMC_Ammo: LIB_US6_Ammo {
+    class LIB_US_GMC_Base: LIB_Truck_base {
+        ace_refuel_fuelCapacity = 151;
+    };
+    class LIB_US_GMC_Ammo: LIB_US_GMC_Base {
         transportAmmo = 0;
         MACRO_REARM_TRUCK_ACTIONS
     };
 
-    class LIB_US_GMC_Parm: LIB_US6_Tent {
+    class LIB_US_GMC_Parm: LIB_US_GMC_Base {
         MACRO_REPAIRVEHICLE
-		ace_repair_canRepair = 1;
+        ace_repair_canRepair = 1;
         transportRepair = 0;
     };
 
-    class LIB_US_GMC_Fuel: LIB_US6_Tent {
+    class LIB_US_GMC_Fuel: LIB_US_GMC_Base {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
         ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };

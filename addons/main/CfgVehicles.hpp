@@ -303,70 +303,71 @@ class CfgVehicles {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 820;
         ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_front" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_JS2_43",{0,-1,0}};
     };
 
     class LIB_PzKpfwIV_H_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 470;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_PzKpfwV_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 720;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_PzKpfwVI_B_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 860;
         ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_PzKpfwVI_E_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 540;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_StuG_III_G_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 320;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander","osa_poklop_loader_back" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_T34_76: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 610;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_T34_85: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 810;
         ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_M4A3_75: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 660;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_left" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
     class LIB_SU85: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 510;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
     };
 
 

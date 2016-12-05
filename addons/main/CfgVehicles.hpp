@@ -312,6 +312,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 470;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwIV_H",{0,-1,0}};
     };
 
     class LIB_PzKpfwV_base: LIB_Tank_base {
@@ -319,6 +320,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 720;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwV",{0,-1,0}};
     };
 
     class LIB_PzKpfwVI_B_base: LIB_Tank_base {
@@ -326,6 +328,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 860;
         ace_cookoff_ammoLocation = "HitTurret";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwVI_B",{0,-1,0}};
     };
 
     class LIB_PzKpfwVI_E_base: LIB_Tank_base {
@@ -333,6 +336,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 540;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwVI_E",{0,-1,0}};
     };
 
     class LIB_StuG_III_G_base: LIB_Tank_base {
@@ -340,6 +344,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 320;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_StuG_III_G",{0,-1,0}};
     };
 
     class LIB_T34_76: LIB_Tank_base {
@@ -347,6 +352,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 610;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_T34_76",{0,-1,0}};
     };
 
     class LIB_T34_85: LIB_Tank_base {
@@ -354,6 +360,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 810;
         ace_cookoff_ammoLocation = "HitTurret";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_T34_85",{0,-1,0}};
     };
 
     class LIB_M4A3_75: LIB_Tank_base {
@@ -361,6 +368,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 660;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_M4A3_75",{0,-1,0}};
     };
 
     class LIB_SU85: LIB_Tank_base {
@@ -368,6 +376,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 510;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_SU85",{0,-1,0}};
     };
 
 

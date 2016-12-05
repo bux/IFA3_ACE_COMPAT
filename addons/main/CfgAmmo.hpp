@@ -207,28 +207,58 @@ class CfgAmmo {
     };
 
     class LIB_SC500_Bomb: LIB_Bomb_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_large","ACE_frag_large","ACE_frag_large_HD","ACE_frag_large","ACE_frag_huge","ACE_frag_huge_HD","ACE_frag_huge" };
         ace_frag_metal = 500;
         ace_frag_charge = 260;
+        ace_frag_gurney_c = 2027; //60% amatol (1886) + 40% TNT (2240) = 2027 m/s
+        ace_frag_gurney_k = "1/2";
     };
 
     class LIB_FAB250_Bomb: LIB_Bomb_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_large","ACE_frag_large","ACE_frag_large_HD","ACE_frag_large","ACE_frag_huge","ACE_frag_huge_HD","ACE_frag_huge" };
         ace_frag_metal = 207;
         ace_frag_charge = 113;
+        ace_frag_gurney_c = 2027; //60% amatol (1886) + 40% TNT (2240) = 2027 m/s
+        ace_frag_gurney_k = "1/2";
     };
 
     class LIB_SC250_Bomb: LIB_Bomb_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_large","ACE_frag_large","ACE_frag_large_HD","ACE_frag_large","ACE_frag_huge","ACE_frag_huge_HD","ACE_frag_huge" };
         ace_frag_metal = 250;
         ace_frag_charge = 130;
+        ace_frag_gurney_c = 2027; //60% amatol (1886) + 40% TNT (2240) = 2027 m/s
+        ace_frag_gurney_k = "1/2";
     };
 
     class LIB_SC50_Bomb: LIB_Bomb_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_large","ACE_frag_large","ACE_frag_large_HD","ACE_frag_large","ACE_frag_huge","ACE_frag_huge_HD","ACE_frag_huge" };
         ace_frag_metal = 50;
         ace_frag_charge = 30;
+        ace_frag_gurney_c = 2027; //60% amatol (1886) + 40% TNT (2240) = 2027 m/s
+        ace_frag_gurney_k = "1/2";
     };
 
     class LIB_US_500lb_Bomb: LIB_Bomb_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_large","ACE_frag_large","ACE_frag_large_HD","ACE_frag_large","ACE_frag_huge","ACE_frag_huge_HD","ACE_frag_huge" };
         ace_frag_metal = 213;
         ace_frag_charge = 63;
+        ace_frag_gurney_c = 2027; //60% amatol (1886) + 40% TNT (2240) = 2027 m/s
+        ace_frag_gurney_k = "1/2";
     };
 
 

@@ -506,7 +506,7 @@ class CfgAmmo {
     class LIB_Ladung_Small_ammo: LIB_MAIN_pipebomb {
         // ace_explosives_magazine = "LIB_Ladung_Small_MINE_mag";
         ace_explosives_Explosive = "LIB_Ladung_Small_ammo_Scripted";
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
@@ -518,7 +518,7 @@ class CfgAmmo {
     class LIB_Ladung_Big_ammo: LIB_MAIN_pipebomb {
         // ace_explosives_magazine = "LIB_Ladung_Big_MINE_mag";
         ace_explosives_Explosive = "LIB_Ladung_Big_ammo_Scripted";
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
@@ -530,7 +530,7 @@ class CfgAmmo {
     class LIB_US_TNT_4pound_ammo: LIB_MAIN_pipebomb {
         // ace_explosives_magazine = "LIB_US_TNT_4pound_mag";
         ace_explosives_Explosive = "LIB_US_TNT_4pound_ammo_Scripted";
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0.07,0,0.055 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
@@ -541,78 +541,78 @@ class CfgAmmo {
 
     class LIB_MAIN_mine;
     class LIB_TMI42_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_SMI35_1_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0,0,0.06 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_pomzec_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 1.85,0,0.1 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_SMI35_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 1.85,0,0.06 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_STMI_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 1.85,0,0.1 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_shumine42_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_M3_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 1.85,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_PMD6_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_TM44_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
     };
 
     class LIB_US_M1A1_ATMINE_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 0,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
-		
+        
     };
 
   class LIB_US_M3_ammo: LIB_MAIN_mine {
-		ace_explodeOnDefuse = 0.02;
+        ace_explodeOnDefuse = 0.02;
         ace_explosives_defuseObjectPosition[] = { 1.85,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};

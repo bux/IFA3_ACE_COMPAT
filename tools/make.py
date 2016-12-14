@@ -57,7 +57,7 @@ if sys.platform == "win32":
     import winreg
 
 ######## GLOBALS #########
-project = "@ace"
+project = "@ifa3_comp_ace"
 project_version = "3.0.0"
 arma3tools_path = ""
 work_drive = ""
@@ -66,14 +66,14 @@ make_root = ""
 release_dir = ""
 module_root_parent = ""
 optionals_root = ""
-key_name = "ace"
+key_name = "ifa3_comp_ace"
 key = ""
 dssignfile = ""
-prefix = "ace"
-pbo_name_prefix = "ace_"
-signature_blacklist = ["ace_server.pbo"]
-importantFiles = ["mod.cpp", "README.md", "docs\\README_DE.md", "docs\\README_PL.md", "AUTHORS.txt", "LICENSE", "logo_ace3_ca.paa", "meta.cpp"]
-versionFiles = ["README.md", "docs\\README_DE.md", "docs\\README_PL.md", "mod.cpp"]
+prefix = "ifa3_comp_ace"
+pbo_name_prefix = "ifa3_comp_ace_"
+signature_blacklist = []
+importantFiles = ["mod.cpp", "logo.paa", "meta.cpp"]
+versionFiles = ["mod.cpp"]
 
 ciBuild = False # Used for CI builds
 
@@ -1431,7 +1431,7 @@ See the make.cfg file for additional build options.
 
     # Make release
     if make_release_zip:
-        release_name = "{}_{}".format(zipPrefix, project_version.rsplit(".", 1)[0])
+        release_name = "{}_{}".format(zipPrefix, project_version)
 
         try:
             # Delete all log files

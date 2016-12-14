@@ -513,7 +513,7 @@ class CfgWeapons {
     };
 
     class ACE_LIB_LadungPM: ACE_ItemCore {
-        author = "ACE Iron Front";
+        author = CSTRING(Team);
         scope = 2;
         displayName = "Detonator";
         descriptionShort = "Used to remotely trigger explosives";
@@ -530,7 +530,7 @@ class CfgWeapons {
     };
 
     class ACE_LIB_FireCord: ACE_ItemCore {
-        author = "ACE Iron Front";
+        author = CSTRING(Team);
         scope = 2;
         displayName = "Black powder fuse";
         descriptionShort = "Used to remotely trigger explosives";

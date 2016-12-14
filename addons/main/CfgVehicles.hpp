@@ -2,22 +2,22 @@
         class ACE_Actions: ACE_Actions { \
             class ACE_MainActions: ACE_MainActions { \
                 class ace_rearm_TakeAmmo { \
-                    displayName = ECSTRING(rearm,TakeAmmo); \
+                    displayName = "$STR_ACE_Rearm_TakeAmmo"; \
                     distance = 7; \
-                    condition = QUOTE(_this call EFUNC(rearm,canTakeAmmo)); \
-                    insertChildren = QUOTE(_target call EFUNC(rearm,addRearmActions)); \
+                    condition = QUOTE(_this call ace_rearm_fnc_canTakeAmmo); \
+                    insertChildren = QUOTE(_target call ace_rearm_fnc_addRearmActions); \
                     exceptions[] = {"isNotInside"}; \
                     showDisabled = 0; \
                     priority = 2; \
-                    icon = QPATHTOEF(rearm,ui\icon_rearm_interact.paa); \
+                    icon = "\z\ace\addons\rearm\ui\icon_rearm_interact.paa"; \
                 }; \
                 class ace_rearm_StoreAmmo { \
-                    displayName = ECSTRING(rearm,StoreAmmo); \
+                    displayName = "$STR_ACE_Rearm_StoreAmmo"; \
                     distance = 7; \
-                    condition = QUOTE(_this call EFUNC(rearm,canStoreAmmo)); \
-                    statement = QUOTE(_this call EFUNC(rearm,storeAmmo)); \
+                    condition = QUOTE(_this call ace_rearm_fnc_canStoreAmmo); \
+                    statement = QUOTE(_this call ace_rearm_fnc_storeAmmo); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(rearm,ui\icon_rearm_interact.paa); \
+                    icon = "\z\ace\addons\rearm\ui\icon_rearm_interact.paa"; \
                 }; \
             }; \
         };
@@ -26,47 +26,47 @@
     class ACE_Actions: ACE_Actions { \
         class ACE_MainActions: ACE_MainActions { \
             class ace_refuel_Refuel { \
-                displayName = ECSTRING(refuel,Refuel); \
+                displayName = "$STR_ACE_Refuel_Refuel"; \
                 distance = 7; \
                 condition = "true"; \
                 statement = ""; \
                 showDisabled = 0; \
                 priority = 2; \
-                icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 class ace_refuel_TakeNozzle { \
-                    displayName = ECSTRING(refuel,TakeNozzle); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canTakeNozzle)); \
-                    statement = QUOTE([ARR_3(_player,_target,objNull)] call EFUNC(refuel,TakeNozzle)); \
+                    displayName = "$STR_ACE_Refuel_TakeNozzle"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canTakeNozzle); \
+                    statement = QUOTE([ARR_3(_player,_target,objNull)] call ace_refuel_fnc_TakeNozzle); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_CheckFuelCounter { \
-                    displayName = ECSTRING(refuel,CheckFuelCounter); \
+                    displayName = "$STR_ACE_Refuel_CheckFuelCounter"; \
                     condition = "true"; \
-                    statement = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,readFuelCounter)); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_readFuelCounter); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_CheckFuel { \
-                    displayName = ECSTRING(refuel,CheckFuel); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canCheckFuel)); \
-                    statement = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,checkFuel)); \
+                    displayName = "$STR_ACE_Refuel_CheckFuel"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canCheckFuel); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_checkFuel); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_Connect { \
-                    displayName = ECSTRING(refuel,Connect); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canConnectNozzle)); \
-                    statement = QUOTE([ARR_2(_player,_target)] call DEFUNC(refuel,connectNozzle)); \
+                    displayName = "$STR_ACE_Refuel_Connect"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canConnectNozzle); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_connectNozzle); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_Return { \
-                    displayName = ECSTRING(refuel,Return); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canReturnNozzle)); \
-                    statement = QUOTE([ARR_2(_player,_target)] call DEFUNC(refuel,returnNozzle)); \
+                    displayName = "$STR_ACE_Refuel_Return"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canReturnNozzle); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_returnNozzle); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
             }; \
         }; \
@@ -77,7 +77,7 @@
     class ACE_Actions { \
         class ACE_MainActions { \
             class ace_repair_Repair { \
-                displayName = ECSTRING(repair,Repair); \
+                displayName = "$STR_ACE_Repair_Repair"; \
                 condition = "true"; \
                 statement = ""; \
                 runOnHover = 1; \
@@ -88,7 +88,7 @@
                 exceptions[] = {"isNotOnLadder"}; \
             }; \
         }; \
-    };	
+    };
 
 class CfgVehicles {
 
@@ -224,7 +224,7 @@ class CfgVehicles {
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_Js2_43_destruct_tower.p3d";
 		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_Js2_43_ca.paa";
-	};	
+	};
 	class ace_cookoff_Turret_M4A3_75: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_M4A3_75";
@@ -280,7 +280,7 @@ class CfgVehicles {
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_SU85_destruct_tower.p3d";
 		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_SU85_ca.paa";
-	};	
+	};
 	class ace_cookoff_Turret_T34_76: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_T34_76";
@@ -297,7 +297,7 @@ class CfgVehicles {
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_T34_85_destruct_tower.p3d";
 		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_T34_85_ca.paa";
 	};
-	
+
     class LIB_Tank_base;
     class LIB_JS2_43: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };

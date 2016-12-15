@@ -2,22 +2,22 @@
         class ACE_Actions: ACE_Actions { \
             class ACE_MainActions: ACE_MainActions { \
                 class ace_rearm_TakeAmmo { \
-                    displayName = ECSTRING(rearm,TakeAmmo); \
+                    displayName = "$STR_ACE_Rearm_TakeAmmo"; \
                     distance = 7; \
-                    condition = QUOTE(_this call EFUNC(rearm,canTakeAmmo)); \
-                    insertChildren = QUOTE(_target call EFUNC(rearm,addRearmActions)); \
+                    condition = QUOTE(_this call ace_rearm_fnc_canTakeAmmo); \
+                    insertChildren = QUOTE(_target call ace_rearm_fnc_addRearmActions); \
                     exceptions[] = {"isNotInside"}; \
                     showDisabled = 0; \
                     priority = 2; \
-                    icon = QPATHTOEF(rearm,ui\icon_rearm_interact.paa); \
+                    icon = "\z\ace\addons\rearm\ui\icon_rearm_interact.paa"; \
                 }; \
                 class ace_rearm_StoreAmmo { \
-                    displayName = ECSTRING(rearm,StoreAmmo); \
+                    displayName = "$STR_ACE_Rearm_StoreAmmo"; \
                     distance = 7; \
-                    condition = QUOTE(_this call EFUNC(rearm,canStoreAmmo)); \
-                    statement = QUOTE(_this call EFUNC(rearm,storeAmmo)); \
+                    condition = QUOTE(_this call ace_rearm_fnc_canStoreAmmo); \
+                    statement = QUOTE(_this call ace_rearm_fnc_storeAmmo); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(rearm,ui\icon_rearm_interact.paa); \
+                    icon = "\z\ace\addons\rearm\ui\icon_rearm_interact.paa"; \
                 }; \
             }; \
         };
@@ -26,47 +26,47 @@
     class ACE_Actions: ACE_Actions { \
         class ACE_MainActions: ACE_MainActions { \
             class ace_refuel_Refuel { \
-                displayName = ECSTRING(refuel,Refuel); \
+                displayName = "$STR_ACE_Refuel_Refuel"; \
                 distance = 7; \
                 condition = "true"; \
                 statement = ""; \
                 showDisabled = 0; \
                 priority = 2; \
-                icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 class ace_refuel_TakeNozzle { \
-                    displayName = ECSTRING(refuel,TakeNozzle); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canTakeNozzle)); \
-                    statement = QUOTE([ARR_3(_player,_target,objNull)] call EFUNC(refuel,TakeNozzle)); \
+                    displayName = "$STR_ACE_Refuel_TakeNozzle"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canTakeNozzle); \
+                    statement = QUOTE([ARR_3(_player,_target,objNull)] call ace_refuel_fnc_TakeNozzle); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_CheckFuelCounter { \
-                    displayName = ECSTRING(refuel,CheckFuelCounter); \
+                    displayName = "$STR_ACE_Refuel_CheckFuelCounter"; \
                     condition = "true"; \
-                    statement = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,readFuelCounter)); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_readFuelCounter); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_CheckFuel { \
-                    displayName = ECSTRING(refuel,CheckFuel); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canCheckFuel)); \
-                    statement = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,checkFuel)); \
+                    displayName = "$STR_ACE_Refuel_CheckFuel"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canCheckFuel); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_checkFuel); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_Connect { \
-                    displayName = ECSTRING(refuel,Connect); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canConnectNozzle)); \
-                    statement = QUOTE([ARR_2(_player,_target)] call DEFUNC(refuel,connectNozzle)); \
+                    displayName = "$STR_ACE_Refuel_Connect"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canConnectNozzle); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_connectNozzle); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
                 class ace_refuel_Return { \
-                    displayName = ECSTRING(refuel,Return); \
-                    condition = QUOTE([ARR_2(_player,_target)] call EFUNC(refuel,canReturnNozzle)); \
-                    statement = QUOTE([ARR_2(_player,_target)] call DEFUNC(refuel,returnNozzle)); \
+                    displayName = "$STR_ACE_Refuel_Return"; \
+                    condition = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_canReturnNozzle); \
+                    statement = QUOTE([ARR_2(_player,_target)] call ace_refuel_fnc_returnNozzle); \
                     exceptions[] = {"isNotInside"}; \
-                    icon = QPATHTOEF(refuel,ui\icon_refuel_interact.paa); \
+                    icon = "\z\ace\addons\refuel\ui\icon_refuel_interact.paa"; \
                 }; \
             }; \
         }; \
@@ -77,7 +77,7 @@
     class ACE_Actions { \
         class ACE_MainActions { \
             class ace_repair_Repair { \
-                displayName = ECSTRING(repair,Repair); \
+                displayName = "$STR_ACE_Repair_Repair"; \
                 condition = "true"; \
                 statement = ""; \
                 runOnHover = 1; \
@@ -88,7 +88,7 @@
                 exceptions[] = {"isNotOnLadder"}; \
             }; \
         }; \
-    };	
+    };
 
 class CfgVehicles {
 
@@ -216,75 +216,167 @@ class CfgVehicles {
     };
 
 
+	class ThingX;
+	class ace_cookoff_Turret_JS2_43: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_JS2_43";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_Js2_43_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_Js2_43_ca.paa";
+	};
+	class ace_cookoff_Turret_M4A3_75: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_M4A3_75";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_M4A3_75_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_M4A3_75_ca.paa";
+	};
+	class ace_cookoff_Turret_PzKpfwIV_H: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_PzKpfwIV_H";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwIV_H_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwIV_H_ca.paa";
+	};
+	class ace_cookoff_Turret_PzKpfwV: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_PzKpfwV";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwV_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwV_ca.paa";
+	};
+	class ace_cookoff_Turret_PzKpfwVI_B: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_PzKpfwVI_B";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwVI_B_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwVI_b_ca.paa";
+	};
+	class ace_cookoff_Turret_PzKpfwVI_E: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_PzKpfwVI_E";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwVI_E_Destruct_Tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwVI_e_ca.paa";
+	};
+	class ace_cookoff_Turret_StuG_III_G: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_StuG_III_G";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_StuG_III_G_Tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_StuG_III_G_ca.paa";
+	};
+	class ace_cookoff_Turret_SU85: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_SU85";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_SU85_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_SU85_ca.paa";
+	};
+	class ace_cookoff_Turret_T34_76: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_T34_76";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_T34_76_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_T34_76_ca.paa";
+	};
+	class ace_cookoff_Turret_T34_85: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_T34_85";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_T34_85_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_T34_85_ca.paa";
+	};
+
     class LIB_Tank_base;
     class LIB_JS2_43: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 820;
         ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_front" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_JS2_43",{0,-1,0}};
     };
 
     class LIB_PzKpfwIV_H_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 470;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwIV_H",{0,-1,0}};
     };
 
     class LIB_PzKpfwV_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 720;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwV",{0,-1,0}};
     };
 
     class LIB_PzKpfwVI_B_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 860;
         ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwVI_B",{0,-1,0}};
     };
 
     class LIB_PzKpfwVI_E_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 540;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwVI_E",{0,-1,0}};
     };
 
     class LIB_StuG_III_G_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 320;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander","osa_poklop_loader_back" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_StuG_III_G",{0,-1,0}};
     };
 
     class LIB_T34_76: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 610;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_T34_76",{0,-1,0}};
     };
 
     class LIB_T34_85: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 810;
         ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_T34_85",{0,-1,0}};
     };
 
     class LIB_M4A3_75: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 660;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_left" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_M4A3_75",{0,-1,0}};
     };
 
     class LIB_SU85: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 510;
-        ace_cookoff_ammoLocation = "HitTurret";
-        ace_cookoff_cookoffSelections[] = { "osa_poklop_commander_back" };
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_SU85",{0,-1,0}};
     };
 
 
@@ -363,18 +455,21 @@ class CfgVehicles {
         MACRO_REARM_TRUCK_ACTIONS
     };
 
-    class LIB_US_GMC_Ammo: LIB_US6_Ammo {
+    class LIB_US_GMC_Base: LIB_Truck_base {
+        ace_refuel_fuelCapacity = 151;
+    };
+    class LIB_US_GMC_Ammo: LIB_US_GMC_Base {
         transportAmmo = 0;
         MACRO_REARM_TRUCK_ACTIONS
     };
 
-    class LIB_US_GMC_Parm: LIB_US6_Tent {
+    class LIB_US_GMC_Parm: LIB_US_GMC_Base {
         MACRO_REPAIRVEHICLE
-		ace_repair_canRepair = 1;
+        ace_repair_canRepair = 1;
         transportRepair = 0;
     };
 
-    class LIB_US_GMC_Fuel: LIB_US6_Tent {
+    class LIB_US_GMC_Fuel: LIB_US_GMC_Base {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
         ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };

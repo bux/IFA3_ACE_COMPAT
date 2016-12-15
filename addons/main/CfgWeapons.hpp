@@ -140,16 +140,43 @@ class CfgWeapons {
     class LIB_K98ZF39: LIB_SRIFLE {
         ACE_barrelTwist = 240;
         ACE_barrelLength = 600;
+		ACE_scopeZeroRange = 100;
+		ACE_ScopeAdjust_Vertical[] = {-4, 30};
+        ACE_ScopeAdjust_Horizontal[] = {-6, 6};
+        ACE_ScopeAdjust_VerticalIncrement = 0.1;
+        ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		discreteDistance[] = {100};
+        discreteDistanceInitIndex = 0;
+		ACE_railHeightAboveBore = 1.8;  // Distance between center of bore and rail in centimeters
+        ACE_scopeHeightAboveRail = 3.8;  // Distance between center of scope and rail in centimeters
     };
 
     class LIB_M9130PU: LIB_SRIFLE {
         ACE_barrelTwist = 254;
         ACE_barrelLength = 730;
+		ACE_scopeZeroRange = 100;
+		ACE_ScopeAdjust_Vertical[] = {-4, 30};
+        ACE_ScopeAdjust_Horizontal[] = {-6, 6};
+        ACE_ScopeAdjust_VerticalIncrement = 0.1;
+        ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		discreteDistance[] = {100};
+        discreteDistanceInitIndex = 0;
+		ACE_railHeightAboveBore = 1.8;
+        ACE_scopeHeightAboveRail = 3.8;
     };
 
     class LIB_M1903A4_Springfield: LIB_SRIFLE {
         ACE_barrelTwist = 254;
         ACE_barrelLength = 610;
+		ACE_scopeZeroRange = 100;
+		ACE_ScopeAdjust_Vertical[] = {-4, 30};
+        ACE_ScopeAdjust_Horizontal[] = {-6, 6};
+        ACE_ScopeAdjust_VerticalIncrement = 0.1;
+        ACE_ScopeAdjust_HorizontalIncrement = 0.1;
+		discreteDistance[] = {100};
+        discreteDistanceInitIndex = 0;
+		ACE_railHeightAboveBore = 1.8;
+        ACE_scopeHeightAboveRail = 3.8;
     };
 
 
@@ -486,7 +513,7 @@ class CfgWeapons {
     };
 
     class ACE_LIB_LadungPM: ACE_ItemCore {
-        author = "ACE Iron Front";
+        author = CSTRING(Team);
         scope = 2;
         displayName = "Detonator";
         descriptionShort = "Used to remotely trigger explosives";
@@ -503,7 +530,7 @@ class CfgWeapons {
     };
 
     class ACE_LIB_FireCord: ACE_ItemCore {
-        author = "ACE Iron Front";
+        author = CSTRING(Team);
         scope = 2;
         displayName = "Black powder fuse";
         descriptionShort = "Used to remotely trigger explosives";

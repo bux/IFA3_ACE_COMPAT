@@ -1,4 +1,4 @@
 // see: http://ace3mod.com/wiki/development/setting-up-the-development-environment.html#manual-setup
 
-mklink /J "PATH-TO\Steam\SteamApps\common\Arma 3\z\IFA3_ACE_COMPAT" "PATH-TO-REPO\IFA3_ACE_COMPAT"
-mklink /J "P:\z\IFA3_ACE_COMPAT" "PATH-TO-REPO\IFA3_ACE_COMPAT"
+mklink /J "PATH-TO\Steam\SteamApps\common\Arma 3\z\ifa3_comp_ace" "PATH-TO-REPO\IFA3_ACE_COMPAT"
+mklink /J "P:\z\ifa3_comp_ace" "PATH-TO-REPO\IFA3_ACE_COMPAT"

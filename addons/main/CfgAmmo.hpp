@@ -608,7 +608,6 @@ class CfgAmmo {
         ace_explosives_defuseObjectPosition[] = { 0,0,0.07 };
         soundActivation[] = {"", 0, 0, 0};
         soundDeactivation[] = {"", 0, 0, 0};
-
     };
 
   class LIB_US_M3_ammo: LIB_MAIN_mine {

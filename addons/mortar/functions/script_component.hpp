@@ -1,0 +1,1 @@
+#include "\z\ifa3_comp_ace\addons\mortar\script_component.hpp"

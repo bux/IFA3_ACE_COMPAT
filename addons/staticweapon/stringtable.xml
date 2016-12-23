@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+    <Package name="ifa3staticweapon">
+        <Key ID="STR_ACE_ifa3staticweapon_push">
+            <English>Push</English>
+            <Russian>Толкать</Russian>
+        </Key>
+    </Package>
+</Project>

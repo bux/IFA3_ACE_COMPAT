@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+    <Package name="Ifa3reload">
+        <Key ID="STR_ACE_ifa3reload_reload_mgun">
+            <English>Reload  machine gun</English>
+            <Russian>Перезарядить пулемет</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_load_ammo">
+            <English>Сharge</English>
+            <Russian>Зарядить</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_unload_ammo">
+            <English>Unload cannon</English>
+            <Russian>Разрядить</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_loadingCannon">
+            <English>Charged</English>
+            <Russian>Заряжаю</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_unloadingCannon">
+            <English>Unloading</English>
+            <Russian>Разряжаю</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_charge_he">
+            <English>Сharge еxplosive shell</English>
+            <Russian>Зарядить фугасный</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_charge_ap">
+            <English>Сharge armor-piercing shell</English>
+            <Russian>Зарядить бронебойный</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_charge_apcr">
+            <English>Сharge subcaliber shell</English>
+            <Russian>Зарядить подкалиберный</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_disp_he">
+            <English>HE shell</English>
+            <Russian>ОФС</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_disp_ap">
+            <English>AP shell</English>
+            <Russian>БС</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_disp_apcr">
+            <English>APCR shell</English>
+            <Russian>БПС</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_disp_heat">
+            <English>Shaped shell</English>
+            <Russian>Кумулятивный</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_disp_Buckshot">
+            <English>Buckshot shell</English>
+            <Russian>Картечь</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_150">
+            <English>Explosive shell 150mm</English>
+            <Russian>Фугасный 150</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_Buckshot_76">
+            <English>Buckshot shell 76mm</English>
+            <Russian>Картечь 76мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_76">
+            <English>Explosive shell 76mm</English>
+            <Russian>Фугасный 76мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_76">
+            <English>Armor-piercing shell 76mm</English>
+            <Russian>Бронебойный 76мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_apcr_76">
+            <English>Subcaliber shell 76mm</English>
+            <Russian>Подкалиберный 76мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_75">
+            <English>Explosive shell 75mm</English>
+            <Russian>Фугасный 75мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_75">
+            <English>Armor-piercing shell 75mm</English>
+            <Russian>Бронебойный 75мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_apcr_75">
+            <English>Subcaliber shell 75mm</English>
+            <Russian>Подкалиберный 75мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_50">
+            <English>Explosive shell 50mm</English>
+            <Russian>Фугасный 50мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_50">
+            <English>Armor-piercing shell 50mm</English>
+            <Russian>Бронебойный 50мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_apcr_50">
+            <English>Subcaliber shell 50mm</English>
+            <Russian>Подкалиберный 50мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_45">
+            <English>Explosive shell 45mm</English>
+            <Russian>Фугасный 45мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_45">
+            <English>Armor-piercing shell 45mm</English>
+            <Russian>Бронебойный 45мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_apcr_45">
+            <English>Subcaliber shell 45mm</English>
+            <Russian>Подкалиберный 45мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_37">
+            <English>5 x Explosive shell's 37mm</English>
+            <Russian>5 х Фугасные 37мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_37">
+            <English>5 x Armor-piercing shell's 37mm</English>
+            <Russian>5 х Бронебойные 37мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_20">
+            <English>10 x Explosive shell's 20mm</English>
+            <Russian>10 х Фугасные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_20">
+            <English>10 x Armor-piercing shell's 20mm</English>
+            <Russian>10 х Бронебойные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_apcr_20">
+            <English>10 x Subcaliber shell's 20mm</English>
+            <Russian>10 х Подкалиберные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_5820">
+            <English>58 x Explosive shell's 20mm</English>
+            <Russian>58 х Фугасные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_5820">
+            <English>58 x Armor-piercing shell's 20mm</English>
+            <Russian>58 х Бронебойные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_apcr_5820">
+            <English>58 x Subcaliber shell's 20mm</English>
+            <Russian>58 х Подкалиберные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_8020">
+            <English>80 x Explosive shell's 20mm</English>
+            <Russian>80 х Фугасные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_2020">
+            <English>20 x Explosive shell's 20mm</English>
+            <Russian>20 х Фугасные 20мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_browning">
+            <English>Tape Browning 7.62x63</English>
+            <Russian>Лента Браунинг 7.62x63</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_m2">
+            <English>Tape 12.7x99 M2</English>
+            <Russian>Лента  12.7x99 М2</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_dshk">
+            <English>Tape 12.7x108 dshk</English>
+            <Russian>Лента  12.7x108 ДШК</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_max">
+            <English>Tape 7.62x54R maxim</English>
+            <Russian>Лента  7.62x54R maxim</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_browning_desc">
+            <English>Tape Browning</English>
+            <Russian>Лента Браунинг</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_m2_desc">
+            <English>Tape M2</English>
+            <Russian>Лента М2</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_max_desc">
+            <English>Tape Maxim</English>
+            <Russian>Лента Maxim</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_dshk_desc">
+            <English>Tape DSHK</English>
+            <Russian>Лента ДШК</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_round_250">
+            <English>250 rounds</English>
+            <Russian>на 250 патронов</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_round_100">
+            <English>100 rounds</English>
+            <Russian>на 100 патронов</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_round_63">
+            <English>63 rounds</English>
+            <Russian>на 63 патрона</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_round_50">
+            <English>50 rounds</English>
+            <Russian>на 50 патронов</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_round_10">
+            <English>clip 10 rounds</English>
+            <Russian>обойма 10 снарядов</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_mg34">
+            <English>Tape MG-34 7.92x57</English>
+            <Russian>Лента MG-34 7.92x57</Russian>
+        </Key
+        <Key ID="STR_ACE_ifa3reload_tape_mg34_desc">
+            <English>Tape MG-34</English>
+            <Russian>Лента MG-34</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_tape_round_150">
+            <English>150 rounds</English>
+            <Russian>на 150 патронов</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_he_105">
+            <English>Explosive shell 105mm</English>
+            <Russian>Фугасный 105мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_ap_105">
+            <English>Armor-piercing shell 105mm</English>
+            <Russian>Бронебойный 105мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_heat_105">
+            <English>Shaped shell 105mm</English>
+            <Russian>Кумулятивный 105мм</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_shell_heat_75">
+            <English>Shaped shell 75mm</English>
+            <Russian>Кумулятивный 75мм</Russian>
+        </Key>
+		<Key ID="STR_ACE_ifa3reload_nebel">
+            <English>5 roket Nebelwerfer</English>
+            <Russian>5-ть ракет для Nebelwerfer</Russian>
+        </Key>
+		<Key ID="STR_ACE_ifa3reload_shell_he_Leichtgeschütz">
+            <English>Explosive shell Leichtgeschütz</English>
+            <Russian>Снаряд Leichtgeschütz 40 HE</Russian>
+        </Key>
+		<Key ID="STR_ACE_ifa3reload_shell_ap_Leichtgeschütz">
+            <English>Armor-piercing shell Leichtgeschütz</English>
+            <Russian>Снаряд Leichtgeschütz 40 AP</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_p27_cannon">
+            <English>P-27</English>
+            <Russian>P-27</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3reload_ba10_vehicle">
+            <English>BA 10</English>
+            <Russian>БА 10</Russian>
+        </Key>
+    </Package>
+</Project>

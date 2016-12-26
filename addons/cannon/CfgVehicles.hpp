@@ -22,7 +22,7 @@ class CfgVehicles
 		{
 			class Towing
 			{
-				displayName = $STR_LIB_ARTY_TOWING;
+				displayName = "$STR_LIB_ARTY_TOWING";
 				displayNameDefault = "<img image='WW2\Assets_t\Vehicles\Misc_t\pritsep.paa' size='3' shadow='false' />";
 				position = "zamerny";
 				radius = 6;
@@ -33,7 +33,7 @@ class CfgVehicles
 
 			class Drop
 			{
-				displayName = $STR_LIB_ARTY_DROP;
+				displayName = "$STR_LIB_ARTY_DROP";
 				displayNameDefault = "<img image='WW2\Assets_t\Vehicles\Misc_t\otsep.paa' size='3' shadow='false' />";
 				position = "zamerny";
 				radius = 6;

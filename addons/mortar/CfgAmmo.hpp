@@ -1,32 +1,18 @@
 class CfgAmmo {
 
-	class Sh_82mm_AMOS;
-	class Flare_82mm_AMOS_White;
-	class HE_82mm_mortar: Sh_82mm_AMOS
+	class ACE_1Rnd_82mm_Mo_HE;
+	class ACE_1Rnd_82mm_Mo_Smoke;
+	class ACE_1Rnd_82mm_Mo_Illum;
+	class LIB_1Rnd_82mm_Mo_HE: ACE_1Rnd_82mm_Mo_HE
 	{
-		hit = 150;
-		indirectHit = 20;
-		indirectHitRange = 10;
-		explosioneffects = "ifa3_GrenadeExplosion";
-		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_het_shell";
-		soundFly[] = {"WW2\Assets_s\Weapons\Misc_s\Mortars_Bm37\Bm_37_SoundFly.wss",1,1,300};
+		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_het_shell.p3d";
 	};
-	class Smoke_82mm_mortar_White: Sh_82mm_AMOS
+	class LIB_1Rnd_82mm_Mo_Smoke: ACE_1Rnd_82mm_Mo_Smoke
 	{
-		hit = 10;
-		indirectHit = 5;
-		indirectHitRange = 5;
-		explosive = 0.8;
-		ExplosionEffects = "if_WPExplosion";
-		CraterEffects = "";
-		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_smoke_shell";
-		soundFly[] = {"WW2\Assets_s\Weapons\Misc_s\Mortars_Bm37\Bm_37_SoundFly.wss",1,1,300};
+		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_smoke_shell.p3d";
 	};
-
-	class Illum_82mm_mortar_White: Flare_82mm_AMOS_White
+	class LIB_1Rnd_82mm_Mo_Illum: ACE_1Rnd_82mm_Mo_Illum
 	{
-		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_illum_shell";
-		soundFly[] = {"WW2\Assets_s\Weapons\Misc_s\Mortars_Bm37\Bm_37_SoundFly.wss",1,1,300};
+		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_illum_shell.p3d";
 	};
-
 };

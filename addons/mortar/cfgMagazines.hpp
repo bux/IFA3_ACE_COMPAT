@@ -1,48 +1,27 @@
 class CfgMagazines
 {
-	class 8Rnd_82mm_Mo_shells;
-	class 8Rnd_82mm_Mo_Flare_white;
-	class 8Rnd_82mm_Mo_Smoke_white;
-	class lex_82mm_HE_round: 8Rnd_82mm_Mo_shells
+	class ACE_1Rnd_82mm_Mo_HE;
+	class ACE_1Rnd_82mm_Mo_Smoke;
+	class ACE_1Rnd_82mm_Mo_Illum;
+	class LIB_1Rnd_82mm_Mo_HE: ACE_1Rnd_82mm_Mo_HE
 	{
-		count = 1;
-		scope = 2;
-		scopeCurator = 2;
-		author = "Lex (ACE)";
-		displayName = "$STR_ace_ifa3mortar_mortar_mine_HE";
-		displayNameShort = "$STR_ace_ifa3mortar_mortar_mine_HE";
-		descriptionShort = "$STR_ace_ifa3mortar_desc_mortar_mine_HE";
+		author = "Lex";
 		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_het_shell";
 		picture = "\z\ifa3_comp_ace\addons\mortar\ui\ui_he_round";
-		ammo = "HE_82mm_mortar";
-		mass = 50;
+		ammo = "LIB_1Rnd_82mm_Mo_HE";
 	};
-	class lex_82mm_Smoke_round: 8Rnd_82mm_Mo_Smoke_white
+	class LIB_1Rnd_82mm_Mo_Smoke: ACE_1Rnd_82mm_Mo_Smoke
 	{
-		count = 1;
-		scope = 2;
-		scopeCurator = 2;
-		author = "Lex (ACE)";
-		displayName = "$STR_ace_ifa3mortar_mortar_mine_Smoke";
-		displayNameShort = "$STR_ace_ifa3mortar_mortar_mine_Smoke";
-		descriptionShort = "$STR_ace_ifa3mortar_desc_mortar_mine_Smoke";
+		author = "Lex";
 		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_smoke_shell";
 		picture = "\z\ifa3_comp_ace\addons\mortar\ui\ui_smoke_round";
-		ammo = "Smoke_82mm_mortar_White";
-		mass = 50;
+		ammo = "LIB_1Rnd_82mm_Mo_Smoke";
 	};
-	class lex_82mm_Illum_round: 8Rnd_82mm_Mo_Flare_white
+	class LIB_1Rnd_82mm_Mo_Illum: ACE_1Rnd_82mm_Mo_Illum
 	{
-		count = 1;
-		scope = 2;
-		scopeCurator = 2;
-		author = "Lex (ACE)";
-		displayName = "$STR_ace_ifa3mortar_mortar_mine_Illum";
-		displayNameShort = "$STR_ace_ifa3mortar_mortar_mine_Illum";
-		descriptionShort = "$STR_ace_ifa3mortar_desc_mortar_mine_Illum";
+		author = "Lex";
 		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_illum_shell";
 		picture = "\z\ifa3_comp_ace\addons\mortar\ui\ui_illum_round";
-		ammo = "Illum_82mm_mortar_White";
-		mass = 50;
+		ammo = "LIB_1Rnd_82mm_Mo_Illum";
 	};
 };

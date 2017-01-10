@@ -231,12 +231,12 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
 				selection = "";
 				distance = 3;
-				condition = "!(_target getVariable ['isOpened',0])";
+				condition = "!(_target getVariable ['isOpened',false])";
 				class ACE_OpenLid {
 					displayName = "$STR_ace_ifa3mortar_open_ammobox";
 					distance = 2;
-					condition = "!(_target getVariable ['isOpened',0])";
-					statement = "_target animate [""BoxLidRotation"",1]; _target setVariable [""isOpened"",1,1];";
+					condition = "!(_target getVariable ['isOpened',false])";
+					statement = "_target animate [""BoxLidRotation"",1]; _target setVariable [""isOpened"",true,true];";
 					showDisabled = 0;
 					exceptions[] = {};
 					priority = 5;
@@ -247,8 +247,8 @@ class CfgVehicles {
 				selection = "rotation_action_point";
 				distance = 2;
 				displayName = "$STR_ace_ifa3mortar_close_ammobox";
-				condition = "_target getVariable ['isOpened',1]";
-				statement = "_target animate [""BoxLidRotation"",0]; _target setVariable [""isOpened"",0,1];";
+				condition = "_target getVariable ['isOpened',true]";
+				statement = "_target animate [""BoxLidRotation"",0]; _target setVariable [""isOpened"",false,true];";
 				showDisabled = 0;
 				exceptions[] = {};
 				priority = 5;
@@ -259,8 +259,8 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_take";
 				selection = "round_1_action_point";
 				distance = 2;
-				condition = "(_target getVariable ['round_1',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canTake)";
-				statement = "_target animate ['round_1_hide',1]; _target setVariable ['round_1',0,1]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
+				condition = "(_target getVariable ['round_1',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)}";
+				statement = "_target animate ['round_1_hide',1]; _target setVariable ['round_1',false,true]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
 				priority = 5;
@@ -270,8 +270,8 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_place";
 				selection = "round_1_action_point";
 				distance = 2;
-				condition = "(!(_target getVariable ['round_1',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canPut))";
-				statement = "[_player,_target,1] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_put_shell.sqf';";
+				condition = "(!(_target getVariable ['round_1',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)})";
+				statement = "[_player,_target,true] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_put_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
 				priority = 5;
@@ -281,8 +281,8 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_take";
 				selection = "round_2_action_point";
 				distance = 2;
-				condition = "(_target getVariable ['round_2',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canTake)";
-				statement = "_target animate ['round_2_hide',1]; _target setVariable ['round_2',0,1]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
+				condition = "(_target getVariable ['round_2',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)}";
+				statement = "_target animate ['round_2_hide',1]; _target setVariable ['round_2',false,true]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
 				priority = 5;
@@ -292,7 +292,7 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_place";
 				selection = "round_2_action_point";
 				distance = 2;
-				condition = "(!(_target getVariable ['round_2',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canPut))";
+				condition = "(!(_target getVariable ['round_2',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)})";
 				statement = "[_player,_target,2] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_put_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
@@ -303,8 +303,8 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_take";
 				selection = "round_3_action_point";
 				distance = 2;
-				condition = "(_target getVariable ['round_3',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canTake)";
-				statement = "_target animate ['round_3_hide',1]; _target setVariable ['round_3',0,1]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
+				condition = "(_target getVariable ['round_3',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)}";
+				statement = "_target animate ['round_3_hide',1]; _target setVariable ['round_3',false,true]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
 				priority = 5;
@@ -314,7 +314,7 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_place";
 				selection = "round_3_action_point";
 				distance = 2;
-				condition = "(!(_target getVariable ['round_3',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canPut))";
+				condition = "(!(_target getVariable ['round_3',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)})";
 				statement = "[_player,_target,3] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_put_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
@@ -325,8 +325,8 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_take";
 				selection = "round_4_action_point";
 				distance = 2;
-				condition = "(_target getVariable ['round_4',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canTake)";
-				statement = "_target animate ['round_4_hide',1]; _target setVariable ['round_4',0,1]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
+				condition = "(_target getVariable ['round_4',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)}";
+				statement = "_target animate ['round_4_hide',1]; _target setVariable ['round_4',false,true]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
 				priority = 5;
@@ -336,7 +336,7 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_place";
 				selection = "round_4_action_point";
 				distance = 2;
-				condition = "(!(_target getVariable ['round_4',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canPut))";
+				condition = "(!(_target getVariable ['round_4',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)})";
 				statement = "[_player,_target,4] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_put_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
@@ -347,8 +347,8 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_take";
 				selection = "round_5_action_point";
 				distance = 2;
-				condition = "(_target getVariable ['round_5',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canTake)";
-				statement = "_target animate ['round_5_hide',1]; _target setVariable ['round_5',0,1]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
+				condition = "(_target getVariable ['round_5',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)}";
+				statement = "_target animate ['round_5_hide',1]; _target setVariable ['round_5',false,true]; [_player,_target] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_take_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};
 				priority = 5;
@@ -358,7 +358,7 @@ class CfgVehicles {
 				displayName = "$STR_ace_ifa3mortar_place";
 				selection = "round_5_action_point";
 				distance = 2;
-				condition = "(!(_target getVariable ['round_5',1]) && (_target getVariable ['isOpened',1]) && ([_player,_target] call ace_ifa3mortar_fnc_canPut))";
+				condition = "(!(_target getVariable ['round_5',true]) && {(_target getVariable ['isOpened',true])} && {([_player,_target] call ace_ifa3mortar_fnc_canTake)})";
 				statement = "[_player,_target,5] call compile preprocessFileLineNumbers '\z\ifa3_comp_ace\addons\mortar\functions\fnc_put_shell.sqf';";
 				showDisabled = 0;
 				exceptions[] = {};

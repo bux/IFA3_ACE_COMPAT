@@ -8,4 +8,4 @@ if ((_amount * 0.5) > _spaceLeft) then
 };
 if (_amount == 0) exitWith {};
 
-["lex_82mm_ammobox", _veh, _amount] call ace_cargo_fnc_addCargoItem;
+["LIB_AmmoOrd_F", _veh, _amount] call ace_cargo_fnc_addCargoItem;

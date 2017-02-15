@@ -416,7 +416,7 @@ class CfgVehicles {
     class LIB_opelblitz_fuel: LIB_opelblitz_base {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
-        ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
+        ace_refuel_hooks[] = { {-0.9, -3.2, -1},{-0.9, -3.2, -1} };
         ace_refuel_fuelCargo = 10000;
     };
 
@@ -472,7 +472,7 @@ class CfgVehicles {
     class LIB_US_GMC_Fuel: LIB_US_GMC_Base {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
-        ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
+        ace_refuel_hooks[] = { {-0.15, -3.37, -0.20},{-0.15, -3.37, -0.20} };
         ace_refuel_fuelCargo = 10000;
     };
 
@@ -489,7 +489,7 @@ class CfgVehicles {
     class LIB_zis5v_fuel: LIB_zis5v_base {
         transportFuel = 0; //3k
         MACRO_REFUEL_ACTIONS
-        ace_refuel_hooks[] = { {.28,-4.99,-.3},{-.25,-4.99,-.3} };
+        ace_refuel_hooks[] = { {-0.8, -2.37, -0.32},{-0.8, -2.37, -0.32} };
         ace_refuel_fuelCargo = 10000;
     };
 

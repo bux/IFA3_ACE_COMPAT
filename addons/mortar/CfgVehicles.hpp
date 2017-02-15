@@ -158,9 +158,9 @@ class CfgVehicles {
 		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_GrWr34_br.p3d";
 		picture = "\WW2\Assets_t\Weapons\Misc_t\Pictures\Backpacks\B_GrWr34_Bar_ca.paa";
 		class assembleInfo: assembleInfo {
-			base[] = {"BG21_ACE3_GrWr34_Bag"};
+			base[] = {"LIB_GrWr34_Bag_ACE"};
 			displayName = "$STR_LIB_DN_GRWR34";
-			assembleTo = "BG21_ACE3_GrWr34";
+			assembleTo = "LIB_GrWr34_ACE";
 		};
 
 	};
@@ -173,9 +173,9 @@ class CfgVehicles {
 
 		class assembleInfo: assembleInfo
 		{
-			base[] = {"BG21_ACE3_GrWr34_Bag"};
+			base[] = {"LIB_BM37_Bag_ACE"};
 			displayName = "$STR_LIB_DN_GRWR34";
-			assembleTo = "BG21_ACE3_GrWr34";
+			assembleTo = "LIB_BM37_ACE";
 		};
 	};
 	class Box_NATO_AmmoOrd_F;

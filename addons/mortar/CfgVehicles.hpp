@@ -35,7 +35,7 @@ class CfgVehicles {
 				gunnerAction = "LIB_mortar_gunner_1";
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
-				gunnerOpticsModel = "\BG21_IF_ACE3_Mortars\BG21_Mortar_Optic.p3d";
+				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_Optika_zis3.p3d";
 			};
 		};
 		class assembleInfo

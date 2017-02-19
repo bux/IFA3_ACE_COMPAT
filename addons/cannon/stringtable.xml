@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+    <Package name="Ifa3cannon">
+        <Key ID="STR_ACE_ifa3cannon_push">
+            <English>Push</English>
+            <Russian>Толкать</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3cannon_cancel">
+            <English>Cancel</English>
+            <Russian>Отмена</Russian>
+        </Key>
+        <Key ID="STR_ACE_ifa3cannon_uncoupled_trailer">
+            <English>TRAILER IS UNCOUPLED</English>
+            <Russian>ПРИЦЕП ОТЦЕПЛЕН</Russian>
+        </Key>
+    </Package>
+</Project>

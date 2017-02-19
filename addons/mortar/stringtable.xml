@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ifa3mortar">
+	<Package name="Translation">
+		<Key ID="STR_ace_ifa3mortar_rangetable_charge">
+			<English>Charge</English>
+			<Russian>Заряды</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_rangetable_name_3">
+			<English>Rangetable (BM-37)</English>
+			<Russian>Таблица стрельбы (БМ-37)</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_rangetable_description_3">
+			<English>Range Table BM-37</English>
+			<Russian>Таблица стрельбы БМ-37</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_rangetable_action_3">
+			<English>Open Rangetable (BM-37)</English>
+			<Russian>Таблица стрельбы (БМ-37)</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_rangetable_name_6">
+			<English>Rangetable GrWr34</English>
+			<Russian>Таблица стрельбы GrWr34</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_rangetable_description_6">
+			<English>Range Table GrWr34</English>
+			<Russian>Таблица стрельбы GrWr34</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_rangetable_action_6">
+			<English>Open Rangetable GrWr34</English>
+			<Russian>Таблица стрельбы GrWr34</Russian>
+		</Key>
+		<Key ID="STR_LIB_DN_BM37_ACE">
+			<English>BM-37 (ACE)</English>
+			<German>BM-37 (ACE)</German>
+			<Spanish>BM-37 (ACE)</Spanish>
+			<Polish>BM-37 (ACE)</Polish>
+			<French>BM-37 (ACE)</French>
+			<Czech>BM-37 (ACE)</Czech>
+			<Italian>BM-37 (ACE)</Italian>
+			<Hungarian>BM-37 (ACE)</Hungarian>
+			<Portuguese>BM-37 (ACE)</Portuguese>
+			<Russian>БМ-37 (ACE)</Russian>
+		</Key>
+		<Key ID="STR_LIB_DN_GRWR34_ACE">
+			<English>GrWr 34 (ACE)</English>
+			<German>GrWr 34 (ACE)</German>
+			<Spanish>GrWr 34 (ACE)</Spanish>
+			<Polish>GrWr 34 (ACE)</Polish>
+			<French>GrWr 34 (ACE)</French>
+			<Czech>GrWr 34 (ACE)</Czech>
+			<Italian>GrWr 34 (ACE)</Italian>
+			<Hungarian>GrWr 34 (ACE)</Hungarian>
+			<Portuguese>GrWr 34 (ACE)</Portuguese>
+			<Russian>GrWr 34 (ACE)</Russian>
+		</Key>
+		<Key ID="STR_ACE_Mortar_table_shooting">
+			<English>Table shooting</English>
+			<German>Table shooting</German>
+			<Spanish>Table shooting</Spanish>
+			<Polish>Table shooting</Polish>
+			<French>Table shooting</French>
+			<Czech>Table shooting</Czech>
+			<Italian>Table shooting</Italian>
+			<Hungarian>Table shooting</Hungarian>
+			<Portuguese>Table shooting</Portuguese>
+			<Russian>Таблица стрельбы</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_HE">
+			<English>WOG IF: Box with HE mines</English>
+			<Russian>WOG IF: Ящик с фугасными минами</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_SM">
+			<English>WOG IF: Box with smoke mines</English>
+			<Russian>WOG IF: Ящик  с дымовыми минами</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_IL">
+			<English>WOG IF: Box with lighting mines</English>
+			<Russian>WOG IF: Ящик с световыми минами</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_open_ammobox">
+			<English>Open ammobox</English>
+			<Russian>Открыть ящик</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_desc_mortar_ammobox_HE">
+			<English>HE mines</English>
+			<Russian>Мины фугасные</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_desc_mortar_ammobox_SM">
+			<English>Smoke mines</English>
+			<Russian>Мины дымовые</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_desc_mortar_ammobox_IL">
+			<English>Illumination mines</English>
+			<Russian>Мины световые</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_close_ammobox">
+			<English>Close ammobox</English>
+			<Russian>Закрыть ящик</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_take">
+			<English>Take</English>
+			<Russian>Взять</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_place">
+			<English>Place</English>
+			<Russian>Положить</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_mortar_mine_HE">
+			<English>HE mine</English>
+			<Russian>Фугасная мина</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_mortar_mine_Smoke">
+			<English>Smoke mine</English>
+			<Russian>Дымовая мина</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_mortar_mine_Illum">
+			<English>Illumination mine</English>
+			<Russian>Световая мина</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_desc_mortar_mine_HE">
+			<English>HE mortar shell</English>
+			<Russian>Фугасная минометная мина</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_desc_mortar_mine_Smoke">
+			<English>Smoke mortar shell</English>
+			<Russian>Дымовая минометная мина</Russian>
+		</Key>
+		<Key ID="STR_ace_ifa3mortar_desc_mortar_mine_Illum">
+			<English>Illumination mortar shell</English>
+			<Russian>Световая минометная мина</Russian>
+		</Key>
+	</Package>
+</Project>

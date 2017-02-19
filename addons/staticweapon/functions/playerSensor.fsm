@@ -1,0 +1,78 @@
+/*%FSM<COMPILE "g:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, playerSensor">*/
+/*%FSM<HEAD>*/
+/*
+item0[] = {"Init",0,250,-38.513512,-84.999992,51.486488,-34.999992,0.000000,"Init"};
+item1[] = {"Exit",1,250,-39.995892,73.219666,50.004124,123.219582,0.000000,"Exit"};
+item2[] = {"Monitor_",4,4314,-40.331482,-4.251060,49.668518,45.748940,0.000000,"Monitor" \n ""};
+link0[] = {0,2};
+link1[] = {2,1};
+globals[] = {0.000000,0,0,0,0,640,480,1,11,6316128,1,-107.444901,121.830833,132.170715,-126.775978,510,576,1};
+window[] = {0,-1,-1,-32000,-32000,771,50,1251,50,1,528};
+*//*%FSM</HEAD>*/
+class FSM
+{
+  fsmName = "playerSensor";
+  class States
+  {
+    /*%FSM<STATE "Init">*/
+    class Init
+    {
+      name = "Init";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "Monitor_">*/
+        class Monitor_
+        {
+          priority = 0.000000;
+          to="Exit";
+          precondition = /*%FSM<CONDPRECONDITION""">*/"#define __DIST 1.8" \n
+           "#define __MODELPOS [0,0,0]" \n
+           "#define __DISTNEAR 3" \n
+           "#define __ZERO 0" \n
+           "" \n
+           "{" \n
+           "    " \n
+           "    if(((_x distance _this) < __DIST) && ((abs(speed _this)) != __ZERO)) then {" \n
+           "	    if!(_this getVariable 'no_damage_static') then {" \n
+           "		    if!(_this getVariable ['ace_dragging_isCarrying',false])  then { _this allowDammage false};" \n
+           "            _this setVariable ['no_damage_static',true,false];" \n
+           "             //hint ""NO DAMM""; " \n
+           "          };		" \n
+           "    } else {" \n
+           "	    if(_this getVariable 'no_damage_static') then {" \n
+           "		    _this allowDammage true;" \n
+           "		    _this setVariable ['no_damage_static',false,false];" \n
+           "             // hint "" DAMM"";" \n
+           "		};" \n
+           "	};" \n
+           "} foreach (nearestObjects [(_this modelToWorld __MODELPOS),['StaticWeapon'],__DISTNEAR]); "/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(!alive _this)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "Exit">*/
+    class Exit
+    {
+      name = "Exit";
+      init = /*%FSM<STATEINIT""">*/"" \n
+       "hint '';" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+      };
+    };
+    /*%FSM</STATE>*/
+  };
+  initState="Init";
+  finalStates[] =
+  {
+    "Exit",
+  };
+};
+/*%FSM</COMPILE>*/

@@ -517,21 +517,21 @@ class CfgVehicles {
     };
 
 
-    class LIB_Wheeled_APC_base;
-    class LIB_SdKfz251_base: LIB_Wheeled_APC_base {
 	// I44
 	class LIB_M8_Greyhound: LIB_Truck_base {
         ace_refuel_fuelCapacity = 224;
     };
 	// I44 end
+    class LIB_WheeledTracked_APC_base;
+    class LIB_SdKfz251_base: LIB_WheeledTracked_APC_base {
         ace_refuel_fuelCapacity = 160;
     };
 
-    class LIB_SdKfz_7_base: LIB_SdKfz251_base {
+    class LIB_SdKfz_7_base: LIB_WheeledTracked_APC_base {
         ace_refuel_fuelCapacity = 215;
     };
 
-    class LIB_US_M3_Halftrack: LIB_SdKfz251_base {
+    class LIB_Halftrack_base: LIB_WheeledTracked_APC_base {
         ace_refuel_fuelCapacity = 230;
     };
 

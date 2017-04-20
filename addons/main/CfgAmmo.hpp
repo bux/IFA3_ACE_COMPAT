@@ -78,7 +78,7 @@ class CfgAmmo {
         ace_frag_charge = 400;
         ace_frag_gurney_c = 2635; //50:50 mix of TNT (2440) and tri-hexogen (2830) = 2635
         ace_frag_gurney_k = "3/5";
-        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_classes[] = { "ACE_frag_small" };
         ace_frag_skip = 0;
         ace_frag_force = 1;
     };
@@ -89,7 +89,7 @@ class CfgAmmo {
         ace_frag_charge = 700;
         ace_frag_gurney_c = 2027;
         ace_frag_gurney_k = "3/5";
-        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_classes[] = { "ACE_frag_small" };
         ace_frag_skip = 0;
         ace_frag_force = 1;
     };
@@ -100,7 +100,7 @@ class CfgAmmo {
         ace_frag_charge = 700;
         ace_frag_gurney_c = 2027;
         ace_frag_gurney_k = "3/5";
-        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_classes[] = { "ACE_frag_small", };
         ace_frag_skip = 0;
         ace_frag_force = 1;
     };

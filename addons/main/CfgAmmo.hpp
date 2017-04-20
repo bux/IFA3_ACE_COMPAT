@@ -395,6 +395,57 @@ class CfgAmmo {
         ace_frag_skip = 1;
     };
 
+	//I44
+	class LIB_S_37L57_M74: LIB_Shell_base {
+        ace_rearm_caliber = 37;
+        ace_frag_skip = 1;		
+	};
+	
+	class LIB_S_76L55_M79: LIB_Shell_base {
+        ace_rearm_caliber = 76;
+        ace_frag_skip = 1;		
+	};
+	
+	class LIB_S_76L55_APMk3: LIB_Shell_base {
+        ace_rearm_caliber = 76;
+        ace_frag_skip = 1;		
+	};
+	
+	class LIB_S_20L55_PzGr: LIB_Shell_base {
+        ace_rearm_caliber = 20;
+        ace_frag_skip = 1;		
+	};
+	
+	class LIB_S_50L60_PzGr: LIB_Shell_base {
+        ace_rearm_caliber = 50;
+        ace_frag_skip = 1;		
+	};
+	
+	class LIB_S_37L57_M51: LIB_ShellAPCR_base {
+        ace_rearm_caliber = 37;
+        ace_frag_skip = 1;				
+	};
+	
+	class LIB_S_76L55_M93: LIB_ShellAPCR_base {
+        ace_rearm_caliber = 76;
+        ace_frag_skip = 1;				
+	};
+	
+	class LIB_S_76L55_APDSMk1: LIB_ShellAPCR_base {
+        ace_rearm_caliber = 76;
+        ace_frag_skip = 1;				
+	};
+	
+	class LIB_S_20L55_PzGr40: LIB_ShellAPCR_base {
+        ace_rearm_caliber = 20;
+        ace_frag_skip = 1;				
+	};
+	
+	class LIB_S_50L60_PzGr40: LIB_ShellAPCR_base {
+        ace_rearm_caliber = 50;
+        ace_frag_skip = 1;				
+	};
+	// I44-End	
 
     class LIB_ShellHE_base;
     class LIB_OF471_HE: LIB_ShellHE_base {
@@ -467,6 +518,77 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
+		//I44
+	class LIB_S_37L57_M63: LIB_ShellHE_base {
+        ace_rearm_caliber = 37;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 730;
+        ace_frag_charge = 39;
+         ace_frag_gurney_c = 2440; //100% TNT
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	class LIB_S_76L55_M42: LIB_ShellHE_base {
+        ace_rearm_caliber = 76;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 5840;
+        ace_frag_charge = 390;
+         ace_frag_gurney_c = 2440; //100% TNT
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	class LIB_S_76L55_HEMk1: LIB_ShellHE_base {
+        ace_rearm_caliber = 76;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 6990;
+        ace_frag_charge = 710;
+         ace_frag_gurney_c = 2440; //100% TNT
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	class LIB_S_20L55_SprGr: LIB_ShellHE_base {
+        ace_rearm_caliber = 20;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_small","ACE_frag_small_HD" };
+        ace_frag_metal = 117;
+        ace_frag_charge = 37;
+        ace_frag_gurney_c = 1886; //100% Amatol
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	class LIB_S_50L60_SprGr38: LIB_ShellHE_base	{
+        ace_rearm_caliber = 50;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 1780;
+        ace_frag_charge = 165;
+        ace_frag_gurney_c = 1886; //100% Amatol
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	class LIB_S_105L28_Gr39HlC: LIB_ShellHE_base {
+        ace_rearm_caliber = 105;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 12350;
+        ace_frag_charge = 1700;
+        ace_frag_gurney_c = 1886; //100% Amatol
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	class LIB_S_105L28_Gr38: LIB_ShellHE_base {
+        ace_rearm_caliber = 105;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 14810;
+        ace_frag_charge = 1380;
+        ace_frag_gurney_c = 1886; //100% Amatol
+        ace_frag_gurney_k = "1/2";
+	};
+	// I44-End
 
     class LIB_76mm_Shell_Base_HE;
     class LIB_OF350_HE: LIB_76mm_Shell_Base_HE {

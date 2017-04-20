@@ -379,7 +379,30 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_SU85",{0,-1,0}};
     };
 
-
+	// I44
+	class LIB_M3A3_Stuart: LIB_M4A3_75 {
+        ace_cookoff_cookoffSelections[] = { "hatchFire_commander" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	
+	class LIB_M5A1_Stuart: LIB_M3A3_Stuart {};
+	
+	class LIB_M4A3_76: LIB_M4A3_75 {
+        ace_cookoff_cookoffSelections[] = { "hatchFire_commander" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	
+	class LIB_M4A3_76_HVSS: LIB_M4A3_76 {
+        ace_cookoff_cookoffSelections[] = { "hatchFire_commander" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	
+	class LIB_M4A4_FIREFLY: LIB_M4A3_75 {
+        ace_cookoff_cookoffSelections[] = { "hatchFire_commander" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	// I44 end
+	
     class LandVehicle;
     class Car: LandVehicle {
         class ACE_Actions {
@@ -496,6 +519,11 @@ class CfgVehicles {
 
     class LIB_Wheeled_APC_base;
     class LIB_SdKfz251_base: LIB_Wheeled_APC_base {
+	// I44
+	class LIB_M8_Greyhound: LIB_Truck_base {
+        ace_refuel_fuelCapacity = 224;
+    };
+	// I44 end
         ace_refuel_fuelCapacity = 160;
     };
 

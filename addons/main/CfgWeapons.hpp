@@ -315,6 +315,45 @@ class CfgWeapons {
         ace_overpressure_damage = 0.4;
     };
 
+	// I44
+	class LIB_M6_L53: LIB_TankCannon_base {
+        ace_overpressure_angle = 60;
+        ace_overpressure_range = 5;
+        ace_overpressure_damage = 0.4;		
+	};
+	
+	class LIB_M1A2_L55: LIB_TankCannon_base {
+        ace_overpressure_angle = 90;
+        ace_overpressure_range = 15;
+        ace_overpressure_damage = 0.4;		
+	};
+	
+	class LIB_QF17_L55: LIB_TankCannon_base {
+        ace_overpressure_angle = 90;
+        ace_overpressure_range = 15;
+        ace_overpressure_damage = 0.4;		
+	};
+	
+	class LIB_KwK30_L55: LIB_TankCannon_base {
+        ace_overpressure_angle = 40;
+        ace_overpressure_range = 4;
+        ace_overpressure_damage = 0.1;				
+	};
+	
+	class LIB_KwK38_L55: LIB_KwK30_L55 {};
+	
+	class LIB_KwK39_L60: LIB_TankCannon_base {
+        ace_overpressure_angle = 90;
+        ace_overpressure_range = 15;
+        ace_overpressure_damage = 0.4;		
+	};
+	
+	class LIB_leFH18_L28: LIB_TankCannon_base {
+        ace_overpressure_angle = 90;
+        ace_overpressure_range = 15;
+        ace_overpressure_damage = 0.4;		
+	};
+	// I44-End
 
     class ACE_ItemCore;
     class ACE_ExplosiveItem;

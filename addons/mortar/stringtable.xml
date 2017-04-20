@@ -1,34 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project name="ifa3mortar">
 	<Package name="Translation">
-		<Key ID="STR_ace_ifa3mortar_rangetable_charge">
-			<English>Charge</English>
-			<Russian>Заряды</Russian>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_rangetable_name_3">
-			<English>Rangetable (BM-37)</English>
-			<Russian>Таблица стрельбы (БМ-37)</Russian>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_rangetable_description_3">
-			<English>Range Table BM-37</English>
-			<Russian>Таблица стрельбы БМ-37</Russian>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_rangetable_action_3">
-			<English>Open Rangetable (BM-37)</English>
-			<Russian>Таблица стрельбы (БМ-37)</Russian>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_rangetable_name_6">
-			<English>Rangetable GrWr34</English>
-			<Russian>Таблица стрельбы GrWr34</Russian>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_rangetable_description_6">
-			<English>Range Table GrWr34</English>
-			<Russian>Таблица стрельбы GrWr34</Russian>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_rangetable_action_6">
-			<English>Open Rangetable GrWr34</English>
-			<Russian>Таблица стрельбы GrWr34</Russian>
-		</Key>
 		<Key ID="STR_LIB_DN_BM37_ACE">
 			<English>BM-37 (ACE)</English>
 			<German>BM-37 (ACE)</German>
@@ -53,29 +25,14 @@
 			<Portuguese>GrWr 34 (ACE)</Portuguese>
 			<Russian>GrWr 34 (ACE)</Russian>
 		</Key>
-		<Key ID="STR_ACE_Mortar_table_shooting">
-			<English>Table shooting</English>
-			<German>Table shooting</German>
-			<Spanish>Table shooting</Spanish>
-			<Polish>Table shooting</Polish>
-			<French>Table shooting</French>
-			<Czech>Table shooting</Czech>
-			<Italian>Table shooting</Italian>
-			<Hungarian>Table shooting</Hungarian>
-			<Portuguese>Table shooting</Portuguese>
-			<Russian>Таблица стрельбы</Russian>
-		</Key>
 		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_HE">
-			<English>WOG IF: Box with HE mines</English>
-			<Russian>WOG IF: Ящик с фугасными минами</Russian>
+			<English>ACE3 WW2 HE Mortar shells box</English>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_SM">
-			<English>WOG IF: Box with smoke mines</English>
-			<Russian>WOG IF: Ящик  с дымовыми минами</Russian>
+			<English>ACE3 WW2 Smoke Mortar shells box</English>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_IL">
-			<English>WOG IF: Box with lighting mines</English>
-			<Russian>WOG IF: Ящик с световыми минами</Russian>
+			<English>ACE3 WW2 Illumination Mortar shells box</English>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_open_ammobox">
 			<English>Open ammobox</English>

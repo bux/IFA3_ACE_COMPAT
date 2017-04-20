@@ -373,7 +373,7 @@ class CfgVehicles {
 		scopeCurator = 2;
 		displayName = "$STR_ace_ifa3mortar_mortar_ammobox_HE";
 		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_heat_ammobox.p3d";
-		mortarMagazines = "lex_82mm_HE_round";
+		mortarMagazines = "LIB_1Rnd_82mm_Mo_HE";
 		class ACE_Actions {
 			class ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
@@ -386,7 +386,7 @@ class CfgVehicles {
 		scopeCurator = 2;		
 		displayName = "$STR_ace_ifa3mortar_mortar_ammobox_SM";
 		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_smoke_ammobox.p3d";
-		mortarMagazines = "lex_82mm_Smoke_round";
+		mortarMagazines = "LIB_1Rnd_82mm_Mo_Smoke";
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_SM";
@@ -399,7 +399,7 @@ class CfgVehicles {
 		scopeCurator = 2;		
 		displayName = "$STR_ace_ifa3mortar_mortar_ammobox_IL";
 		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_illum_ammobox.p3d";
-		mortarMagazines = "lex_82mm_Illum_round";
+		mortarMagazines = "LIB_1Rnd_82mm_Mo_Illum";
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_IL";

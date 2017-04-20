@@ -45,6 +45,11 @@ class CfgWeapons {
         ACE_barrelLength = 730;
     };
 
+	class LIB_M1903A3_Springfield: LIB_RIFLE {
+        ACE_barrelTwist = 254;
+        ACE_barrelLength = 610;
+    };
+	
     class LIB_MP44: LIB_RIFLE {
         ACE_Overheating_JamChance = 0.0015;
         ACE_barrelTwist = 254; //unknown set to 1:10

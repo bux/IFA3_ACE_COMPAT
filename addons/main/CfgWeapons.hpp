@@ -255,7 +255,11 @@ class CfgWeapons {
         ace_hearing_lowerVolume = 0.60;
     };
 
-
+	class H_LIB_US_Helmet_Tank: H_LIB_HelmetB {
+        ACE_Protection = 1;
+        ace_hearing_protection = 0.50;
+        ace_hearing_lowerVolume = 0.60;
+	};
 
     class LIB_TankCannon_base;
 

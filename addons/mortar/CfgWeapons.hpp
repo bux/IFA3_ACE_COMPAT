@@ -1,17 +1,5 @@
 class CfgWeapons
 {
-	class ACE_RangeTable_82mm;
-	class ACE_RangeTable_BM37: ACE_RangeTable_82mm
-	{
-		displayName = "$STR_ace_ifa3mortar_rangetable_name_3";
-		descriptionShort = "$STR_ace_ifa3mortar_rangetable_description_3";
-	};
-	class ACE_RangeTable_GrWr34: ACE_RangeTable_82mm
-	{
-		displayName = "$STR_ace_ifa3mortar_rangetable_name_6";
-		descriptionShort = "$STR_ace_ifa3mortar_rangetable_description_6";
-	};
-
 	class CannonCore;
     class mortar_82mm: CannonCore {
         class Single1;

@@ -125,7 +125,7 @@ class CfgVehicles {
 			dissasembleTo[] = {};
 			displayName = "";
 		};		
-	}
+	};
 	class LIB_GrWr34_Bag_ACE: LIB_Bag_Base_ACE{
 		faction = "LIB_WEHRMACHT";
 		scope = 2;

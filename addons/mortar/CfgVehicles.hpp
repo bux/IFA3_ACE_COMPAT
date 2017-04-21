@@ -374,8 +374,8 @@ class CfgVehicles {
 		displayName = "$STR_ace_ifa3mortar_mortar_ammobox_HE";
 		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_heat_ammobox.p3d";
 		mortarMagazines = "LIB_1Rnd_82mm_Mo_HE";
-		class ACE_Actions {
-			class ACE_MainActions {
+		class ACE_Actions: ACE_Actions {
+			class ACE_MainActions: ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
 			};
 		};

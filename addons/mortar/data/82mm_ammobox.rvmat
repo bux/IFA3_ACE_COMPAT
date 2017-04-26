@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-	texture="#(argb,8,8,3)color(0,0,0,0,AS)";
+	texture="z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox_as.paa";
 	uvSource="tex";
 	class uvTransform
 	{
@@ -56,7 +56,7 @@ class Stage4
 };
 class Stage5
 {
-	texture="z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox_SMDI.paa";
+	texture="z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox_smdi.paa";
 	uvSource="tex";
 	class uvTransform
 	{

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project name="ACE">
+    <Package name="ifa3_ace_pos">
+        <Key ID="STR_ifa3_ace_pos_0">
+            <English>Lower</English>
+            <Russian>Опустить</Russian>
+        </Key>
+		 <Key ID="STR_ifa3_ace_pos_verh">
+            <English>Pick up</English>
+            <Russian>Поднять</Russian>
+        </Key>
+        <Key ID="STR_ifa3_ace_pos_right">
+            <English>Turn right</English>
+            <Russian>Повернуть направо</Russian>
+        </Key>		
+        <Key ID="STR_ifa3_ace_pos_left">
+            <English>Turn left</English>
+            <Russian>Повернуть налево</Russian>
+        </Key>			
+    </Package>
+</Project>

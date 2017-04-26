@@ -12,7 +12,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_interaction","ifa3_kv","Weapons_IF_Damage","ifa3_pz3","ifa3_guns"};
+        requiredAddons[] = {"ace_interaction"};
         author = CSTRING(Team);
         authors[] = { "WOG", "El Tyranos" };
         authorUrl = CSTRING(Url);
@@ -25,7 +25,7 @@ class CfgPatches {
 #include "Extended_PreInit_EventHandlers.hpp"
 #include "Extended_PostInit_EventHandlers.hpp"
 #include "Extended_FiredBIS_EventHandlers.hpp"
-class BaseSoundModeType;//External class reference
+
 #include "cfgMagazines.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgVehicles.hpp"

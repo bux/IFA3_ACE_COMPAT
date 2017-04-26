@@ -357,7 +357,9 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "$STR_ace_ifa3mortar_mortar_ammobox_HE";
-		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_heat_ammobox.p3d";
+		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox_heat_co.paa"};		
 		mortarMagazines = "LIB_1Rnd_82mm_Mo_HE";
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
@@ -370,7 +372,9 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;		
 		displayName = "$STR_ace_ifa3mortar_mortar_ammobox_SM";
-		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_smoke_ammobox.p3d";
+		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox_smoke_co.paa"};				
 		mortarMagazines = "LIB_1Rnd_82mm_Mo_Smoke";
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
@@ -383,7 +387,9 @@ class CfgVehicles {
 		scope = 2;
 		scopeCurator = 2;		
 		displayName = "$STR_ace_ifa3mortar_mortar_ammobox_IL";
-		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_illum_ammobox.p3d";
+		model = "\z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox.p3d";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"z\ifa3_comp_ace\addons\mortar\data\82mm_ammobox_illum_co.paa"};		
 		mortarMagazines = "LIB_1Rnd_82mm_Mo_Illum";
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {

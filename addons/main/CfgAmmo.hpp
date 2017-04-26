@@ -100,7 +100,7 @@ class CfgAmmo {
         ace_frag_charge = 700;
         ace_frag_gurney_c = 2027;
         ace_frag_gurney_k = "3/5";
-        ace_frag_classes[] = { "ACE_frag_small", };
+        ace_frag_classes[] = { "ACE_frag_small" };
         ace_frag_skip = 0;
         ace_frag_force = 1;
     };

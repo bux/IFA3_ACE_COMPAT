@@ -178,8 +178,8 @@ class CfgVehicles {
 			assembleTo = "LIB_BM37_ACE";
 		};
 	};
-	class Box_NATO_AmmoOrd_F;
-	class LIB_AmmoOrd_F: Box_NATO_AmmoOrd_F	{
+	class NATO_Box_Base;
+	class LIB_AmmoOrd_F: NATO_Box_Base	{
 		scope = 1;
 		scopeCurator = 1;
 		forceSupply=0;

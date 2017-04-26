@@ -69,21 +69,6 @@ class CfgVehicles {
 		{
 			dissasembleTo[] = {"LIB_GrWr34_Bag_ACE","LIB_GrWr34_Bar_ACE"};
 		};
-		class UserActions
-		{
-			class Open_table
-			{
-				displayName = $STR_ACE_Mortar_table_shooting;
-				priority = 6;
-				radius = 1;
-				position = "osaveze";
-				showWindow = 0;
-				onlyForPlayer = 1;
-				shortcut = "";
-				condition = "(local player) && (alive this) && (player in (crew this)) && ([this,player] call ace_ifa3mortar_fnc_rangeTableCanUse_6)";
-				statement = "[] call ace_ifa3mortar_fnc_rangeTableOpen_6";
-			};
-		};
 	};
 	class LIB_BM37_ACE: LIB_Mortar_base_ACE {
 		scope = 2;

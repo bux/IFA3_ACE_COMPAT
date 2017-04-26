@@ -39,15 +39,15 @@
 			<Russian>Открыть ящик</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_desc_mortar_ammobox_HE">
-			<English>HE mines</English>
+			<English>HE Mortar shells box</English>
 			<Russian>Мины фугасные</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_desc_mortar_ammobox_SM">
-			<English>Smoke mines</English>
+			<English>Smoke Mortar shells box</English>
 			<Russian>Мины дымовые</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_desc_mortar_ammobox_IL">
-			<English>Illumination mines</English>
+			<English>Illumination Mortar shells box</English>
 			<Russian>Мины световые</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_close_ammobox">
@@ -63,15 +63,15 @@
 			<Russian>Положить</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_mortar_mine_HE">
-			<English>HE mine</English>
+			<English>HE shell</English>
 			<Russian>Фугасная мина</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_mortar_mine_Smoke">
-			<English>Smoke mine</English>
+			<English>Smoke shell</English>
 			<Russian>Дымовая мина</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_mortar_mine_Illum">
-			<English>Illumination mine</English>
+			<English>Illumination shell</English>
 			<Russian>Световая мина</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_desc_mortar_mine_HE">

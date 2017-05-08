@@ -95,7 +95,7 @@ class CfgVehicles {
 	};
 	class LIB_M2_60_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
-		side = 0;
+		side = 2;
 		faction = "LIB_US_ARMY";
 		crew = "LIB_US_corporal";
 		typicalCargo[] = {"LIB_US_corporal"};

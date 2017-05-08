@@ -27,7 +27,7 @@ class CfgMagazines
 	};
 	class LIB_1Rnd_81mm_Mo_HE: ACE_1Rnd_82mm_Mo_HE
 	{
-		displayName = "STR_ACE_81mm_magazine_HE_displayName";
+		displayName = "$STR_ACE_81mm_magazine_HE_displayName";
 		model = "\WW2\Assets_m\Weapons\Ammoboxes_m\mortars\WW2_shell80.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell80_he_co.paa"};
@@ -36,7 +36,7 @@ class CfgMagazines
 	};
 	class LIB_1Rnd_81mm_Mo_Smoke: ACE_1Rnd_82mm_Mo_Smoke
 	{
-		displayName = "STR_ACE_81mm_magazine_Smoke_displayName";
+		displayName = "$STR_ACE_81mm_magazine_Smoke_displayName";
 		model = "\WW2\Assets_m\Weapons\Ammoboxes_m\mortars\WW2_shell80.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell80_smoke_co.paa"};		
@@ -44,7 +44,7 @@ class CfgMagazines
 	};
 	class LIB_1Rnd_81mm_Mo_Illum: ACE_1Rnd_82mm_Mo_Illum
 	{
-		displayName = "STR_ACE_81mm_magazine_Illum_displayName";
+		displayName = "$STR_ACE_81mm_magazine_Illum_displayName";
 		model = "\WW2\Assets_m\Weapons\Ammoboxes_m\mortars\WW2_shell80.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell80_illum_co.paa"};		
@@ -52,7 +52,7 @@ class CfgMagazines
 	};
 	class LIB_1Rnd_60mm_Mo_HE: ACE_1Rnd_82mm_Mo_HE
 	{
-		displayName = "STR_ACE_60mm_magazine_HE_displayName";
+		displayName = "$STR_ACE_60mm_magazine_HE_displayName";
 		model = "\WW2\Assets_m\Weapons\Ammoboxes_m\mortars\WW2_shell60.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell60_he_co.paa"};
@@ -61,7 +61,7 @@ class CfgMagazines
 	};
 	class LIB_1Rnd_60mm_Mo_Smoke: ACE_1Rnd_82mm_Mo_Smoke
 	{
-		displayName = "STR_ACE_60mm_magazine_Smoke_displayName";
+		displayName = "$STR_ACE_60mm_magazine_Smoke_displayName";
 		model = "\WW2\Assets_m\Weapons\Ammoboxes_m\mortars\WW2_shell60.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell60_smoke_co.paa"};		
@@ -69,7 +69,7 @@ class CfgMagazines
 	};
 	class LIB_1Rnd_60mm_Mo_Illum: ACE_1Rnd_82mm_Mo_Illum
 	{
-		displayName = "STR_ACE_60mm_magazine_Illum_displayName";
+		displayName = "$STR_ACE_60mm_magazine_Illum_displayName";
 		model = "\WW2\Assets_m\Weapons\Ammoboxes_m\mortars\WW2_shell60.p3d";
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell60_illum_co.paa"};

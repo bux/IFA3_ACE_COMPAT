@@ -1,22 +1,21 @@
 class CfgVehicles {
-
-	class LandVehicle;
-	class StaticWeapon: LandVehicle
-	{
-		class Turrets
-		{
-			class MainTurret;
-		};
-	};
+	class StaticWeapon;
 	class StaticMortar: StaticWeapon
+	{
+		class Turrets;
+		class ACE_Actions;
+	};
+	class Mortar_01_base_F: StaticMortar
 	{
 		class Turrets: Turrets
 		{
-			class MainTurret: MainTurret{};
+			class MainTurret;
 		};
-		class ACE_Actions;
+		class ACE_Actions: ACE_Actions
+		{
+			class ace_mk6mortar_LoadActions;
+		};
 	};
-	class Mortar_01_base_F: StaticMortar{};
 	class LIB_Mortar_base_ACE: Mortar_01_base_F {
 		scope = 1;
 		expansion = 1;

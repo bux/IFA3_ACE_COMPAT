@@ -14,10 +14,7 @@ class CfgPatches {
     };
 };
 
-#include "Extended_PreStart_EventHandlers.hpp"
-#include "Extended_PreInit_EventHandlers.hpp"
-#include "Extended_PostInit_EventHandlers.hpp"
-#include "Extended_FiredBIS_EventHandlers.hpp"
+#include "CfgEventHandlers.hpp"
 
 class Mode_SemiAuto;
 class Mode_Burst;

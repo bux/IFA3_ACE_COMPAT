@@ -3,17 +3,12 @@ class CfgVehicles {
 	class StaticMortar: StaticWeapon
 	{
 		class Turrets;
-		class ACE_Actions;
 	};
 	class Mortar_01_base_F: StaticMortar
 	{
 		class Turrets: Turrets
 		{
 			class MainTurret;
-		};
-		class ACE_Actions: ACE_Actions
-		{
-			class ace_mk6mortar_LoadActions;
 		};
 	};
 	class LIB_Mortar_base_ACE: Mortar_01_base_F {
@@ -45,14 +40,7 @@ class CfgVehicles {
 			dissasembleTo[] = {};
 			displayName = "";
 		};
-		class ACE_Actions: ACE_Actions
-		{
-			class ace_mk6mortar_LoadActions {
-				class ace_mk6mortar_loadMagazine_Illum;
-				class ace_mk6mortar_loadMagazine_Smoke;
-				class ace_mk6mortar_loadMagazine_HE;
-			};
-		};
+		class ACE_Actions;
 	};
 	class LIB_GrWr34_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
@@ -78,22 +66,43 @@ class CfgVehicles {
 		};
 		class ACE_Actions: ACE_Actions
 		{
-			class ace_mk6mortar_LoadActions: ace_mk6mortar_LoadActions
+			class ace_mk6mortar_unloadMagazine
 			{
-				class ace_mk6mortar_loadMagazine_Illum: ace_mk6mortar_loadMagazine_Illum
+				displayName = "$STR_ace_mk6mortar_unloadMortar";
+				distance = 2;
+				condition = "_this call ace_mk6mortar_fnc_canUnloadMagazine";
+				statement = "[_target,_player,5] call ace_mk6mortar_fnc_unloadMagazineTimer";
+				icon = "";
+				selection = "usti hlavne";
+			};
+			class ace_mk6mortar_LoadActions
+			{
+				displayName = "$STR_ace_mk6mortar_loadMortar";
+				distance = 2;
+				condition = "[_target,_player] call ace_mk6mortar_fnc_canLoadMagazine";
+				statement = "";
+				icon = "";
+				selection = "usti hlavne";
+				class ace_mk6mortar_loadMagazine_Illum
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_Illum";
 					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,5,'LIB_1Rnd_81mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
-				class ace_mk6mortar_loadMagazine_Smoke: ace_mk6mortar_loadMagazine_Smoke
+				class ace_mk6mortar_loadMagazine_Smoke
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_Smoke";
 					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,2.5,'LIB_1Rnd_81mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
-				class ace_mk6mortar_loadMagazine_HE: ace_mk6mortar_loadMagazine_HE
+				class ace_mk6mortar_loadMagazine_HE
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_HE";
 					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,2.5,'LIB_1Rnd_81mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
 			};
 		};
@@ -122,22 +131,43 @@ class CfgVehicles {
 		};
 		class ACE_Actions: ACE_Actions
 		{
-			class ace_mk6mortar_LoadActions: ace_mk6mortar_LoadActions
+			class ace_mk6mortar_unloadMagazine
 			{
-				class ace_mk6mortar_loadMagazine_Illum: ace_mk6mortar_loadMagazine_Illum
+				displayName = "$STR_ace_mk6mortar_unloadMortar";
+				distance = 2;
+				condition = "_this call ace_mk6mortar_fnc_canUnloadMagazine";
+				statement = "[_target,_player,5] call ace_mk6mortar_fnc_unloadMagazineTimer";
+				icon = "";
+				selection = "usti hlavne";
+			};
+			class ace_mk6mortar_LoadActions
+			{
+				displayName = "$STR_ace_mk6mortar_loadMortar";
+				distance = 2;
+				condition = "[_target,_player] call ace_mk6mortar_fnc_canLoadMagazine";
+				statement = "";
+				icon = "";
+				selection = "usti hlavne";
+				class ace_mk6mortar_loadMagazine_Illum
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_Illum";
 					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,5,'LIB_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
-				class ace_mk6mortar_loadMagazine_Smoke: ace_mk6mortar_loadMagazine_Smoke
+				class ace_mk6mortar_loadMagazine_Smoke
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_Smoke";
 					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,2.5,'LIB_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
-				class ace_mk6mortar_loadMagazine_HE: ace_mk6mortar_loadMagazine_HE
+				class ace_mk6mortar_loadMagazine_HE
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_HE";
 					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,2.5,'LIB_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
 			};
 		};
@@ -166,22 +196,43 @@ class CfgVehicles {
 		};
 		class ACE_Actions: ACE_Actions
 		{
-			class ace_mk6mortar_LoadActions: ace_mk6mortar_LoadActions
+			class ace_mk6mortar_unloadMagazine
 			{
-				class ace_mk6mortar_loadMagazine_Illum: ace_mk6mortar_loadMagazine_Illum
+				displayName = "$STR_ace_mk6mortar_unloadMortar";
+				distance = 2;
+				condition = "_this call ace_mk6mortar_fnc_canUnloadMagazine";
+				statement = "[_target,_player,5] call ace_mk6mortar_fnc_unloadMagazineTimer";
+				icon = "";
+				selection = "usti hlavne";
+			};
+			class ace_mk6mortar_LoadActions
+			{
+				displayName = "$STR_ace_mk6mortar_loadMortar";
+				distance = 2;
+				condition = "[_target,_player] call ace_mk6mortar_fnc_canLoadMagazine";
+				statement = "";
+				icon = "";
+				selection = "usti hlavne";
+				class ace_mk6mortar_loadMagazine_Illum
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_Illum";
 					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,5,'LIB_1Rnd_60mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
-				class ace_mk6mortar_loadMagazine_Smoke: ace_mk6mortar_loadMagazine_Smoke
+				class ace_mk6mortar_loadMagazine_Smoke
 				{
-					condition = "[_target,_player,'LIB_1Rnd_60m_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'LIB_1Rnd_60m_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					displayName = "$STR_ace_mk6mortar_loadMagazine_Smoke";
+					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,2.5,'LIB_1Rnd_60mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
-				class ace_mk6mortar_loadMagazine_HE: ace_mk6mortar_loadMagazine_HE
+				class ace_mk6mortar_loadMagazine_HE
 				{
+					displayName = "$STR_ace_mk6mortar_loadMagazine_HE";
 					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
 					statement = "[_target,_player,2.5,'LIB_1Rnd_60mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
+					icon = "";
 				};
 			};
 		};		

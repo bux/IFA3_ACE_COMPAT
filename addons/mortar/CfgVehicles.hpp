@@ -45,6 +45,14 @@ class CfgVehicles {
 			dissasembleTo[] = {};
 			displayName = "";
 		};
+		class ACE_Actions: ACE_Actions
+		{
+			class ace_mk6mortar_LoadActions {
+				class ace_mk6mortar_loadMagazine_Illum;
+				class ace_mk6mortar_loadMagazine_Smoke;
+				class ace_mk6mortar_loadMagazine_HE;
+			};
+		};
 	};
 	class LIB_GrWr34_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
@@ -67,6 +75,27 @@ class CfgVehicles {
 		class assembleInfo: assembleInfo
 		{
 			dissasembleTo[] = {"LIB_GrWr34_Bag_ACE","LIB_GrWr34_Bar_ACE"};
+		};
+		class ACE_Actions: ACE_Actions
+		{
+			class ace_mk6mortar_LoadActions: ace_mk6mortar_LoadActions
+			{
+				class ace_mk6mortar_loadMagazine_Illum: ace_mk6mortar_loadMagazine_Illum
+				{
+					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,5,'LIB_1Rnd_81mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+				class ace_mk6mortar_loadMagazine_Smoke: ace_mk6mortar_loadMagazine_Smoke
+				{
+					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,2.5,'LIB_1Rnd_81mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+				class ace_mk6mortar_loadMagazine_HE: ace_mk6mortar_loadMagazine_HE
+				{
+					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,2.5,'LIB_1Rnd_81mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+			};
 		};
 	};
 	class LIB_BM37_ACE: LIB_Mortar_base_ACE {
@@ -91,6 +120,27 @@ class CfgVehicles {
 		{
 			dissasembleTo[] = {"LIB_BM37_Bag_ACE","LIB_BM37_Bar_ACE"};
 		};
+		class ACE_Actions: ACE_Actions
+		{
+			class ace_mk6mortar_LoadActions: ace_mk6mortar_LoadActions
+			{
+				class ace_mk6mortar_loadMagazine_Illum: ace_mk6mortar_loadMagazine_Illum
+				{
+					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,5,'LIB_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+				class ace_mk6mortar_loadMagazine_Smoke: ace_mk6mortar_loadMagazine_Smoke
+				{
+					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,2.5,'LIB_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+				class ace_mk6mortar_loadMagazine_HE: ace_mk6mortar_loadMagazine_HE
+				{
+					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,2.5,'LIB_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+			};
+		};
 	};
 	class LIB_M2_60_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
@@ -114,6 +164,27 @@ class CfgVehicles {
 		{
 			dissasembleTo[] = {"LIB_M2_60_Bag_ACE","LIB_M2_60_Bar_ACE"};
 		};
+		class ACE_Actions: ACE_Actions
+		{
+			class ace_mk6mortar_LoadActions: ace_mk6mortar_LoadActions
+			{
+				class ace_mk6mortar_loadMagazine_Illum: ace_mk6mortar_loadMagazine_Illum
+				{
+					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,5,'LIB_1Rnd_60mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+				class ace_mk6mortar_loadMagazine_Smoke: ace_mk6mortar_loadMagazine_Smoke
+				{
+					condition = "[_target,_player,'LIB_1Rnd_60m_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,2.5,'LIB_1Rnd_60m_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+				class ace_mk6mortar_loadMagazine_HE: ace_mk6mortar_loadMagazine_HE
+				{
+					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
+					statement = "[_target,_player,2.5,'LIB_1Rnd_60mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
+				};
+			};
+		};		
 	};
 	
 	class Bag_Base;

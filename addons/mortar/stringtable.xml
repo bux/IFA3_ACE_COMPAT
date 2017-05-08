@@ -89,5 +89,83 @@
 			<English>Illumination mortar shell</English>
 			<Russian>Световая минометная мина</Russian>
 		</Key>
+        <Key ID="STR_ACE_81mm_magazine_HE_displayName">
+            <English>81mm HE Round</English>
+            <German>81mm Sprengpatrone</German>
+            <Spanish>Ronda 81mm HE</Spanish>
+            <Polish>Pocisk wybuchowy kal. 81mm</Polish>
+            <French>Obus de 81mm HE</French>
+            <Italian>Proiettile da 81mm HE</Italian>
+            <Czech>81mm HE náboj</Czech>
+            <Portuguese>Munição 81mm HE</Portuguese>
+            <Russian>Фугасный снаряд 81мм</Russian>
+            <Japanese>81mm りゅう弾</Japanese>
+            <Korean>81mm 고폭탄</Korean>
+        </Key>
+        <Key ID="STR_ACE_81mm_magazine_Smoke_displayName">
+            <English>81mm Smoke Round</English>
+            <German>81mm Nebelpatrone</German>
+            <Spanish>Ronda 81mm Humo</Spanish>
+            <Polish>Pocisk dymny kal. 81mm</Polish>
+            <French>Obus de 81mm fumigène</French>
+            <Italian>Proiettile Fumogeno da 81mm</Italian>
+            <Czech>81mm Kouřový náboj</Czech>
+            <Portuguese>Munição 81mm Fumaça</Portuguese>
+            <Russian>Дымовой снаряд 81мм</Russian>
+            <Japanese>81mm 煙幕弾</Japanese>
+            <Korean>81mm 연막탄</Korean>
+        </Key>
+        <Key ID="STR_ACE_81mm_magazine_Illum_displayName">
+            <English>81mm Illumination Round</English>
+            <German>81mm Leuchtpatrone</German>
+            <Spanish>Ronda 81mm Iluminación</Spanish>
+            <Polish>Pocisk oświetlający kal. 81mm</Polish>
+            <French>Obus de 81mm éclairant</French>
+            <Italian>Proiettile illuminante da 81mm</Italian>
+            <Czech>81mm Osvětlovací náboj</Czech>
+            <Portuguese>Munição 81mm Iluminação</Portuguese>
+            <Russian>Осветительный снаряд 81мм</Russian>
+            <Japanese>81mm 照明弾</Japanese>
+            <Korean>81mm 조명탄</Korean>
+        </Key>
+        <Key ID="STR_ACE_60mm_magazine_HE_displayName">
+            <English>60mm HE Round</English>
+            <German>60mm Sprengpatrone</German>
+            <Spanish>Ronda 60mm HE</Spanish>
+            <Polish>Pocisk wybuchowy kal. 60mm</Polish>
+            <French>Obus de 60mm HE</French>
+            <Italian>Proiettile da 60mm HE</Italian>
+            <Czech>60mm HE náboj</Czech>
+            <Portuguese>Munição 60mm HE</Portuguese>
+            <Russian>Фугасный снаряд 60мм</Russian>
+            <Japanese>60mm りゅう弾</Japanese>
+            <Korean>60mm 고폭탄</Korean>
+        </Key>
+        <Key ID="STR_ACE_60mm_magazine_Smoke_displayName">
+            <English>60mm Smoke Round</English>
+            <German>60mm Nebelpatrone</German>
+            <Spanish>Ronda 60mm Humo</Spanish>
+            <Polish>Pocisk dymny kal. 60mm</Polish>
+            <French>Obus de 60mm fumigène</French>
+            <Italian>Proiettile Fumogeno da 60mm</Italian>
+            <Czech>60mm Kouřový náboj</Czech>
+            <Portuguese>Munição 60mm Fumaça</Portuguese>
+            <Russian>Дымовой снаряд 60мм</Russian>
+            <Japanese>60mm 煙幕弾</Japanese>
+            <Korean>60mm 연막탄</Korean>
+        </Key>
+        <Key ID="STR_ACE_60mm_magazine_Illum_displayName">
+            <English>60mm Illumination Round</English>
+            <German>60mm Leuchtpatrone</German>
+            <Spanish>Ronda 60mm Iluminación</Spanish>
+            <Polish>Pocisk oświetlający kal. 60mm</Polish>
+            <French>Obus de 60mm éclairant</French>
+            <Italian>Proiettile illuminante da 60mm</Italian>
+            <Czech>60mm Osvětlovací náboj</Czech>
+            <Portuguese>Munição 60mm Iluminação</Portuguese>
+            <Russian>Осветительный снаряд 60мм</Russian>
+            <Japanese>60mm 照明弾</Japanese>
+            <Korean>60mm 조명탄</Korean>
+        </Key>
 	</Package>
 </Project>

@@ -1,45 +1,38 @@
-class Extended_PreInit_EventHandlers
+
+class Extended_PreStart_EventHandlers
 {
-	class ADDON
+	class ace_mk6mortar
 	{
-		init = QUOTE(call COMPILE_FILE(XEH_preInit));
+		init = "call compile preProcessFileLineNumbers '\z\ace\addons\mk6mortar\XEH_preStart.sqf'";
 	};
 };
-class Extended_PostInit_EventHandlers
-{
-	class ADDON
-	{
-		clientInit = QUOTE( call COMPILE_FILE(XEH_clientInit) );
-	};
+
+class Extended_PreInit_EventHandlers {
+    class ADDON {
+        init = QUOTE(call COMPILE_FILE(XEH_preInit));
+    };
 };
-class Extended_FiredBIS_EventHandlers
-{
-	class rhs_2b14_82mm_Base
-	{
-		class ADDON
-		{
-			firedBIS = QUOTE(_this call FUNC(handleFired));
-		};
-	};
-	class RHS_M252_Base
-	{
-		class ADDON
-		{
-			firedBIS = QUOTE(_this call FUNC(handleFired));
-		};
-	};
-	class rhs_D30_base
-	{
-		class ADDON
-		{
-			firedBIS = QUOTE(_this call FUNC(handleFired));
-		};
-	};
-	class RHS_M119_base
-	{
-		class ADDON
-		{
-			firedBIS = QUOTE(_this call FUNC(handleFired));
-		};
-	};
+
+class Extended_PostInit_EventHandlers {
+    class ADDON {
+        init = QUOTE(call COMPILE_FILE(XEH_postInit));
+    };
+};
+
+class Extended_FiredBIS_EventHandlers {
+    class LIB_GrWr34_ACE {
+        class ADDON {
+            firedBIS = QUOTE(_this call FUNC(handleFired));
+        };
+    };
+	class LIB_BM37_ACE {
+        class ADDON {
+            firedBIS = QUOTE(_this call FUNC(handleFired));
+        };
+    };
+	class LIB_M2_60_ACE {
+        class ADDON {
+            firedBIS = QUOTE(_this call FUNC(handleFired));
+        };
+    };
 };

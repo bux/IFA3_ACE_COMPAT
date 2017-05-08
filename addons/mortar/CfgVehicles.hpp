@@ -30,6 +30,7 @@ class CfgVehicles {
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
 				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_Optika_zis3.p3d";
+				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 			};
 		};
 		class assembleInfo
@@ -188,6 +189,7 @@ class CfgVehicles {
 			class MainTurret: MainTurret
 			{
 				weapons[] = {"LIB_M2_60_ACE"};
+				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_M4_Mortar_Sight.p3d";
 			};
 		};
 		class assembleInfo: assembleInfo

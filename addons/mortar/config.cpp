@@ -5,7 +5,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"A3_Weapons_F","A3_Static_F","LIB_weapons","ace_interaction","ace_mk6mortar"};
+        requiredAddons[] = {"A3_Weapons_F","A3_Static_F","LIB_weapons","ace_interaction","ace_mk6mortar","WW2_Assets_c_Weapons_Ammoboxes_c"};
         author = CSTRING(Team);
         authors[] = { "WOG", "El Tyranos" };
         authorUrl = CSTRING(Url);

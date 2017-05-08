@@ -25,14 +25,17 @@
 			<Portuguese>GrWr 34 (ACE)</Portuguese>
 			<Russian>GrWr 34 (ACE)</Russian>
 		</Key>
-		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_HE">
-			<English>ACE3 WW2 HE Mortar shells box</English>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_SM">
-			<English>ACE3 WW2 Smoke Mortar shells box</English>
-		</Key>
-		<Key ID="STR_ace_ifa3mortar_mortar_ammobox_IL">
-			<English>ACE3 WW2 Illumination Mortar shells box</English>
+		<Key ID="STR_LIB_DN_M2_60_ACE">
+			<English>M2 60mm (ACE)</English>
+			<German>M2 60mm (ACE)</German>
+			<Spanish>M2 60mm (ACE)</Spanish>
+			<Polish>M2 60mm (ACE)</Polish>
+			<French>M2 60mm (ACE)</French>
+			<Czech>M2 60mm (ACE)</Czech>
+			<Italian>M2 60mm (ACE)</Italian>
+			<Hungarian>M2 60mm (ACE)</Hungarian>
+			<Portuguese>M2 60mm (ACE)</Portuguese>
+			<Russian>M2 60mm (ACE)</Russian>
 		</Key>
 		<Key ID="STR_ace_ifa3mortar_open_ammobox">
 			<English>Open ammobox</English>

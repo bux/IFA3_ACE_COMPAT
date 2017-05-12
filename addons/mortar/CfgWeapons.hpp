@@ -29,8 +29,8 @@ class CfgWeapons
 	class LIB_M2_60_ACE: mortar_82mm {
 		author = "IFA3 Team";
 		displayname = "$STR_LIB_DN_M2_60";
-		magazines[] = {"LIB_1Rnd_60mm_Mo_HE","LIB_1Rnd_60m_Mo_Smoke","LIB_1Rnd_60mm_Mo_Illum"};
-		modes[] = {"Single1","Single2","Single3"};
+		magazines[] = {"LIB_1Rnd_60mm_Mo_HE","LIB_1Rnd_60mm_Mo_Smoke","LIB_1Rnd_60mm_Mo_Illum"};
+		modes[] = {"Single1","Single2"};
 		reloadTime = 0.5;
         magazineReloadTime = 0.5;
 		class Single1: Single1 {

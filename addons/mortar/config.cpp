@@ -21,6 +21,7 @@ class Mode_Burst;
 class Mode_FullAuto;
 class BaseSoundModeType;
 
+#include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"

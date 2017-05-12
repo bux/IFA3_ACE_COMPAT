@@ -211,10 +211,17 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 1086;
     };
 
-    class LIB_Li2: LIB_SU_Plane_base {
+	class LIB_C47_Skytrain: LIB_US_Plane_base {
         ace_refuel_fuelCapacity = 3043;
     };
 
+	class LIB_CG4_WACO: LIB_US_Plane_base {
+        ace_refuel_fuelCapacity = 0;
+    };
+	
+	class LIB_HORSA: LIB_US_Plane_base {
+        ace_refuel_fuelCapacity = 0;
+    };
 
 	class ThingX;
 	class ace_cookoff_Turret_JS2_43: ThingX {
@@ -315,6 +322,11 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwIV_H",{0,-1,0}};
     };
 
+    class LIB_FlakPanzerIV_Wirbelwind: LIB_PzKpfwIV_H_base {
+        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+		// ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwIV_H",{0,-1,0}};
+    };	
+	
     class LIB_PzKpfwV_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 720;
@@ -427,6 +439,10 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 56.8;
     };
 
+	class LIB_GazM1_base: LIB_Car_base {
+        ace_cargo_space = 3;
+        ace_refuel_fuelCapacity = 60;
+    };
 
     class Truck_F: Car_F {};
     class LIB_Truck_base: Truck_F {};

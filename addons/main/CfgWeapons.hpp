@@ -5,12 +5,12 @@ class CfgWeapons {
         ACE_barrelTwist = 254;
         ACE_barrelLength = 125.0;
     };
-
-    class LIB_M1908: LIB_P38 {
-        ACE_barrelTwist = 254; //unknown
-        ACE_barrelLength = 102.0;
+	
+	class LIB_P08: LIB_P38 {
+        ACE_barrelTwist = 233.68;
+        ACE_barrelLength = 10.2;
     };
-
+	
     class LIB_TT33: LIB_PISTOL {
         ACE_barrelTwist = 406.4; //unknown
         ACE_barrelLength = 130.0;
@@ -28,6 +28,30 @@ class CfgWeapons {
 
 
     class Rifle_Base_F;
+    class Rifle_Short_Base_F: Rifle_Base_F {};
+    class LIB_SMG: Rifle_Short_Base_F {
+        ACE_Overheating_Dispersion = 0.75;
+        ACE_Overheating_SlowdownFactor = 1;
+        ACE_Overheating_JamChance = 0.0015;
+        ACE_overheating_mrbs = 3000;
+    };
+
+    class LIB_MP40: LIB_SMG {
+        ACE_barrelTwist = 392; //unknown set same as thompson
+        ACE_barrelLength = 251;
+    };
+
+    class LIB_PPSh41_m: LIB_SMG {
+        ACE_barrelTwist = 392; //unknown set same as thompson
+        ACE_barrelLength = 269;
+    };
+
+    class LIB_M1A1_Thompson: LIB_SMG {
+        ACE_barrelTwist = 392;
+        ACE_barrelLength = 270;
+    };
+
+	
     class LIB_RIFLE: Rifle_Base_F {
         ACE_Overheating_Dispersion = 0.75;
         ACE_Overheating_SlowdownFactor = 1;
@@ -80,31 +104,13 @@ class CfgWeapons {
         ACE_barrelLength = 460;
     };
 
-
-    class Rifle_Short_Base_F: Rifle_Base_F {};
-    class LIB_SMG: Rifle_Short_Base_F {
-        ACE_Overheating_Dispersion = 0.75;
-        ACE_Overheating_SlowdownFactor = 1;
-        ACE_Overheating_JamChance = 0.0015;
-        ACE_overheating_mrbs = 3000;
+	class LIB_PTRD: LIB_RIFLE {
+        ACE_Overheating_JamChance = 0;
+        ACE_barrelTwist = 304.8;
+        ACE_barrelLength = 1350;
     };
-
-    class LIB_MP40: LIB_SMG {
-        ACE_barrelTwist = 392; //unknown set same as thompson
-        ACE_barrelLength = 251;
-    };
-
-    class LIB_PPSh41_m: LIB_SMG {
-        ACE_barrelTwist = 392; //unknown set same as thompson
-        ACE_barrelLength = 269;
-    };
-
-    class LIB_M1A1_Thompson: LIB_SMG {
-        ACE_barrelTwist = 392;
-        ACE_barrelLength = 270;
-    };
-
-
+	
+	
     class Rifle_Long_Base_F: Rifle_Base_F {};
     class LIB_LMG: Rifle_Long_Base_F {
         ACE_Overheating_Dispersion = 0.75;
@@ -129,6 +135,16 @@ class CfgWeapons {
         ACE_barrelLength = 533;
     };
 
+	class LIB_MG34: LIB_LMG {
+        ACE_barrelTwist = 101.6;
+        ACE_barrelLength = 627;
+    };
+	
+	class LIB_M1919A4: LIB_LMG {
+        ACE_barrelTwist = 254;
+        ACE_barrelLength = 610;
+    };
+	
     class LIB_M1918A2_BAR: LIB_LMG {
         ACE_barrelTwist = 254; //unknown set to 1:10
         ACE_barrelLength = 610;
@@ -206,7 +222,29 @@ class CfgWeapons {
         ACE_overheating_allowSwapBarrel = 0;
     };
 
-
+	class LIB_TankMGun_base: MGun {
+        ACE_Overheating_Dispersion = 0.75;
+        ACE_Overheating_SlowdownFactor = 1;
+        ACE_Overheating_JamChance = 0.0075;
+        ACE_overheating_mrbs = 3000;
+        ACE_overheating_allowSwapBarrel = 1;
+    };
+	
+	class LIB_DT29: LIB_TankMGun_base {
+        ACE_barrelTwist = 254; //unknown set to 1:10
+        ACE_barrelLength = 604;
+    };
+	
+	class LIB_MG34_coax: LIB_TankMGun_base {
+        ACE_barrelTwist = 101.6;
+        ACE_barrelLength = 627;
+    };
+	
+	class LIB_M1919A4_coax: LIB_TankMGun_base {
+        ACE_barrelTwist = 254;
+        ACE_barrelLength = 610;
+    };
+	
     class LIB_LAUNCHER;
     class LIB_PzFaust_30m: LIB_LAUNCHER {
         ACE_UsedTube = "LIB_PzFaust_30m_used";

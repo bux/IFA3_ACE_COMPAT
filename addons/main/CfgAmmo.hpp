@@ -15,7 +15,7 @@ class CfgAmmo {
     };
 
     class LIB_Bullet_base;
-    class LIB_B_45ACP_Ball: LIB_Bullet_base {
+	class LIB_B_45ACP_Ball: LIB_Bullet_base {
         ACE_caliber = 11.481;
         ACE_bulletLength = 17.272;
         ACE_bulletMass = 14.904;
@@ -27,8 +27,8 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = { 230,250,285 };
         ACE_barrelLengths[] = { 101.6,127,228.6 };
     };
-
-    class LIB_B_762x54_Ball: LIB_Bullet_base {
+	
+	class LIB_B_762x25_Ball: LIB_Bullet_base { // Using LIB_B_762x54_Ball
         ACE_caliber = 7.925;
         ACE_bulletLength = 28.956;
         ACE_bulletMass = 9.8496;
@@ -40,10 +40,75 @@ class CfgAmmo {
         ACE_muzzleVelocities[] = { 700,800,820,833 };
         ACE_barrelLengths[] = { 406.4,508,609.6,660.4 };
     };
-
+    
+	class LIB_B_762x54_Ball: LIB_Bullet_base {
+        ACE_caliber=7.925;
+        ACE_bulletLength=28.956;
+        ACE_bulletMass=9.8496;
+        ACE_ammoTempMuzzleVelocityShifts[]={-26.55, -25.47, -22.85, -20.12, -16.98, -12.80, -7.64, -1.53, 5.96, 15.17, 26.19};
+        ACE_ballisticCoefficients[]={0.4};
+        ACE_velocityBoundaries[]={};
+        ACE_standardAtmosphere="ICAO";
+        ACE_dragModel=1;
+        ACE_muzzleVelocities[]={700, 800, 820, 833};
+        ACE_barrelLengths[]={406.4, 508.0, 609.6, 660.4};
+    };
+	
+	class LIB_B_762x63_Ball: LIB_Bullet_base {
+        ACE_caliber=7.823;
+        ACE_bulletLength=34.366;
+        ACE_bulletMass=12.312;
+        ACE_ammoTempMuzzleVelocityShifts[]={-26.55, -25.47, -22.85, -20.12, -16.98, -12.80, -7.64, -1.53, 5.96, 15.17, 26.19};
+        ACE_ballisticCoefficients[]={0.268};
+        ACE_velocityBoundaries[]={};
+        ACE_standardAtmosphere="ICAO";
+        ACE_dragModel=7;
+        ACE_muzzleVelocities[]={865, 900, 924};
+        ACE_barrelLengths[]={508.0, 609.6, 660.4};
+    };
+	
+	class LIB_B_792x57_Ball: LIB_Bullet_base {
+        ACE_caliber = 7.925;
+        ACE_bulletLength = 28.956;
+        ACE_bulletMass = 9.8496;
+        ACE_ammoTempMuzzleVelocityShifts[] = { -26.55,-25.47,-22.85,-20.12,-16.98,-12.8,-7.64,-1.53,5.96,15.17,26.19 };
+        ACE_ballisticCoefficients[] = { 0.4 };
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 1;
+        ACE_muzzleVelocities[] = { 700,800,820,833 };
+        ACE_barrelLengths[] = { 406.4,508,609.6,660.4 };
+    };
+	
+	class LIB_B_792x33_Ball: LIB_Bullet_base { // Using LIB_B_762x54_Ball
+        ACE_caliber = 7.925;
+        ACE_bulletLength = 28.956;
+        ACE_bulletMass = 9.8496;
+        ACE_ammoTempMuzzleVelocityShifts[] = { -26.55,-25.47,-22.85,-20.12,-16.98,-12.8,-7.64,-1.53,5.96,15.17,26.19 };
+        ACE_ballisticCoefficients[] = { 0.4 };
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 1;
+        ACE_muzzleVelocities[] = { 700,800,820,833 };
+        ACE_barrelLengths[] = { 406.4,508,609.6,660.4 };
+    };
+	
+	class LIB_B_145x144_Ball: LIB_Bullet_base {
+        ACE_caliber = 7.925;
+        ACE_bulletLength = 36.26;
+        ACE_bulletMass = 64;
+        ACE_ammoTempMuzzleVelocityShifts[] = { -2.655,-2.547,-2.285,-2.012,-1.698,-1.28,-0.764,-0.153,0.596,1.517,2.619 };
+        ACE_ballisticCoefficients[] = { 1.05 };
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ASM";
+        ACE_dragModel = 1;
+        ACE_muzzleVelocities[] = { 1114 };
+        ACE_barrelLengths[] = { 1350 };
+    };
+	
     class LIB_Bullet_Vehicle_base;
     class LIB_B_127x108_Ball: LIB_Bullet_Vehicle_base {
-        ACE_caliber = 12.954;
+        ACE_caliber = 14.88;
         ACE_bulletLength = 64.516;
         ACE_bulletMass = 48.6;
         ACE_ammoTempMuzzleVelocityShifts[] = { -2.655,-2.547,-2.285,-2.012,-1.698,-1.28,-0.764,-0.153,0.596,1.517,2.619 };
@@ -55,6 +120,7 @@ class CfgAmmo {
         ACE_barrelLengths[] = { 436.88 };
     };
 
+	
     class LIB_Bullet_AA_base;
     class LIB_B_23mm_AA: LIB_Bullet_AA_base {
         ace_rearm_caliber = 23;
@@ -73,14 +139,8 @@ class CfgAmmo {
 
     class LIB_Rocket_base;
     class LIB_PzFaust_30m: LIB_Rocket_base {
-        ace_frag_enabled = 1;
-        ace_frag_metal = 3200;
-        ace_frag_charge = 400;
-        ace_frag_gurney_c = 2635; //50:50 mix of TNT (2440) and tri-hexogen (2830) = 2635
-        ace_frag_gurney_k = "3/5";
-        ace_frag_classes[] = { "ACE_frag_small" };
-        ace_frag_skip = 0;
-        ace_frag_force = 1;
+        ace_frag_enabled = 0;
+        ace_frag_skip = 1;
     };
 
     class LIB_R_88mm_RPzB: LIB_Rocket_base {
@@ -194,7 +254,74 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
-    class LIB_Bomb_base;
+	class LIB_Grenade_base;
+	class LIB_G_SPRGR_30: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_tiny_HD" };
+        ace_frag_metal = 255;
+        ace_frag_charge = 31;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_G_PZGR_30: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_tiny_HD" };
+        ace_frag_metal = 240;
+        ace_frag_charge = 50;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_G_PZGR_40: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_tiny_HD" };
+        ace_frag_metal = 380;
+        ace_frag_charge = 127.6;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_G_MK2: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_small_HD" };
+        ace_frag_metal = 595;
+        ace_frag_charge = 57;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_G_M9A1: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_tiny_HD" };
+        ace_frag_metal = 590;
+        ace_frag_charge = 113;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_G_DYAKONOV: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_tiny_HD" };
+        ace_frag_metal = 360;
+        ace_frag_charge = 40;
+        ace_frag_gurney_c = 2320;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_Bomb_base;
     class LIB_FAB500_Bomb: LIB_Bomb_base {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;

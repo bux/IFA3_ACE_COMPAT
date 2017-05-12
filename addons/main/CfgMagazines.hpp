@@ -3,6 +3,10 @@ class CfgMagazines {
     class CA_Magazine;
     class LIB_50Rnd_792x57: CA_Magazine {
         ACE_isBelt = 1;
+    };   
+
+    class LIB_50Rnd_762x63: CA_Magazine {
+        ACE_isBelt = 1;
     };
 
     class LIB_50Rnd_792x57_Veh;

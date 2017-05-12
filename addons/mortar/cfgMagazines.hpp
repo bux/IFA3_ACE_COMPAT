@@ -58,6 +58,7 @@ class CfgMagazines
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell60_he_co.paa"};
 		// picture = "\z\ifa3_comp_ace\addons\mortar\ui\ui_he_round.paa";
 		ammo = "LIB_Sh_60_HE";
+		mass = 30;
 	};
 	class LIB_1Rnd_60mm_Mo_Smoke: ACE_1Rnd_82mm_Mo_Smoke
 	{
@@ -66,6 +67,7 @@ class CfgMagazines
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell60_smoke_co.paa"};		
 		// picture = "\z\ifa3_comp_ace\addons\mortar\ui\ui_smoke_round.paa";
+		mass = 30;
 	};
 	class LIB_1Rnd_60mm_Mo_Illum: ACE_1Rnd_82mm_Mo_Illum
 	{
@@ -74,5 +76,6 @@ class CfgMagazines
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {"WW2\Assets_t\Weapons\Ammoboxes_t\Mortars\shell60_illum_co.paa"};
 		// picture = "\z\ifa3_comp_ace\addons\mortar\ui\ui_illum_round.paa";
+		mass = 30;
 	};
 };

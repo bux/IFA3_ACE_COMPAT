@@ -37,4 +37,24 @@ class CfgWeapons
             reloadTime = 0.5;
         };
 	};
+
+	class LIB_Slung_Static_Weapon_Base;
+	class LIB_BM37_Tripod: LIB_Slung_Static_Weapon_Base {
+		magazines[] = {"LIB_1Rnd_82mm_Mo_HE","LIB_1Rnd_82mm_Mo_Smoke","LIB_1Rnd_82mm_Mo_Illum"};
+	};
+	class LIB_BM37_Barrel: LIB_Slung_Static_Weapon_Base {
+		magazines[] = {"LIB_1Rnd_82mm_Mo_HE","LIB_1Rnd_82mm_Mo_Smoke","LIB_1Rnd_82mm_Mo_Illum"};
+	};
+	class LIB_GrWr34_Tripod: LIB_Slung_Static_Weapon_Base {
+		magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
+	};
+	class LIB_GrWr34_Barrel: LIB_Slung_Static_Weapon_Base {
+		magazines[] = {"LIB_1Rnd_81mm_Mo_HE","LIB_1Rnd_81mm_Mo_Smoke","LIB_1Rnd_81mm_Mo_Illum"};
+	};
+	class LIB_M2_60_Tripod: LIB_Slung_Static_Weapon_Base {
+		magazines[] = {"LIB_1Rnd_60mm_Mo_HE","LIB_1Rnd_60mm_Mo_Smoke","LIB_1Rnd_60mm_Mo_Illum"};
+	};
+	class LIB_M2_60_Barrel: LIB_Slung_Static_Weapon_Base {
+		magazines[] = {"LIB_1Rnd_60mm_Mo_HE","LIB_1Rnd_60mm_Mo_Smoke","LIB_1Rnd_60mm_Mo_Illum"};
+	};	
 };

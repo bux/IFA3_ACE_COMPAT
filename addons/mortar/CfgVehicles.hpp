@@ -1,4 +1,11 @@
 class CfgVehicles {
+	class LIB_SU_Mortar_base;
+	class LIB_BM37: LIB_SU_Mortar_base {scope=1;};
+	class LIB_GER_Mortar_base;
+	class LIB_GrWr34: LIB_GER_Mortar_base {scope=1;};
+	class LIB_US_Mortar_base;
+	class LIB_M2_60: LIB_US_Mortar_base {scope=1;};
+	
 	class StaticWeapon;
 	class StaticMortar: StaticWeapon
 	{
@@ -6,6 +13,7 @@ class CfgVehicles {
 	};
 	class Mortar_01_base_F: StaticMortar
 	{
+		class EventHandlers;
 		class Turrets: Turrets
 		{
 			class MainTurret;
@@ -21,6 +29,21 @@ class CfgVehicles {
 		{
 			libTextDesc = "";
 		};
+        class Eventhandlers: Eventhandlers
+		{
+			class IFA3_Weapons_Static_fnc_fired_EH
+			{
+				fired = "_this call LIB_Weapons_Static_fnc_fired_EH";
+			};
+            class IFA3_Weapons_Static
+			{
+				init = "[(_this select 0),[],true] spawn LIB_Weapons_Static_fnc_init_EH";
+			};
+            class IFA3_Weapons_Static_fnc_GetOut_EH
+			{
+				GetOut = "[(_this select 0),(_this select 1),(_this select 2),'AmovPknlMstpSnonWnonDnon'] call LIB_Weapons_Static_fnc_GetOut_EH";
+			};
+		};		
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -53,17 +76,17 @@ class CfgVehicles {
 		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_GrWr34.p3d";
 		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_GrWr34_ca.paa";
 		picture = "\WW2\Assets_t\Vehicles\Pictures_t\Mortars\GrWr34_ca.paa";
-
+		class assembleInfo: assembleInfo
+		{
+            LIB_dissasembleTo[] = {"LIB_GrWr34_Barrel","LIB_GrWr34_Tripod_Deployed"};
+            deployTime = 12;
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
 			{
 				weapons[] = {"LIB_GrWr34_ACE"};
 			};
-		};
-		class assembleInfo: assembleInfo
-		{
-			dissasembleTo[] = {"LIB_GrWr34_Bag_ACE","LIB_GrWr34_Bar_ACE"};
 		};
 		class ACE_Actions: ACE_Actions
 		{
@@ -118,17 +141,17 @@ class CfgVehicles {
 		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_Bm37.p3d";
 		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_Bm37_ca.paa";
 		picture = "\WW2\Assets_t\Vehicles\Pictures_t\Mortars\BM37_ca.paa";
-
+		class assembleInfo: assembleInfo
+		{
+            LIB_dissasembleTo[] = {"LIB_BM37_Barrel","LIB_BM37_Tripod_Deployed"};
+            deployTime = 13;
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
 			{
 				weapons[] = {"LIB_BM37_ACE"};
 			};
-		};
-		class assembleInfo: assembleInfo
-		{
-			dissasembleTo[] = {"LIB_BM37_Bag_ACE","LIB_BM37_Bar_ACE"};
 		};
 		class ACE_Actions: ACE_Actions
 		{
@@ -183,7 +206,11 @@ class CfgVehicles {
 		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_M2.p3d";
 		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_M2.paa";
 		picture = "\WW2\Assets_t\Vehicles\Pictures_t\Mortars\M2_ca.paa";
-
+		class assembleInfo: assembleInfo
+		{
+            LIB_dissasembleTo[] = {"LIB_M2_60_Barrel","LIB_M2_60_Tripod_Deployed"};
+            deployTime = 8;			
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -191,11 +218,7 @@ class CfgVehicles {
 				weapons[] = {"LIB_M2_60_ACE"};
 				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_M4_Mortar_Sight.p3d";
 			};
-		};
-		class assembleInfo: assembleInfo
-		{
-			dissasembleTo[] = {"LIB_M2_60_Bag_ACE","LIB_M2_60_Bar_ACE"};
-		};
+		};	
 		class ACE_Actions: ACE_Actions
 		{
 			class ace_mk6mortar_unloadMagazine
@@ -240,94 +263,32 @@ class CfgVehicles {
 		};		
 	};
 	
-	class Bag_Base;
-	class LIB_Bag_Base_ACE: Bag_Base {
-		scope = 1;
-		editorCategory = "EdCat_Equipment";
-		editorSubcategory = "EdSubcat_DismantledWeapons";
-		icon = "iconBackpack";
-		mass = 380;
-		maximumLoad = 0;
-		class assembleInfo
-		{
-			primary = 0;
-			base = "";
-			assembleTo = "";
-			dissasembleTo[] = {};
-			displayName = "";
-		};		
+	class B_LIB_AssaultPack_Base;
+	class LIB_Tripod_Bag: B_LIB_AssaultPack_Base {
+		class assembleInfo; 
 	};
-	class LIB_GrWr34_Bag_ACE: LIB_Bag_Base_ACE{
-		faction = "LIB_WEHRMACHT";
-		scope = 2;
-		displayName = "GrWr34 Tripod (ACE3)";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_GrWr34_bp.p3d";
-		picture = "\WW2\Assets_t\Weapons\Misc_t\Pictures\Backpacks\B_GrWr34_Bag_ca.paa";
+	class LIB_BM37_Tripod_Deployed: LIB_Tripod_Bag {
+        class assembleInfo: assembleInfo {
+            class LIB_BM37_Barrel {
+                deployTime = 10;
+                assembleTo = "LIB_BM37_ACE";
+            };
+		};
 	};
-	class LIB_BM37_Bag_ACE: LIB_Bag_Base_ACE {
-		faction = "LIB_RKKA";
-		scope = 2;
-		displayName = "BM37 Tripod (ACE3)";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_Bm37_bp.p3d";
-		picture = "\WW2\Assets_t\Vehicles\Misc_t\Pictures\Mortars\BM37_base_ca.paa";
-	};	
-	class LIB_M2_60_Bag_ACE: LIB_Bag_Base_ACE {
-		faction = "LIB_US_ARMY";
-		scope = 2;
-		displayName = "M2 60mm Tripod (ACE3)";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_M2_bp.p3d";
-		picture = "\WW2\Assets_t\Vehicles\Misc_t\Pictures\Mortars\BM37_base_ca.paa"; //TODO
-	};
-	
-	class Weapon_Bag_Base: Bag_Base {
-		class assembleInfo{};
-	};	
-	class LIB_Weapon_Bag_Base_ACE: Weapon_Bag_Base {
-		scope = 1;
-		editorCategory = "EdCat_Equipment";
-		editorSubcategory = "EdSubcat_DismantledWeapons";		
-		mass = 250;
-		class assembleInfo: assembleInfo{};
-	};
-	class LIB_GrWr34_Bar_ACE: LIB_Weapon_Bag_Base_ACE {
-		faction = "LIB_WEHRMACHT";
-		scope = 2;
-		displayName = "GrWr34 Barrel (ACE3)";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_GrWr34_br.p3d";
-		picture = "\WW2\Assets_t\Weapons\Misc_t\Pictures\Backpacks\B_GrWr34_Bar_ca.paa";
+	class LIB_GrWr34_Tripod_Deployed: LIB_Tripod_Bag {
 		class assembleInfo: assembleInfo {
-			base[] = {"LIB_GrWr34_Bag_ACE"};
-			displayName = "$STR_LIB_DN_GRWR34_ACE";
-			assembleTo = "LIB_GrWr34_ACE";
-		};
-
-	};
-	class LIB_BM37_Bar_ACE: LIB_Weapon_Bag_Base_ACE {
-		faction = "LIB_RKKA";
-		scope = 2;
-		displayName = "BM37 Barrel (ACE3)";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_Bm37_br.p3d";
-		picture = "\WW2\Assets_t\Weapons\Misc_t\Pictures\Backpacks\B_BM37_Bar_ca.paa";
-
-		class assembleInfo: assembleInfo
-		{
-			base[] = {"LIB_BM37_Bag_ACE"};
-			displayName = "$STR_LIB_DN_BM37_ACE";
-			assembleTo = "LIB_BM37_ACE";
+            class LIB_GrWr34_Barrel {
+                deployTime = 10;
+                assembleTo = "LIB_GrWr34_ACE";
+            };
 		};
 	};
-	class LIB_M2_60_Bar_ACE: LIB_Weapon_Bag_Base_ACE {
-		faction = "LIB_US_ARMY";
-		scope = 2;
-		displayName = "M2 60mm Barrel (ACE3)";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_M2_br.p3d";
-		picture = "\WW2\Assets_t\Weapons\Misc_t\Pictures\Backpacks\B_BM37_Bar_ca.paa"; //TODO
-
-		class assembleInfo: assembleInfo
-		{
-			base[] = {"LIB_M2_60_Bag_ACE"};
-			displayName = "$STR_LIB_DN_M2_60_ACE";
-			assembleTo = "LIB_M2_60_ACE";
+	class LIB_M2_60_Tripod_Deployed: LIB_Tripod_Bag	{
+		class assembleInfo: assembleInfo {
+            class LIB_M2_60_Barrel {
+                deployTime = 8;
+                assembleTo = "LIB_M2_60_ACE";
+            };
 		};
 	};
 	

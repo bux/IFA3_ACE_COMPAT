@@ -29,7 +29,7 @@ class CfgVehicles {
 				gunnerAction = "LIB_mortar_gunner_1";
 				discreteDistance[] = {};
 				discreteDistanceInitIndex = 0;
-				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_Optika_zis3.p3d";
+				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\IF_Optika_Zis3.p3d";
 				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
 			};
 		};
@@ -50,9 +50,9 @@ class CfgVehicles {
 		crew = "LIB_GER_gun_crew";
 		typicalCargo[] = {"LIB_GER_gun_crew"};
 		displayName = "$STR_LIB_DN_GRWR34_ACE";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_GrWr34.p3d";
-		icon = "\WW2\Assets_t\Weapons\Misc_t\Icons\Mortars\icon_GrWr34_ca.paa";
-		picture = "\WW2\Assets_t\Vehicles\Misc_t\Pictures\Mortars\GrWr34_ca.paa";
+		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_GrWr34.p3d";
+		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_GrWr34_ca.paa";
+		picture = "\WW2\Assets_t\Vehicles\Pictures_t\Mortars\GrWr34_ca.paa";
 
 		class Turrets: Turrets
 		{
@@ -115,9 +115,9 @@ class CfgVehicles {
 		crew = "LIB_SOV_gun_crew";
 		typicalCargo[] = {"LIB_SOV_gun_crew"};
 		displayName = "$STR_LIB_DN_BM37_ACE";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_Bm37.p3d";
-		icon = "\WW2\Assets_t\Weapons\Misc_t\Icons\Mortars\icon_Bm37_ca.paa";
-		picture = "\WW2\Assets_t\Vehicles\Misc_t\Pictures\Mortars\BM37_ca.paa";
+		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_Bm37.p3d";
+		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_Bm37_ca.paa";
+		picture = "\WW2\Assets_t\Vehicles\Pictures_t\Mortars\BM37_ca.paa";
 
 		class Turrets: Turrets
 		{
@@ -181,8 +181,8 @@ class CfgVehicles {
 		typicalCargo[] = {"LIB_US_corporal"};
 		displayName = "$STR_LIB_DN_M2_60_ACE";
 		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_M2.p3d";
-		icon = "\WW2\Assets_t\Weapons\Misc_t\Icons\Mortars\icon_Bm37_ca.paa"; //TODO
-		picture = "\WW2\Assets_t\Vehicles\Misc_t\Pictures\Mortars\BM37_ca.paa"; // TODO
+		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_M2.paa";
+		picture = "\WW2\Assets_t\Vehicles\Pictures_t\Mortars\M2_ca.paa";
 
 		class Turrets: Turrets
 		{

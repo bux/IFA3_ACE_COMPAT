@@ -229,80 +229,80 @@ class CfgVehicles {
 		_generalMacro = "ace_cookoff_Turret_JS2_43";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_Js2_43_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_Js2_43_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_Js2_43_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_Js2_43_ca.paa";
 	};
 	class ace_cookoff_Turret_M4A3_75: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_M4A3_75";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_M4A3_75_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_M4A3_75_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_M4A3_75_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_M4A3_75_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwIV_H: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_PzKpfwIV_H";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwIV_H_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwIV_H_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwIV_H_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwIV_H_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwV: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_PzKpfwV";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwV_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwV_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwV_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwV_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwVI_B: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_PzKpfwVI_B";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwVI_B_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwVI_b_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwVI_B_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwVI_b_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwVI_E: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_PzKpfwVI_E";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_PzKpfwVI_E_Destruct_Tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_PzKpfwVI_e_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwVI_E_Destruct_Tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwVI_e_ca.paa";
 	};
 	class ace_cookoff_Turret_StuG_III_G: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_StuG_III_G";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_StuG_III_G_Tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_StuG_III_G_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_StuG_III_G_Tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_StuG_III_G_ca.paa";
 	};
 	class ace_cookoff_Turret_SU85: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_SU85";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_SU85_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_SU85_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_SU85_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_SU85_ca.paa";
 	};
 	class ace_cookoff_Turret_T34_76: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_T34_76";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_T34_76_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_T34_76_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_T34_76_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_T34_76_ca.paa";
 	};
 	class ace_cookoff_Turret_T34_85: ThingX {
 		author = "AWAR";
 		_generalMacro = "ace_cookoff_Turret_T34_85";
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
-		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_T34_85_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Misc_t\Icons\Tanks\icon_T34_85_ca.paa";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_T34_85_destruct_tower.p3d";
+		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_T34_85_ca.paa";
 	};
 
     class LIB_Tank_base;
@@ -556,7 +556,7 @@ class CfgVehicles {
     class LIB_Mine_Ammo_Box_Ger: LIB_ReammoBox_base {
         scope = 2;
         displayName = "$STR_LIB_MINES_BOX_GER";
-        model = "\WW2\Assets_m\Weapons\Ammoboxes_m\WW2_Ger_ammo.p3d";
+        model = "\WW2\Assets_m\Weapons\Ammoboxes_m\IF_Ger_ammo.p3d";
         faction = "LIB_WEHRMACHT";
         class TransportMagazines {
             class Ammo_LIB_TMI_42 {
@@ -633,7 +633,7 @@ class CfgVehicles {
     class LIB_Mine_Ammo_Box_Su: LIB_ReammoBox_base {
         scope = 2;
         displayName = "$STR_LIB_MINES_BOX_Su";
-        model = "\WW2\Assets_m\Weapons\Ammoboxes_m\WW2_Su_ammo.p3d";
+        model = "\WW2\Assets_m\Weapons\Ammoboxes_m\IF_Su_ammo.p3d";
         faction = "LIB_RKKA";
         class TransportMagazines {
             class Ammo_LIB_pomzec {
@@ -702,7 +702,7 @@ class CfgVehicles {
     class LIB_Mine_AmmoBox_US: LIB_ReammoBox_base {
         scope = 2;
         displayName = "$STR_LIB_DN_US_MINES_BOX";
-        model = "\WW2\Assets_m\Weapons\Ammoboxes_m\WW2_Su_ammo.p3d";
+        model = "\WW2\Assets_m\Weapons\Ammoboxes_m\IF_Su_ammo.p3d";
         faction = "LIB_US_ARMY";
         class TransportMagazines {
             class _xx_LIB_US_M1A1_ATMINE_mag {
@@ -752,77 +752,77 @@ class CfgVehicles {
     class ACE_Explosives_Place;
     class ACE_Explosives_Place_LIB_SMI_35_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_SMI_35";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_SMI35_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_SMI35_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_SMI_SMi35_1_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_SMI_35_1";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Smi35_1_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Smi35_1_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_STMI_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_STMI";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_StMi_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_StMi_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_pomzec_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_POMZ_2";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Pomzec_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Pomzec_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_M3_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_M3";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_M3_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_M3_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_US_M3_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_DN_US_M3";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_M3_ap_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_M3_ap_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_shumine42_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_shumine42";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Shumine42_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Shumine42_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_PMD6_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_PMD6";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_PMD6_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_PMD6_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_TMI_42_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_TMI_42";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Tmi42_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Tmi42_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_TM_44_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_TM_44";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Tm_44_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Tm_44_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_US_M1A1_ATMINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_DN_US_M1A1_ATMINE";
-        model = "\WW2\Assets_m\Weapons\Mines_m\inv\WW2_M1a1_at_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_M1a1_at_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_US_TNT: ACE_Explosives_Place {
         displayName = "$STR_LIB_DN_US_TNT_4POUND";
-        model = "\WW2\Assets_m\Weapons\Mines_m\inv\WW2_Tnt_4pound_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Tnt_4pound_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_MARKER_MINE: ACE_Explosives_Place {
         displayName = "$STR_LIB_MARKER";
-        model = "\WW2\Assets_m\Weapons\Mines_m\WW2_Marker_mine.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\IF_Marker_mine.p3d";
     };
 
     class ACE_Explosives_Place_LIB_Ladung_Small: ACE_Explosives_Place {
         displayName = "$STR_LIB_Ladung_Small";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Ladung_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_Ladung_Big: ACE_Explosives_Place {
         displayName = "$STR_LIB_Ladung_Big";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_big_provod_inv.p3d";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Ladung_big_provod_inv.p3d";
     };
 
 };

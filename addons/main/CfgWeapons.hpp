@@ -414,15 +414,15 @@ class CfgWeapons {
         scope = 2;
         displayName = "Detonator";
         descriptionShort = "Used to remotely trigger explosives";
-        picture = "\WW2\Assets_t\Weapons\Misc_t\Equipment\Mines\gear_Ladung_charger_ca.paa";
-        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_pm_inv.p3d";
+        picture = "\WW2\Assets_t\Weapons\Equipment_t\Mines\gear_Ladung_charger_ca.paa";
+        model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Ladung_pm_inv.p3d";
         ace_explosives_Range = 100;
         ace_explosives_Detonator = 1;
         ace_explosives_triggerType = "LIB_LadungPM";
         class ItemInfo: ACE_ExplosiveItem {
             allowedSlots[] = { 901 };
             mass = 20;
-            uniformModel = "\WW2\Assets_m\Weapons\Mines_m\Inv\WW2_Ladung_pm_inv.p3d";
+            uniformModel = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Ladung_pm_inv.p3d";
         };
     };
 

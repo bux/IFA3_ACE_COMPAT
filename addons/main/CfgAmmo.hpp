@@ -333,7 +333,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_SC500_Bomb: LIB_Bomb_base {
+    class LIB_SC500_Bomb: LIB_FAB500_Bomb {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;
@@ -355,7 +355,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    class LIB_SC250_Bomb: LIB_Bomb_base {
+    class LIB_SC250_Bomb: LIB_FAB250_Bomb {
         ace_frag_enabled = 1;
         ace_frag_skip = 0;
         ace_frag_force = 1;

@@ -439,7 +439,7 @@ class CfgVehicles {
 		};
 	};
 	class LIB_Box_82mm_Mo_HE: LIB_AmmoOrd_F {
-		class TransportMagazines: TransportMagazines {};
+		class TransportMagazines;
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
@@ -449,7 +449,7 @@ class CfgVehicles {
 	class LIB_Box_82mm_Mo_Smoke: LIB_Box_82mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
+		class TransportMagazines;
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_SM";
@@ -469,7 +469,7 @@ class CfgVehicles {
 	class LIB_Box_81mm_Mo_HE: LIB_Box_82mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
+		class TransportMagazines;
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
@@ -479,7 +479,7 @@ class CfgVehicles {
 	class LIB_Box_81mm_Mo_Smoke: LIB_Box_81mm_Mo_HE {	
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
+		class TransportMagazines;
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_SM";
@@ -499,7 +499,7 @@ class CfgVehicles {
 	class LIB_Box_60mm_Mo_HE: LIB_Box_82mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
+		class TransportMagazines;
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
@@ -509,7 +509,7 @@ class CfgVehicles {
 	class LIB_Box_60mm_Mo_Smoke: LIB_Box_60mm_Mo_HE {	
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
+		class TransportMagazines;
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_SM";

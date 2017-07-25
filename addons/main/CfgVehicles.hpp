@@ -306,7 +306,7 @@ class CfgVehicles {
 	};
 
     class LIB_Tank_base;
-    class LIB_JS2_43: LIB_Tank_base {
+    class LIB_JS2_43_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.37,-1.08}},{"HitEngine", {0,-4.28,-1}},{"HitFuel", {0,1.64,-1.47}},{"HitLTrack", {-1.3,-1.39,-1.6}},{"HitRTrack", {1.3,-1.39,-1.6}} };
         ace_refuel_fuelCapacity = 820;
         ace_cookoff_ammoLocation = "HitTurret";
@@ -359,7 +359,7 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_StuG_III_G",{0,-1,0}};
     };
 
-    class LIB_T34_76: LIB_Tank_base {
+    class LIB_T34_76_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,2.5,-1.2}},{"HitEngine", {0.1,-1.5,-0.5}},{"HitFuel", {0.1,-1,-0.5}},{"HitLTrack", {-1.2,-0.1,-1.4}},{"HitRTrack", {1.2,-0.1,-1.4}} };
         ace_refuel_fuelCapacity = 610;
         ace_cookoff_ammoLocation = "HitHull";
@@ -367,7 +367,7 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_T34_76",{0,-1,0}};
     };
 
-    class LIB_T34_85: LIB_Tank_base {
+    class LIB_T34_85_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.43,-1.1}},{"HitEngine", {0,-2.7,-0.6}},{"HitFuel", {0,-2.1,-0.6}},{"HitLTrack", {-1.2,-1,-1.4}},{"HitRTrack", {1.2,-1,-1.4}} };
         ace_refuel_fuelCapacity = 810;
         ace_cookoff_ammoLocation = "HitTurret";
@@ -375,7 +375,7 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_T34_85",{0,-1,0}};
     };
 
-    class LIB_M4A3_75: LIB_Tank_base {
+    class LIB_M4A3_75_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,0,0}},{"HitEngine", {0,0,0}},{"HitFuel", {0,0,0}},{"HitLTrack", {0,0,0}},{"HitRTrack", {0,0,0}} };
         ace_refuel_fuelCapacity = 660;
         ace_cookoff_ammoLocation = "HitHull";
@@ -383,7 +383,7 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_M4A3_75",{0,-1,0}};
     };
 
-    class LIB_SU85: LIB_Tank_base {
+    class LIB_SU85_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
         ace_refuel_fuelCapacity = 510;
         ace_cookoff_ammoLocation = "HitHull";
@@ -392,6 +392,7 @@ class CfgVehicles {
     };
 
 	// I44
+	class LIB_M4A3_75: LIB_M4A3_75_base {};
 	class LIB_M3A3_Stuart: LIB_M4A3_75 {
         ace_cookoff_cookoffSelections[] = { "hatchFire_commander" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};

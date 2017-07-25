@@ -439,7 +439,13 @@ class CfgVehicles {
 		};
 	};
 	class LIB_Box_82mm_Mo_HE: LIB_AmmoOrd_F {
-		class TransportMagazines;
+		class TransportMagazines {
+			class _xx_LIB_1rnd_82mmHE_BM37
+			{
+				magazine = "LIB_1rnd_82mmHE_BM37";
+				count = 0;
+			};
+		};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
@@ -449,7 +455,13 @@ class CfgVehicles {
 	class LIB_Box_82mm_Mo_Smoke: LIB_Box_82mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines;
+		class TransportMagazines {
+			class _xx_LIB_82mm_BM37_SmokeShell
+			{
+				magazine = "LIB_82mm_BM37_SmokeShell";
+				count = 0;
+			};
+		};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_SM";
@@ -459,7 +471,6 @@ class CfgVehicles {
 	class LIB_Box_82mm_Mo_Illum: LIB_Box_82mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_IL";
@@ -468,8 +479,13 @@ class CfgVehicles {
 	};
 	class LIB_Box_81mm_Mo_HE: LIB_Box_82mm_Mo_HE {
 		scope = 2;
-		scopeCurator = 2;
-		class TransportMagazines;
+		class TransportMagazines {
+			class _xx_LIB_1rnd_81mmHE_GRWR34
+			{
+				magazine = "LIB_1rnd_81mmHE_GRWR34";
+				count = 0;
+			};
+		};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
@@ -479,7 +495,13 @@ class CfgVehicles {
 	class LIB_Box_81mm_Mo_Smoke: LIB_Box_81mm_Mo_HE {	
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines;
+		class TransportMagazines {
+			class _xx_LIB_81mm_GRWR34_SmokeShell
+			{
+				magazine = "LIB_81mm_GRWR34_SmokeShell";
+				count = 0;
+			};
+		};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_SM";
@@ -489,7 +511,6 @@ class CfgVehicles {
 	class LIB_Box_81mm_Mo_Illum: LIB_Box_81mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_IL";
@@ -499,7 +520,13 @@ class CfgVehicles {
 	class LIB_Box_60mm_Mo_HE: LIB_Box_82mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines;
+		class TransportMagazines {
+			class _xx_LIB_1rnd_60mmHE_M2
+			{
+				magazine = "LIB_1rnd_60mmHE_M2";
+				count = 0;
+			};
+		};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_HE";
@@ -509,7 +536,13 @@ class CfgVehicles {
 	class LIB_Box_60mm_Mo_Smoke: LIB_Box_60mm_Mo_HE {	
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines;
+		class TransportMagazines {
+			class _xx_LIB_60mm_M2_SmokeShell
+			{
+				magazine = "LIB_60mm_M2_SmokeShell";
+				count = 0;
+			};
+		};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_SM";
@@ -519,7 +552,6 @@ class CfgVehicles {
 	class LIB_Box_60mm_Mo_Illum: LIB_Box_60mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
-		class TransportMagazines: TransportMagazines {};
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions:  ACE_MainActions {
 				displayName = "$STR_ace_ifa3mortar_desc_mortar_ammobox_IL";

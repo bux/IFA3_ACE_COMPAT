@@ -92,6 +92,8 @@
 
 class CfgVehicles {
 
+	class LandVehicle;
+
     class LIB_Boat_base;
     class LIB_LCVP: LIB_Boat_base {
         ace_refuel_fuelCapacity = 500;
@@ -314,7 +316,6 @@ class CfgVehicles {
 		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_T34_85_ca.paa";
 	};
 
-	class LandVehicle;
     class Tank: LandVehicle
 	{
 		class NewTurret;

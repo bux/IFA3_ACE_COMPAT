@@ -305,7 +305,17 @@ class CfgVehicles {
 		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_T34_85_ca.paa";
 	};
 
-    class LIB_Tank_base;
+	class LIB_Tank_base: Tank_F
+	{
+		class Turrets: Turrets
+		{
+			class MainTurret: MainTurret
+			{
+				ace_fcs_Enabled = 0;
+			};
+		};
+	};
+	
     class LIB_JS2_43_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.37,-1.08}},{"HitEngine", {0,-4.28,-1}},{"HitFuel", {0,1.64,-1.47}},{"HitLTrack", {-1.3,-1.39,-1.6}},{"HitRTrack", {1.3,-1.39,-1.6}} };
         ace_refuel_fuelCapacity = 820;
@@ -419,7 +429,6 @@ class CfgVehicles {
     };
 	// I44 end
 	
-    class LandVehicle;
     class Car: LandVehicle {
         class ACE_Actions {
             class ACE_MainActions {};

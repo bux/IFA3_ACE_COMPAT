@@ -8,7 +8,17 @@ class CfgWeapons {
 	
 	class LIB_P08: LIB_P38 {
         ACE_barrelTwist = 233.68;
-        ACE_barrelLength = 10.2;
+        ACE_barrelLength = 100;
+    };
+	
+	class LIB_M1896: LIB_PISTOL {
+        ACE_barrelTwist = 203.2;
+        ACE_barrelLength = 99;
+    };
+	
+	class LIB_WaltherPPK: LIB_PISTOL {
+        ACE_barrelTwist = 254;
+        ACE_barrelLength = 83;
     };
 	
     class LIB_TT33: LIB_PISTOL {
@@ -37,10 +47,15 @@ class CfgWeapons {
     };
 
     class LIB_MP40: LIB_SMG {
-        ACE_barrelTwist = 392; //unknown set same as thompson
+        ACE_barrelTwist = 203.2;
         ACE_barrelLength = 251;
     };
 
+	class LIB_MP38: LIB_SMG {
+        ACE_barrelTwist = 203.2;
+        ACE_barrelLength = 251;
+    };
+	
     class LIB_PPSh41_m: LIB_SMG {
         ACE_barrelTwist = 392; //unknown set same as thompson
         ACE_barrelLength = 269;
@@ -110,6 +125,15 @@ class CfgWeapons {
         ACE_barrelLength = 1350;
     };
 	
+	class LIB_DELISLE: LIB_RIFLE {
+        ACE_barrelTwist = 392;
+        ACE_barrelLength = 210;
+    };
+	
+	class LIB_M2_Flamethrower: LIB_RIFLE
+	{
+		ACE_Overheating_JamChance = 0;
+	};
 	
     class Rifle_Long_Base_F: Rifle_Base_F {};
     class LIB_LMG: Rifle_Long_Base_F {
@@ -362,6 +386,12 @@ class CfgWeapons {
         ace_overpressure_damage = 0.4;
     };
 
+	class LIB_K51_L54: LIB_TankCannon_base {
+        ace_overpressure_angle = 80;
+        ace_overpressure_range = 10;
+        ace_overpressure_damage = 0.2;
+	};
+	
 	// I44
 	class LIB_M6_L53: LIB_TankCannon_base {
         ace_overpressure_angle = 60;

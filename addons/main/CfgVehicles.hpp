@@ -128,6 +128,15 @@ class CfgVehicles {
         ace_dragging_dragDirection = 0;
     };
 
+	class LIB_Nebelwerfer41_base: LIB_StaticCannon_base {
+        ace_cargo_canLoad = 0;
+        ace_dragging_canCarry = 0;
+        ace_dragging_carryPosition[] = { 0,1.2,0 };
+        ace_dragging_carryDirection = 0;
+        ace_dragging_canDrag = 1;
+        ace_dragging_dragPosition[] = { 0,1.2,0 };
+        ace_dragging_dragDirection = 0;
+    };
 
     class LIB_StaticCanon_base;
     class LIB_FlaK_38_base: LIB_StaticCanon_base {
@@ -305,6 +314,18 @@ class CfgVehicles {
 		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_T34_85_ca.paa";
 	};
 
+	class LandVehicle;
+    class Tank: LandVehicle
+	{
+		class NewTurret;
+	};
+	class Tank_F: Tank
+	{
+		class Turrets
+		{
+			class MainTurret: NewTurret {};
+		};
+	};
 	class LIB_Tank_base: Tank_F
 	{
 		class Turrets: Turrets
@@ -401,6 +422,14 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_SU85",{0,-1,0}};
     };
 
+	class LIB_SdKfz124: LIB_Tank_base {
+        ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
+        ace_refuel_fuelCapacity = 170;
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	
 	// I44
 	class LIB_M4A3_75: LIB_M4A3_75_base {};
 	class LIB_M3A3_Stuart: LIB_M4A3_75 {
@@ -545,6 +574,13 @@ class CfgVehicles {
         ace_refuel_fuelCargo = 10000;
     };
 
+	class LIB_SdKfz222: LIB_Truck_base {
+        ace_refuel_fuelCapacity = 100;
+    };
+	
+	class LIB_SdKfz234_base: LIB_Truck_base {
+        ace_refuel_fuelCapacity = 240;
+    };
 
 	// I44
 	class LIB_M8_Greyhound: LIB_Truck_base {

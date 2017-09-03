@@ -106,6 +106,21 @@ class CfgAmmo {
         ACE_barrelLengths[] = { 1350 };
     };
 	
+	class BulletBase;
+	class LIB_M2_Flamethrower_Ammo: BulletBase
+	{
+        ACE_caliber = 0;
+        ACE_bulletLength = 0;
+        ACE_bulletMass = 0;
+        ACE_ammoTempMuzzleVelocityShifts[] = {};
+        ACE_ballisticCoefficients[] = { 0 };
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ICAO";
+        ACE_dragModel = 1;
+        ACE_muzzleVelocities[] = { 40 };
+        ACE_barrelLengths[] = { 0 };
+	};
+	
     class LIB_Bullet_Vehicle_base;
     class LIB_B_127x108_Ball: LIB_Bullet_Vehicle_base {
         ACE_caliber = 14.88;
@@ -516,6 +531,11 @@ class CfgAmmo {
         ace_frag_skip = 1;
     };
 
+	class LIB_KGrRotPz_K51_AP: LIB_Shell_base {
+		ace_rearm_caliber = 75;
+        ace_frag_skip = 1;
+	};
+	
     class LIB_Bullet_Plane_base;
     class LIB_B_37mm_AP: LIB_Bullet_Plane_base {
         ace_rearm_caliber = 37;
@@ -644,7 +664,16 @@ class CfgAmmo {
         ace_frag_gurney_c = 2440;
         ace_frag_gurney_k = "1/2";
     };
-
+	
+	class LIB_SprGr34_K51_HE: LIB_ShellHE_base {
+        ace_rearm_caliber = 75;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 4422;
+        ace_frag_charge = 454;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "1/2";
+	};
 		//I44
 	class LIB_S_37L57_M63: LIB_ShellHE_base {
         ace_rearm_caliber = 37;

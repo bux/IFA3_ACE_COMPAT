@@ -649,10 +649,10 @@ class CfgVehicles {
                 magazine = "LIB_MARKER_MINE_mag";
                 count = 15;
             };
-            class _xx_LIB_SIGN_MINEN {
-                magazine = "LIB_SIGN_MINEN_mag";
-                count = 15;
-            };
+            // class _xx_LIB_SIGN_MINEN {
+                // magazine = "LIB_SIGN_MINEN_mag";
+                // count = 15;
+            // };
         };
         class TransportWeapons {
             class Ammo_LIB_w {
@@ -718,10 +718,10 @@ class CfgVehicles {
                 magazine = "LIB_MARKER_MINE_mag";
                 count = 15;
             };
-            class _xx_LIB_SIGN_MINES {
-                magazine = "LIB_SIGN_MINES_mag";
-                count = 15;
-            };
+            // class _xx_LIB_SIGN_MINES {
+                // magazine = "LIB_SIGN_MINES_mag";
+                // count = 15;
+            // };
         };
         class TransportWeapons {
             class Ammo_LIB_w {

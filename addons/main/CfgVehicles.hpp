@@ -423,7 +423,7 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"ace_cookoff_Turret_SU85",{0,-1,0}};
     };
 
-	class LIB_SdKfz124: LIB_Tank_base {
+	class LIB_SdKfz124_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
         ace_refuel_fuelCapacity = 170;
         ace_cookoff_ammoLocation = "HitHull";
@@ -575,7 +575,7 @@ class CfgVehicles {
         ace_refuel_fuelCargo = 10000;
     };
 
-	class LIB_SdKfz222: LIB_Truck_base {
+	class LIB_SdKfz222_base: LIB_Truck_base {
         ace_refuel_fuelCapacity = 100;
     };
 	
@@ -584,7 +584,7 @@ class CfgVehicles {
     };
 
 	// I44
-	class LIB_M8_Greyhound: LIB_Truck_base {
+	class LIB_M8_Greyhound_base: LIB_Truck_base {
         ace_refuel_fuelCapacity = 224;
     };
 	// I44 end

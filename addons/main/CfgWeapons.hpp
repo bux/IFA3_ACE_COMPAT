@@ -289,12 +289,14 @@ class CfgWeapons {
         ace_overpressure_angle = 60;
         ace_overpressure_range = 10;
         ace_overpressure_damage = 0.4;
+		ace_reloadlaunchers_enabled = 1;
     };
 
     class LIB_M1A1_Bazooka: LIB_LAUNCHER {
         ace_overpressure_angle = 60;
         ace_overpressure_range = 10;
         ace_overpressure_damage = 0.4;
+		ace_reloadlaunchers_enabled = 1;
     };
 
 

@@ -875,4 +875,30 @@ class CfgVehicles {
         model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Ladung_big_provod_inv.p3d";
     };
 
+	// Buildings
+	class NonStrategic;
+    class I44_Misc_BaseClass;
+    class I44_Buildings_BaseClass;
+    class I44_SimpleHouse;
+    class Land_WW2_wire_1 : NonStrategic {
+		ace_logistics_wirecutter_isFence = 1;
+	};
+    class Land_I44_Misc_Vine_Fence : I44_Misc_BaseClass {
+		ace_logistics_wirecutter_isFence = 1;
+	};
+    class Land_I44_Misc_Vine_Fence_Half : I44_Misc_BaseClass {
+		ace_logistics_wirecutter_isFence = 1;
+	};
+    class Land_I44_Buildings_Barbedwire2 : I44_Buildings_BaseClass {
+		ace_logistics_wirecutter_isFence = 1;
+	};
+    class Land_I44_Buildings_Barbedwire : I44_Buildings_BaseClass {
+		ace_logistics_wirecutter_isFence = 1;
+	};
+    class Land_I44_bwf_6_mlod : I44_SimpleHouse {
+		ace_logistics_wirecutter_isFence = 1;
+	};
+    class Land_WW2_wire_3 : Land_WW2_wire_1 {
+		ace_logistics_wirecutter_isFence = 1;
+	};
 };

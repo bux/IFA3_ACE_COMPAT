@@ -190,6 +190,8 @@ class CfgAmmo {
         ace_frag_charge = 165;
         ace_frag_gurney_c = 2440;
         ace_frag_gurney_k = "3/5";
+		ace_advanced_throwing_torqueDirection[] = {1,0.2,0};
+		ace_advanced_throwing_torqueMagnitude = "(250 + random 100)";
     };
 
     class LIB_shg24x7: LIB_GrenadeHand_base {
@@ -201,6 +203,8 @@ class CfgAmmo {
         ace_frag_charge = 1155;
         ace_frag_gurney_c = 2440;
         ace_frag_gurney_k = "3/5";
+		ace_advanced_throwing_torqueDirection[] = {1,0.2,0};
+		ace_advanced_throwing_torqueMagnitude = "(100 + random 100)";
     };
 
     class LIB_m39: LIB_GrenadeHand_base {
@@ -245,6 +249,8 @@ class CfgAmmo {
         ace_frag_charge = 570;
         ace_frag_gurney_c = 2440;
         ace_frag_gurney_k = "3/5";
+		ace_advanced_throwing_torqueDirection[] = {1,0.2,0};
+		ace_advanced_throwing_torqueMagnitude = "(100 + random 100)";
     };
 
     class LIB_pwm: LIB_GrenadeHand_base {
@@ -256,6 +262,8 @@ class CfgAmmo {
         ace_frag_charge = 500;
         ace_frag_gurney_c = 2440;
         ace_frag_gurney_k = "3/5";
+		ace_advanced_throwing_torqueDirection[] = {1,0.2,0};
+		ace_advanced_throwing_torqueMagnitude = "(10 + random 100)";
     };
 
     class LIB_US_Mk_2: LIB_GrenadeHand_base {

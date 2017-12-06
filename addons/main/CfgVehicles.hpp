@@ -241,7 +241,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_Js2_43_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_Js2_43_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_Js2_43_ca.paa";
 	};
 	class ace_cookoff_Turret_M4A3_75: ThingX {
 		author = "AWAR";
@@ -249,7 +249,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_M4A3_75_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_M4A3_75_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_M4A3_75_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwIV_H: ThingX {
 		author = "AWAR";
@@ -257,7 +257,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwIV_H_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwIV_H_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_PzKpfwIV_H_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwV: ThingX {
 		author = "AWAR";
@@ -265,7 +265,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwV_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwV_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_PzKpfwV_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwVI_B: ThingX {
 		author = "AWAR";
@@ -273,7 +273,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwVI_B_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwVI_b_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_PzKpfwVI_b_ca.paa";
 	};
 	class ace_cookoff_Turret_PzKpfwVI_E: ThingX {
 		author = "AWAR";
@@ -281,7 +281,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_PzKpfwVI_E_Destruct_Tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_PzKpfwVI_e_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_PzKpfwVI_e_ca.paa";
 	};
 	class ace_cookoff_Turret_StuG_III_G: ThingX {
 		author = "AWAR";
@@ -289,7 +289,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_StuG_III_G_Tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_StuG_III_G_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_StuG_III_G_ca.paa";
 	};
 	class ace_cookoff_Turret_SU85: ThingX {
 		author = "AWAR";
@@ -297,7 +297,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_SU85_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_SU85_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_SU85_ca.paa";
 	};
 	class ace_cookoff_Turret_T34_76: ThingX {
 		author = "AWAR";
@@ -305,7 +305,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_T34_76_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_T34_76_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_T34_76_ca.paa";
 	};
 	class ace_cookoff_Turret_T34_85: ThingX {
 		author = "AWAR";
@@ -313,7 +313,7 @@ class CfgVehicles {
 		scope = 1;
 		displayName = "$STR_ace_cookoff_generic_turret_wreck";
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_T34_85_destruct_tower.p3d";
-		icon = "\WW2\Assets_t\Vehicles\Icons_t\Tanks\icon_T34_85_ca.paa";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_T34_85_ca.paa";
 	};
 
     class Tank: LandVehicle

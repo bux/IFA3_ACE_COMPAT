@@ -751,7 +751,7 @@ class CfgVehicles {
 
     class LIB_Mine_AmmoBox_US: LIB_ReammoBox_base {
         scope = 2;
-        displayName = "$STR_LIB_DN_US_MINES_BOX";
+        displayName = "$STR_DN_LIB_US_MINES_BOX";
         model = "\WW2\Assets_m\Weapons\Ammoboxes_m\IF_Su_ammo.p3d";
         faction = "LIB_US_ARMY";
         class TransportMagazines {

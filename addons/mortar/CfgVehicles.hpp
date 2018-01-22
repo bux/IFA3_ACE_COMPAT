@@ -204,7 +204,7 @@ class CfgVehicles {
 		typicalCargo[] = {"LIB_US_corporal"};
 		displayName = "$STR_LIB_DN_M2_60_ACE";
 		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_M2.p3d";
-		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_M2.paa";
+		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_M2_60_ca.paa";
 		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_M2_60_ca.paa";
 		class assembleInfo: assembleInfo
 		{

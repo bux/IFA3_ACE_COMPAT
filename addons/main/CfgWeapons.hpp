@@ -65,6 +65,11 @@ class CfgWeapons {
         ACE_barrelTwist = 392;
         ACE_barrelLength = 270;
     };
+	
+	class LIB_M3_GreaseGun: LIB_SMG {
+        ACE_barrelTwist = 392;
+        ACE_barrelLength = 270;
+    };
 
 	
     class LIB_RIFLE: Rifle_Base_F {

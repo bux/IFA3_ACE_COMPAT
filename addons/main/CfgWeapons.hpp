@@ -113,8 +113,8 @@ class CfgWeapons {
     };
 	
 	class LIB_G41 : LIB_RIFLE {
-		ACE_barrelTwist=240;
-		ACE_barrelLength=546; //unknown set to same as K98
+		ACE_barrelTwist=240; //unknown set to same as K98
+		ACE_barrelLength=546;
 		ACE_twistDirection=1;
 	};
 	

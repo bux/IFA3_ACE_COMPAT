@@ -106,7 +106,7 @@ class CfgAmmo {
         ACE_barrelLengths[] = { 1350 };
     };
 	
-	class BulletBase_NonAceAB//BulletBase;
+	class BulletBase_NonAceAB;//BulletBase
 	class LIB_M2_Flamethrower_Ammo: BulletBase_NonAceAB//BulletBase
 	{
         ACE_caliber = 0;

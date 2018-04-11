@@ -111,6 +111,17 @@ class CfgWeapons {
         ACE_barrelTwist = 254; //unknown set to 1:10
         ACE_barrelLength = 550;
     };
+	
+	class LIB_G41 : LIB_RIFLE {
+		ACE_barrelTwist=240;
+		ACE_barrelLength=546; //unknown set to same as K98
+		ACE_twistDirection=1;
+	};
+	
+	class LIB_FG42G : LIB_RIFLE {
+		ACE_barrelLength=500;
+		ACE_barrelTwist=240; //unknown set to same as K98
+		ACE_twistDirection=1;
 
     class LIB_M1_Garand: LIB_RIFLE {
         ACE_Overheating_JamChance = 0.0003;

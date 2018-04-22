@@ -22,7 +22,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_nebel";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_150";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 70;
@@ -127,7 +127,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_he";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_76";
-		//model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		//model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
@@ -140,7 +140,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_ap";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_76";
-		//model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		//model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		tracersEvery = 1;
@@ -167,7 +167,7 @@ class cfgMagazines
 		displayName = "$STR_LIB_MN_DT";
 		displayNameShort = "$STR_LIB_MN_DT";
 		descriptionShort = "$STR_ACE_ifa3reload_tape_round_63";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\DT.paa";
 		allowedSlots[] = {901,701};
 		mass = 25;
@@ -210,7 +210,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_tape_browning";
 		displayNameShort = "$STR_ACE_ifa3reload_tape_browning_desc";
 		descriptionShort = "$STR_ACE_ifa3reload_tape_round_250";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_brow_corob_ico.paa";
 		allowedSlots[] = {901};
 		mass = 50;
@@ -252,7 +252,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_tape_mg34";
 //		displayNameShort = "$STR_ACE_ifa3reload_tape_mg34_desc";
 		descriptionShort = "$STR_ACE_ifa3reload_tape_round_150";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		initSpeed = 755;
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\lib_250Rnd_792x57.paa";
 		mass = 40;
@@ -332,7 +332,7 @@ class cfgMagazines
 		displayName = "PZ II";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_20";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 33;
@@ -343,7 +343,7 @@ class cfgMagazines
 		displayName = "PZ II";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_20";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 33;
@@ -354,7 +354,7 @@ class cfgMagazines
 		displayName = "PZ II";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_apcr";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_apcr_20";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_apcr.paa";
 		allowedSlots[] = {901};
 		mass = 33;
@@ -402,7 +402,7 @@ class cfgMagazines
 		displayName = "T60";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_5820";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 100;
@@ -413,7 +413,7 @@ class cfgMagazines
 		displayName = "T60";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_5820";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 100;
@@ -424,7 +424,7 @@ class cfgMagazines
 		displayName = "T60";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_apcr";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_apcr_5820";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_apcr.paa";
 		allowedSlots[] = {901};
 		mass = 100;
@@ -435,7 +435,7 @@ class cfgMagazines
 		displayName = "61K";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_37";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 33;
@@ -446,7 +446,7 @@ class cfgMagazines
 		displayName = "61K";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_37";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 33;
@@ -456,7 +456,7 @@ class cfgMagazines
 		displayName = "FlaK 38x4";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_8020";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 100;
@@ -466,7 +466,7 @@ class cfgMagazines
 		displayName = "FlaK 38";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_2020";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 50;
@@ -476,7 +476,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_tape_m2";
 		displayNameShort = "$STR_ACE_ifa3reload_tape_m2_desc";
 		descriptionShort = "$STR_ACE_ifa3reload_tape_round_100";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_brow_corob_ico.paa";
 		allowedSlots[] = {901};
 		mass = 50;
@@ -488,7 +488,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_tape_dshk";
 		displayNameShort = "$STR_ACE_ifa3reload_tape_dshk_desc";
 		descriptionShort = "$STR_ACE_ifa3reload_tape_round_50";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\Dshk.paa";
 		allowedSlots[] = {901};
 		mass = 35;
@@ -498,7 +498,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_tape_max";
 		displayNameShort = "$STR_ACE_ifa3reload_tape_max_desc";
 		descriptionShort = "$STR_ACE_ifa3reload_tape_round_250";
-		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\WW2_Mag_univ.p3d";
+		model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\Maxim_box.paa";
 		mass = 50;
 		allowedSlots[] = {901};

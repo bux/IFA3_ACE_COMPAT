@@ -75,7 +75,7 @@ class CfgVehicles {
 		displayName = "$STR_LIB_DN_GRWR34_ACE";
 		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_GrWr34.p3d";
 		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_GrWr34_ca.paa";
-		picture = "\WW2\Assets_t\Vehicles\Pictures_t\GrWr34_ca.paa";
+		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_GrWr34_ca.paa";
 		class assembleInfo: assembleInfo
 		{
             LIB_dissasembleTo[] = {"LIB_GrWr34_Barrel","LIB_GrWr34_Tripod_Deployed"};
@@ -140,7 +140,7 @@ class CfgVehicles {
 		displayName = "$STR_LIB_DN_BM37_ACE";
 		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_Bm37.p3d";
 		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_Bm37_ca.paa";
-		picture = "\WW2\Assets_t\Vehicles\Pictures_t\BM37_ca.paa";
+		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_BM37_ca.paa";
 		class assembleInfo: assembleInfo
 		{
             LIB_dissasembleTo[] = {"LIB_BM37_Barrel","LIB_BM37_Tripod_Deployed"};

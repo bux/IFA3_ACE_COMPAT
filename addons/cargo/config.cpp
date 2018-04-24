@@ -1,26 +1,27 @@
-class CfgPatches
-{
-	class LIB_ACE_Cargo
-	{
-		author="IFA3 Team, ACE3 Team & Garmr";
-		name="IFA33 ACE Cargo Compatibility";
-		requiredVersion=0.1;
-		requiredAddons[]=
+#include "script_component.hpp"
+
+class CfgPatches {
+    class ADDON {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = REQUIRED_VERSION;
+        requiredAddons[] =
 		{
+			"ace_cargo",
 			"WW2_assets_c_vehicles_planes_c",
 			"WW2_Assets_c_Vehicles_Planes_c_HORSA",
 			"WW2_Assets_c_Vehicles_Planes_c_C47",
 			"WW2_Assets_c_Vehicles_Planes_c_WACO",
 			"WW2_Assets_c_Weapons_Ammoboxes_c",
-			"ace_cargo",
 			"ifa3_comp_ace_mortar",
 			"ifa3_comp_ace_main"
 		};
-		ammo[]={};
-		magazines[]={};
-		weapons[]={};
-		units[]={};
-	};
+        author = CSTRING(Team);
+        authors[] = { "Garmr" };
+        authorUrl = CSTRING(Url);
+        url = CSTRING(Url);
+        VERSION_CONFIG;
+    };
 };
 
 class CfgVehicles

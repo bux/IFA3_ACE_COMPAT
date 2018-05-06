@@ -68,6 +68,7 @@ class CfgVehicles {
 	};
 	class LIB_GrWr34_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
+		scopeCurator = 2;
 		side = 1;
 		faction = "LIB_WEHRMACHT";
 		crew = "LIB_GER_gun_crew";
@@ -133,6 +134,7 @@ class CfgVehicles {
 	};
 	class LIB_BM37_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
+		scopeCurator = 2;
 		side = 0;
 		faction = "LIB_RKKA";
 		crew = "LIB_SOV_gun_crew";
@@ -198,6 +200,7 @@ class CfgVehicles {
 	};
 	class LIB_M2_60_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
+		scopeCurator = 2;
 		side = 2;
 		faction = "LIB_US_ARMY";
 		crew = "LIB_US_corporal";

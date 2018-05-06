@@ -29,17 +29,17 @@ class CfgVehicles {
 		{
 			libTextDesc = "";
 		};
-        class Eventhandlers: Eventhandlers
+		class Eventhandlers: Eventhandlers
 		{
 			class IFA3_Weapons_Static_fnc_fired_EH
 			{
 				fired = "_this call LIB_Weapons_Static_fnc_fired_EH";
 			};
-            class IFA3_Weapons_Static
+			class IFA3_Weapons_Static
 			{
 				init = "[(_this select 0),[],true] spawn LIB_Weapons_Static_fnc_init_EH";
 			};
-            class IFA3_Weapons_Static_fnc_GetOut_EH
+			class IFA3_Weapons_Static_fnc_GetOut_EH
 			{
 				GetOut = "[(_this select 0),(_this select 1),(_this select 2),'AmovPknlMstpSnonWnonDnon'] call LIB_Weapons_Static_fnc_GetOut_EH";
 			};
@@ -78,8 +78,8 @@ class CfgVehicles {
 		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_GrWr34_ca.paa";
 		class assembleInfo: assembleInfo
 		{
-            LIB_dissasembleTo[] = {"LIB_GrWr34_Barrel","LIB_GrWr34_Tripod_Deployed"};
-            deployTime = 12;
+			LIB_dissasembleTo[] = {"LIB_GrWr34_Barrel","LIB_GrWr34_Tripod_Deployed"};
+			deployTime = 12;
 		};
 		class Turrets: Turrets
 		{
@@ -143,8 +143,8 @@ class CfgVehicles {
 		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_BM37_ca.paa";
 		class assembleInfo: assembleInfo
 		{
-            LIB_dissasembleTo[] = {"LIB_BM37_Barrel","LIB_BM37_Tripod_Deployed"};
-            deployTime = 13;
+			LIB_dissasembleTo[] = {"LIB_BM37_Barrel","LIB_BM37_Tripod_Deployed"};
+			deployTime = 13;
 		};
 		class Turrets: Turrets
 		{
@@ -208,8 +208,8 @@ class CfgVehicles {
 		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_M2_60_ca.paa";
 		class assembleInfo: assembleInfo
 		{
-            LIB_dissasembleTo[] = {"LIB_M2_60_Barrel","LIB_M2_60_Tripod_Deployed"};
-            deployTime = 8;
+			LIB_dissasembleTo[] = {"LIB_M2_60_Barrel","LIB_M2_60_Tripod_Deployed"};
+			deployTime = 8;
 		};
 		class Turrets: Turrets
 		{
@@ -268,27 +268,27 @@ class CfgVehicles {
 		class assembleInfo;
 	};
 	class LIB_BM37_Tripod_Deployed: LIB_Tripod_Bag {
-        class assembleInfo: assembleInfo {
-            class LIB_BM37_Barrel {
-                deployTime = 10;
-                assembleTo = "LIB_BM37_ACE";
-            };
+		class assembleInfo: assembleInfo {
+			class LIB_BM37_Barrel {
+				deployTime = 10;
+				assembleTo = "LIB_BM37_ACE";
+			};
 		};
 	};
 	class LIB_GrWr34_Tripod_Deployed: LIB_Tripod_Bag {
 		class assembleInfo: assembleInfo {
-            class LIB_GrWr34_Barrel {
-                deployTime = 10;
-                assembleTo = "LIB_GrWr34_ACE";
-            };
+			class LIB_GrWr34_Barrel {
+				deployTime = 10;
+				assembleTo = "LIB_GrWr34_ACE";
+			};
 		};
 	};
 	class LIB_M2_60_Tripod_Deployed: LIB_Tripod_Bag	{
 		class assembleInfo: assembleInfo {
-            class LIB_M2_60_Barrel {
-                deployTime = 8;
-                assembleTo = "LIB_M2_60_ACE";
-            };
+			class LIB_M2_60_Barrel {
+				deployTime = 8;
+				assembleTo = "LIB_M2_60_ACE";
+			};
 		};
 	};
 

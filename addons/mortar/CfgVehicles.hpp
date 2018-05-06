@@ -283,7 +283,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_M2_60_Tripod_Deployed: LIB_Tripod_Bag	{
+	class LIB_M2_60_Tripod_Deployed: LIB_Tripod_Bag {
 		class assembleInfo: assembleInfo {
 			class LIB_M2_60_Barrel {
 				deployTime = 8;
@@ -293,7 +293,7 @@ class CfgVehicles {
 	};
 
 	class NATO_Box_Base;
-	class LIB_AmmoOrd_F: NATO_Box_Base	{
+	class LIB_AmmoOrd_F: NATO_Box_Base {
 		class TransportMagazines;
 		class eventHandlers {
 			init = "_this call compile preProcessFileLineNumbers ""\z\ifa3_comp_ace\addons\mortar\functions\fnc_init.sqf"";";

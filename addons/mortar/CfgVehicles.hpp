@@ -5,7 +5,7 @@ class CfgVehicles {
 	class LIB_GrWr34: LIB_GER_Mortar_base {scope=1;};
 	class LIB_US_Mortar_base;
 	class LIB_M2_60: LIB_US_Mortar_base {scope=1;};
-	
+
 	class StaticWeapon;
 	class StaticMortar: StaticWeapon
 	{
@@ -24,7 +24,7 @@ class CfgVehicles {
 		expansion = 1;
 		transportSoldier = 1;
 		cargoAction[] = {"LIB_mortar_gunner_2"};
-		mapSize = 3;	
+		mapSize = 3;
 		class Library
 		{
 			libTextDesc = "";
@@ -43,7 +43,7 @@ class CfgVehicles {
 			{
 				GetOut = "[(_this select 0),(_this select 1),(_this select 2),'AmovPknlMstpSnonWnonDnon'] call LIB_Weapons_Static_fnc_GetOut_EH";
 			};
-		};		
+		};
 		class Turrets: Turrets
 		{
 			class MainTurret: MainTurret
@@ -209,7 +209,7 @@ class CfgVehicles {
 		class assembleInfo: assembleInfo
 		{
             LIB_dissasembleTo[] = {"LIB_M2_60_Barrel","LIB_M2_60_Tripod_Deployed"};
-            deployTime = 8;			
+            deployTime = 8;
 		};
 		class Turrets: Turrets
 		{
@@ -218,7 +218,7 @@ class CfgVehicles {
 				weapons[] = {"LIB_M2_60_ACE"};
 				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_M4_Mortar_Sight.p3d";
 			};
-		};	
+		};
 		class ACE_Actions: ACE_Actions
 		{
 			class ace_mk6mortar_unloadMagazine
@@ -260,12 +260,12 @@ class CfgVehicles {
 					icon = "";
 				};
 			};
-		};		
+		};
 	};
-	
+
 	class B_LIB_AssaultPack_Base;
 	class LIB_Tripod_Bag: B_LIB_AssaultPack_Base {
-		class assembleInfo; 
+		class assembleInfo;
 	};
 	class LIB_BM37_Tripod_Deployed: LIB_Tripod_Bag {
         class assembleInfo: assembleInfo {
@@ -291,7 +291,7 @@ class CfgVehicles {
             };
 		};
 	};
-	
+
 	class NATO_Box_Base;
 	class LIB_AmmoOrd_F: NATO_Box_Base	{
 		class TransportMagazines;
@@ -314,7 +314,7 @@ class CfgVehicles {
 					priority = 5;
 				};
 			};
-			
+
 			class ACE_CloseLid {
 				selection = "rotation_action_point";
 				distance = 2;
@@ -326,7 +326,7 @@ class CfgVehicles {
 				priority = 5;
 
 			};
-			
+
 			class ACE_Round_1_Take {
 				displayName = "$STR_ace_ifa3mortar_take";
 				selection = "round_1_action_point";
@@ -492,7 +492,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_81mm_Mo_Smoke: LIB_Box_81mm_Mo_HE {	
+	class LIB_Box_81mm_Mo_Smoke: LIB_Box_81mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
 		class TransportMagazines {
@@ -533,7 +533,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_60mm_Mo_Smoke: LIB_Box_60mm_Mo_HE {	
+	class LIB_Box_60mm_Mo_Smoke: LIB_Box_60mm_Mo_HE {
 		scope = 2;
 		scopeCurator = 2;
 		class TransportMagazines {

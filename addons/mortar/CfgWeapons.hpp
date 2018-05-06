@@ -56,5 +56,5 @@ class CfgWeapons
 	};
 	class LIB_M2_60_Barrel: LIB_Slung_Static_Weapon_Base {
 		magazines[] = {"LIB_1Rnd_60mm_Mo_HE","LIB_1Rnd_60mm_Mo_Smoke","LIB_1Rnd_60mm_Mo_Illum"};
-	};	
+	};
 };

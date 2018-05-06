@@ -20,7 +20,7 @@ class CfgVehicles {
 		};
 	};
 	class LIB_Mortar_base_ACE: Mortar_01_base_F {
-		scope = 1;
+		scope = 0;
 		expansion = 1;
 		transportSoldier = 1;
 		cargoAction[] = {"LIB_mortar_gunner_2"};

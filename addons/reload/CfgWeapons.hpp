@@ -79,20 +79,20 @@ class CfgWeapons
 		magazines[] = {"lib_63Rnd_762x54"};
 	};
 	class LIB_StaticGunCannon_base;
-	class LIB_ZIS3: LIB_StaticGunCannon_base
+	class LIB_ZIS3_base: LIB_StaticGunCannon_base
 	{
 		reloadTime = 2;
 		magazineReloadTime = 2;
 		autoReload = true;
 		magazines[] = {"LIB_OF350_HE","LIB_BR350B_AP","LIB_BR350P_APCR"};
 	};
-	class ifa3_ZIS5: LIB_ZIS3
+	class ifa3_ZIS5: LIB_ZIS3_base
 	{
 		reloadTime = 6;
 		magazineReloadTime = 6;
 	};
 
-	class LIB_Pak40: LIB_StaticGunCannon_base
+	class LIB_Pak40_base: LIB_StaticGunCannon_base
 	{
 		reloadTime = 2;
 		magazineReloadTime = 2;
@@ -100,7 +100,7 @@ class CfgWeapons
 		magazines[] = { "LIB_SprGr34_KWK40_HE","LIB_PzGr39_KWK40_AP","LIB_PzGr40_KWK40_APCR"};
 	};
 	class LIB_TankCannon_base;
-	class LIB_F34: LIB_TankCannon_base
+	class LIB_F34_base: LIB_TankCannon_base
 	{
 		reloadTime = 6;
 		magazineReloadTime = 6;
@@ -197,32 +197,32 @@ class CfgWeapons
 			autoReload = true;
 		};
 	};
-	class LIB_M3_L40: LIB_TankCannon_base
+	class LIB_M3_L40_base: LIB_TankCannon_base
 	{
 		reloadTime = 6;
 		magazineReloadTime = 6;
 		autoReload = true;
 		magazines[] = {"LIB_M42A1_M1_HE","LIB_M61_M1_AP","LIB_T45_M1_APCR"};
 	};
-	class LIB_KwK40_L48: LIB_TankCannon_base
+	class LIB_KwK40_L48_base: LIB_TankCannon_base
 	{
 		reloadTime = 7;
 		magazineReloadTime = 7;
 		autoReload = true;
 		magazines[] = { "LIB_SprGr34_KWK40_HE","LIB_PzGr39_KWK40_AP","LIB_PzGr40_KWK40_APCR"};
 	};
-	class LIB_StuK40_L48: LIB_TankCannon_base
+	class LIB_StuK40_L48_base: LIB_TankCannon_base
 	{
 		reloadTime = 6;
 		magazineReloadTime = 6;
 	};
-	class LIB_leFH18_L28: LIB_StuK40_L48
+	class LIB_LeFH18_base_L28: LIB_StuK40_L48_base
 	{
 		reloadTime = 6;
 		magazineReloadTime = 6;
 		magazines[] = { "LIB_FHGr_leFH18_HE","LIB_PzGr_leFH18_AP","LIB_GR39rot_leFH18_HI"};
 	};
-	class IFA3_M10T: LIB_StuK40_L48
+	class IFA3_M10T: LIB_StuK40_L48_base
 	{
 	reloadTime = 19;
 	magazineReloadTime = 19;

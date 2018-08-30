@@ -599,6 +599,10 @@ class CfgVehicles {
     class LIB_SdKfz_7_base: LIB_WheeledTracked_APC_base {
         ace_refuel_fuelCapacity = 215;
     };
+	class LIB_SdKfz_7_Ammo: LIB_SdKfz_7_base {
+		transportAmmo = 0;
+		ace_rearm_defaultSupply = 1200;
+	};
 
     class LIB_Halftrack_base: LIB_WheeledTracked_APC_base {
         ace_refuel_fuelCapacity = 230;

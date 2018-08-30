@@ -510,6 +510,7 @@ class CfgVehicles {
 
     class LIB_opelblitz_ammo: LIB_opelblitz_open_y_camo {
         transportAmmo = 0;
+		ace_rearm_defaultSupply = 1200;
         MACRO_REARM_TRUCK_ACTIONS
     };
 
@@ -534,6 +535,7 @@ class CfgVehicles {
 
     class LIB_US6_Ammo: LIB_US6_Open_Cargo {
         transportAmmo = 0;
+		ace_rearm_defaultSupply = 1200;
         MACRO_REARM_TRUCK_ACTIONS
     };
 
@@ -542,6 +544,7 @@ class CfgVehicles {
     };
     class LIB_US_GMC_Ammo: LIB_US_GMC_Base {
         transportAmmo = 0;
+		ace_rearm_defaultSupply = 1200;
         MACRO_REARM_TRUCK_ACTIONS
     };
 

@@ -369,6 +369,19 @@ class CfgWeapons {
 		ace_reloadlaunchers_enabled = 1;
     };
 
+	class LIB_PIAT: LIB_LAUNCHER {
+        ace_overpressure_angle = 0;
+        ace_overpressure_range = 0;
+        ace_overpressure_damage = 0;
+		ace_reloadlaunchers_enabled = 0;
+	};
+	
+	class LIB_Bagpipes: LIB_LAUNCHER {
+        ace_overpressure_angle = 0;
+        ace_overpressure_range = 0;
+        ace_overpressure_damage = 0;
+		ace_reloadlaunchers_enabled = 0;
+	};
 
     class H_LIB_HelmetB;
     class H_LIB_GER_LW_PilotHelmet: H_LIB_HelmetB {

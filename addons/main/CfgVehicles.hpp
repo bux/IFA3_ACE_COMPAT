@@ -196,8 +196,13 @@ class CfgVehicles {
         ace_hasReserveParachute = 1;
         ace_reserveParachute = "ACE_ReserveParachute";
     };
-
-
+	class Thing;
+	class LIB_ParachuteLanded_base: Thing
+	{
+		ace_hasReserveParachute = 0;
+        ace_reserveParachute = "";
+	};
+	
     class LIB_Plane_base;
     class LIB_SU_Plane_base: LIB_Plane_base {};
     class LIB_GER_Plane_base: LIB_Plane_base {};

@@ -477,6 +477,12 @@ class CfgWeapons {
         ace_overpressure_damage = 0.2;
 	};
 	
+    class LIB_OQF_75_base: LIB_TankCannon_base {
+        ace_overpressure_angle = 90;
+        ace_overpressure_range = 15;
+        ace_overpressure_damage = 0.4;
+    };
+	
 	// I44
 	class LIB_M6_L53_base: LIB_TankCannon_base {
         ace_overpressure_angle = 60;

@@ -98,6 +98,18 @@ class CfgVehicles {
     class LIB_LCVP: LIB_Boat_base {
         ace_refuel_fuelCapacity = 500;
     };
+	
+	class LIB_LCM3: LIB_Boat_base {
+        ace_refuel_fuelCapacity = 500;
+    };
+	
+	class LIB_LCI: LIB_Boat_base {
+        ace_refuel_fuelCapacity = 173587;
+    };
+	
+	class LIB_LCA: LIB_Boat_base {
+        ace_refuel_fuelCapacity = 290;
+    };
 
     class LIB_StaticCannon_base;
     class LIB_Zis3_base: LIB_StaticCannon_base {
@@ -436,6 +448,32 @@ class CfgVehicles {
 		ace_cookoff_turret[] = {"",{0,-1,0}};
     };
 	
+	class LIB_Crusader_Base: LIB_Tank_base {};
+	
+	class LIB_Crusader_Mk3: LIB_Crusader_Base {
+        ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
+        ace_refuel_fuelCapacity = 500;
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	
+	class LIB_Crusader_Mk1AA: LIB_Crusader_Base {
+        ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
+        ace_refuel_fuelCapacity = 500;
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	
+	class LIB_Cromwell_Base: LIB_Tank_base {
+        ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
+        ace_refuel_fuelCapacity = c;
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+    };
+	
 	// I44
 	class LIB_M4A3_75: LIB_M4A3_75_base {};
 	class LIB_M3A3_Stuart: LIB_M4A3_75 {
@@ -527,7 +565,6 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 151;
     };
 
-
     class LIB_US6_Unarmed_base: LIB_US6_base {};
     class LIB_US6_Tent: LIB_US6_Unarmed_base {};
     class LIB_US6_Tent_Cargo: LIB_US6_Unarmed_base {
@@ -591,6 +628,15 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 240;
     };
 
+	class LIB_AustinK5_base: LIB_Truck_base {
+		ace_refuel_fuelCapacity = 60;
+	};
+	class LIB_AustinK5_Ammo: LIB_AustinK5_base {
+        transportAmmo = 0;
+		ace_rearm_defaultSupply = 1200;
+        MACRO_REARM_TRUCK_ACTIONS		
+	};
+	
 	// I44
 	class LIB_M8_Greyhound_base: LIB_Truck_base {
         ace_refuel_fuelCapacity = 224;

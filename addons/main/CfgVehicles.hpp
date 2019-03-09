@@ -454,7 +454,7 @@ class CfgVehicles {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
         ace_refuel_fuelCapacity = 500;
         ace_cookoff_ammoLocation = "HitHull";
-        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+        ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};
     };
 	
@@ -470,7 +470,7 @@ class CfgVehicles {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
         ace_refuel_fuelCapacity = c;
         ace_cookoff_ammoLocation = "HitHull";
-        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+        ace_cookoff_cookoffSelections[] = { "hatch_commander" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};
     };
 	
@@ -500,6 +500,14 @@ class CfgVehicles {
         ace_cookoff_cookoffSelections[] = { "hatchFire_commander" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};
     };
+	
+	class LIB_UniversalCarrier_base: LIB_Tank_base {
+        ace_repair_hitpointPositions[] = { {"HitHull", {0,1.37,-1.08}},{"HitEngine", {0,-4.28,-1}},{"HitFuel", {0,1.64,-1.47}},{"HitLTrack", {-1.3,-1.39,-1.6}},{"HitRTrack", {1.3,-1.39,-1.6}} };
+        ace_refuel_fuelCapacity = 91;
+        ace_cookoff_ammoLocation = "HitTurret";
+        ace_cookoff_cookoffSelections[] = { "engine_smoke" };
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+	};
 	// I44 end
 	
     class Car: LandVehicle {

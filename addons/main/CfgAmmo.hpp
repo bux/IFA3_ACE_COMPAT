@@ -619,9 +619,23 @@ class CfgAmmo {
         ace_frag_skip = 1;
 	};
 	
+	class LIB_6pdr_mk7_AP: LIB_Shell_base {
+        ace_rearm_caliber = 57;
+        ace_frag_skip = 1;		
+	};
+	
+	class LIB_6pdr_Mk1T_APCR: LIB_ShellAPCR_base {
+        ace_rearm_caliber = 57;
+        ace_frag_skip = 1;		
+	};
+	
     class LIB_Bullet_Plane_base;
     class LIB_B_37mm_AP: LIB_Bullet_Plane_base {
         ace_rearm_caliber = 37;
+        ace_frag_skip = 1;
+    };
+	class LIB_B_40mm_AP: LIB_Bullet_Plane_base {
+        ace_rearm_caliber = 40;
         ace_frag_skip = 1;
     };
 
@@ -757,7 +771,18 @@ class CfgAmmo {
         ace_frag_gurney_c = 2440;
         ace_frag_gurney_k = "1/2";
 	};
-		//I44
+	
+	class LIB_6pdr_mk10T_HE: LIB_ShellHE_base {
+        ace_rearm_caliber = 57;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 1780;
+        ace_frag_charge = 165;
+        ace_frag_gurney_c = 1886; //100% Amatol
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	//I44
 	class LIB_S_37L57_M63: LIB_ShellHE_base {
         ace_rearm_caliber = 37;
         ace_frag_enabled = 1;

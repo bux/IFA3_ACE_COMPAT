@@ -65,7 +65,7 @@ class CfgVehicles
 		ace_cargo_size=1;
 		ace_cargo_canLoad=1;
 	};
-	class LIB_BasicWeaponsBox_GER : LIB_BasicAmmunitionBox_US {
+	class LIB_BasicWeaponsBox_GER : LIB_BasicAmmunitionBox_GER {
 		ace_cargo_size=1;
 		ace_cargo_canLoad=1;
 	};

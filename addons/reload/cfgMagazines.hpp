@@ -43,7 +43,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_shell_ap_Leichtgeschütz";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 30;
@@ -56,7 +56,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_he";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_50";
-			model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 70;
@@ -67,7 +67,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_ap";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_50";
-			model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 70;
@@ -78,7 +78,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_apcr";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_apcr";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_apcr_50";
-			model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_apcr.paa";
 		allowedSlots[] = {901};
 		mass = 70;
@@ -90,7 +90,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_heat";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_heat";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_heat_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_heat.paa";
 		allowedSlots[] = {901};
 		tracersEvery = 1;
@@ -102,7 +102,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_ap";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		tracersEvery = 1;
 		allowedSlots[] = {901};
@@ -114,7 +114,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_he";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -127,7 +127,7 @@ class cfgMagazines
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_76";
 		//model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -140,7 +140,7 @@ class cfgMagazines
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_76";
 		//model = "\WW2\Assets_m\Weapons\Misc_m\Weapons\IF_Mag_Univ.p3d";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		tracersEvery = 1;
 		allowedSlots[] = {901};
@@ -153,7 +153,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_apcr";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_apcr";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_apcr_76";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_apcr.paa";
 		tracersEvery = 1;
 		allowedSlots[] = {901};
@@ -177,7 +177,7 @@ class cfgMagazines
 		displayName = "M4A3";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -187,7 +187,7 @@ class cfgMagazines
 		displayName = "M4A3";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -198,7 +198,7 @@ class cfgMagazines
 		displayName = "M4A3";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_apcr";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_apcr_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_apcr.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -219,7 +219,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_he";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -229,7 +229,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_ap";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -240,7 +240,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_disp_apcr";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_apcr";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_apcr_75";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_apcr.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -261,7 +261,7 @@ class cfgMagazines
 		displayName = "StuH 42";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_105";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 90;
@@ -273,7 +273,7 @@ class cfgMagazines
 		displayName = "StuH 42";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_heat";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_heat_105";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_heat.paa";
 		allowedSlots[] = {901};
 		mass = 90;
@@ -285,7 +285,7 @@ class cfgMagazines
 		displayName = "StuH 42";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_105";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 90;
@@ -296,7 +296,7 @@ class cfgMagazines
 		displayName = "P27";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_76";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -308,7 +308,7 @@ class cfgMagazines
 		displayName = "P27";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_76";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -320,7 +320,7 @@ class cfgMagazines
 		displayName = "P27";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_Buckshot";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_Buckshot_76";
-			model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\zis3_76mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 80;
@@ -366,7 +366,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_ba10_vehicle";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_he";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_he_45";
-			model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_he.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_he.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_he.paa";
 		allowedSlots[] = {901};
 		mass = 70;
@@ -379,7 +379,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_ba10_vehicle";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_ap";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_ap_45";
-			model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_ap.paa";
 		allowedSlots[] = {901};
 		mass = 70;
@@ -391,7 +391,7 @@ class cfgMagazines
 		displayName = "$STR_ACE_ifa3reload_ba10_vehicle";
 		displayNameShort = "$STR_ACE_ifa3reload_disp_apcr";
 		descriptionShort = "$STR_ACE_ifa3reload_shell_apcr_45";
-			model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
+		model="\z\ifa3_comp_ace\addons\reload\models\45mm_round_apc.p3d";
 		picture = "\z\ifa3_comp_ace\addons\reload\UI\ui_shell_apcr.paa";
 		allowedSlots[] = {901};
 		mass = 70;

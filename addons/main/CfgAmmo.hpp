@@ -67,6 +67,19 @@ class CfgAmmo {
         ACE_barrelLengths[]={508.0, 609.6, 660.4};
     };
 	
+	class LIB_B_770x56_Ball: LIB_Bullet_base {
+        ACE_caliber=7.92;
+        ACE_bulletLength=34.366;
+        ACE_bulletMass=11.66;
+        ACE_ammoTempMuzzleVelocityShifts[]={-26.55, -25.47, -22.85, -20.12, -16.98, -12.80, -7.64, -1.53, 5.96, 15.17, 26.19};
+        ACE_ballisticCoefficients[]={0.268};
+        ACE_velocityBoundaries[]={};
+        ACE_standardAtmosphere="ICAO";
+        ACE_dragModel=7;
+        ACE_muzzleVelocities[]={865, 900, 924};
+        ACE_barrelLengths[]={508.0, 609.6, 660.4};
+	};
+	
 	class LIB_B_792x57_Ball: LIB_Bullet_base {
         ACE_caliber = 7.925;
         ACE_bulletLength = 28.956;
@@ -180,6 +193,17 @@ class CfgAmmo {
         ace_frag_force = 1;
     };
 
+	class LIB_89mm_PIAT: LIB_Rocket_base {
+        ace_frag_enabled = 1;
+        ace_frag_metal = 1200;
+        ace_frag_charge = 700;
+        ace_frag_gurney_c = 2027;
+        ace_frag_gurney_k = "3/5";
+        ace_frag_classes[] = { "ACE_frag_small" };
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+	};
+	
     class LIB_GrenadeHand_base;
     class LIB_shg24: LIB_GrenadeHand_base {
         ace_frag_enabled = 1;
@@ -277,6 +301,35 @@ class CfgAmmo {
         ace_frag_gurney_k = "3/5";
     };
 
+	class LIB_MillsBomb: LIB_GrenadeHand_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_small_HD" };
+        ace_frag_metal = 695;
+        ace_frag_charge = 70;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_No82: LIB_GrenadeHand_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 0.5;
+        ace_frag_classes[] = { "ACE_frag_tiny_HD" };
+        ace_frag_metal = 340;
+        ace_frag_charge = 900;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+		ace_advanced_throwing_torqueDirection[] = {1,0.2,0};
+		ace_advanced_throwing_torqueMagnitude = "(100 + random 100)";
+    };
+	
+	class LIB_No77: LIB_GrenadeHand_base {
+        ace_frag_enabled = 0;
+        ace_frag_skip = 1;
+    };
+	
 	class LIB_Grenade_base;
 	class LIB_G_SPRGR_30: LIB_Grenade_base {
         ace_frag_enabled = 1;
@@ -343,6 +396,28 @@ class CfgAmmo {
         ace_frag_gurney_c = 2320;
         ace_frag_gurney_k = "3/5";
     };
+	
+	class LIB_G_MillsBomb: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+        ace_frag_classes[] = { "ACE_frag_small_HD" };
+        ace_frag_metal = 695;
+        ace_frag_charge = 70;
+        ace_frag_gurney_c = 2440;
+        ace_frag_gurney_k = "3/5";
+    };
+	
+	class LIB_G_89mm_PIAT: LIB_Grenade_base {
+        ace_frag_enabled = 1;
+        ace_frag_metal = 1200;
+        ace_frag_charge = 700;
+        ace_frag_gurney_c = 2027;
+        ace_frag_gurney_k = "3/5";
+        ace_frag_classes[] = { "ACE_frag_small" };
+        ace_frag_skip = 0;
+        ace_frag_force = 1;
+	};
 	
 	class LIB_Bomb_base;
     class LIB_FAB500_Bomb: LIB_Bomb_base {
@@ -544,9 +619,23 @@ class CfgAmmo {
         ace_frag_skip = 1;
 	};
 	
+	class LIB_6pdr_mk7_AP: LIB_Shell_base {
+        ace_rearm_caliber = 57;
+        ace_frag_skip = 1;		
+	};
+	
+	class LIB_6pdr_Mk1T_APCR: LIB_ShellAPCR_base {
+        ace_rearm_caliber = 57;
+        ace_frag_skip = 1;		
+	};
+	
     class LIB_Bullet_Plane_base;
     class LIB_B_37mm_AP: LIB_Bullet_Plane_base {
         ace_rearm_caliber = 37;
+        ace_frag_skip = 1;
+    };
+	class LIB_B_40mm_AP: LIB_Bullet_Plane_base {
+        ace_rearm_caliber = 40;
         ace_frag_skip = 1;
     };
 
@@ -682,7 +771,18 @@ class CfgAmmo {
         ace_frag_gurney_c = 2440;
         ace_frag_gurney_k = "1/2";
 	};
-		//I44
+	
+	class LIB_6pdr_mk10T_HE: LIB_ShellHE_base {
+        ace_rearm_caliber = 57;
+        ace_frag_enabled = 1;
+        ace_frag_classes[] = { "ACE_frag_medium","ACE_frag_medium_HD" };
+        ace_frag_metal = 1780;
+        ace_frag_charge = 165;
+        ace_frag_gurney_c = 1886; //100% Amatol
+        ace_frag_gurney_k = "1/2";
+	};
+	
+	//I44
 	class LIB_S_37L57_M63: LIB_ShellHE_base {
         ace_rearm_caliber = 37;
         ace_frag_enabled = 1;

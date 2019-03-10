@@ -12,7 +12,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ace_interaction"};
+        requiredAddons[] = {"ace_interaction","WW2_Assets_c_Weapons_InfantryWeapons_c","WW2_Assets_c_Vehicles_Weapons_c"};
         author = CSTRING(Team);
         authors[] = { "WOG", "El Tyranos" };
         authorUrl = CSTRING(Url);

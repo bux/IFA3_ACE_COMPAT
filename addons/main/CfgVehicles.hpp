@@ -892,7 +892,7 @@ class CfgVehicles {
     };
 
     class ACE_Explosives_Place_LIB_US_M3_MINE: ACE_Explosives_Place {
-        displayName = "$STR_LIB_DN_US_M3";
+        displayName = "$STR_DN_LIB_US_M3";
         model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_M3_ap_inv.p3d";
     };
 
@@ -917,12 +917,12 @@ class CfgVehicles {
     };
 
     class ACE_Explosives_Place_LIB_US_M1A1_ATMINE: ACE_Explosives_Place {
-        displayName = "$STR_LIB_DN_US_M1A1_ATMINE";
+        displayName = "$STR_DN_LIB_US_M1A1_ATMINE";
         model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_M1a1_at_inv.p3d";
     };
 
     class ACE_Explosives_Place_LIB_US_TNT: ACE_Explosives_Place {
-        displayName = "$STR_LIB_DN_US_TNT_4POUND";
+        displayName = "$STR_DN_LIB_US_TNT_4POUND";
         model = "\WW2\Assets_m\Weapons\Mines_m\Inv\IF_Tnt_4pound_inv.p3d";
     };
 

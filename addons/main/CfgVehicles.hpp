@@ -942,29 +942,27 @@ class CfgVehicles {
     };
 
 	// Buildings
-    class LIB_Objects_Misc_NonStrategic_base;
-    class LIB_Objects_Misc_Things_base;
-    class LIB_Objects_Structures_Buildings_base;
-    class I44_SimpleHouse_base;
-    class Land_WW2_wire_1 : LIB_Objects_Misc_NonStrategic_base {
+    class LIB_Objects_Wire_base;
+    class LIB_Objects_Fences_base;
+    class Land_WW2_wire_1: LIB_Objects_Wire_base {
 		ace_logistics_wirecutter_isFence = 1;
 	};
-    class Land_I44_Misc_Vine_Fence : LIB_Objects_Misc_Things_base {
+    class Land_I44_Misc_Vine_Fence: LIB_Objects_Fences_base {
 		ace_logistics_wirecutter_isFence = 1;
 	};
-    class Land_I44_Misc_Vine_Fence_Half : LIB_Objects_Misc_Things_base {
+    class Land_I44_Misc_Vine_Fence_Half: LIB_Objects_Fences_base {
 		ace_logistics_wirecutter_isFence = 1;
 	};
-    class Land_I44_Buildings_Barbedwire2 : LIB_Objects_Structures_Buildings_base {
+    class Land_I44_Buildings_Barbedwire2: LIB_Objects_Wire_base {
 		ace_logistics_wirecutter_isFence = 1;
 	};
-    class Land_I44_Buildings_Barbedwire : LIB_Objects_Structures_Buildings_base {
+    class Land_I44_Buildings_Barbedwire: LIB_Objects_Wire_base {
 		ace_logistics_wirecutter_isFence = 1;
 	};
-    class Land_I44_bwf_6_mlod : I44_SimpleHouse_base {
+    class Land_I44_bwf_6_mlod: LIB_Objects_Wire_base {
 		ace_logistics_wirecutter_isFence = 1;
 	};
-    class Land_WW2_wire_3 : Land_WW2_wire_1 {
+    class Land_WW2_wire_3: LIB_Objects_Wire_base {
 		ace_logistics_wirecutter_isFence = 1;
 	};
 };

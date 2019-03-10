@@ -384,19 +384,20 @@ class CfgWeapons {
 	};
 
     class H_LIB_HelmetB;
-    class H_LIB_GER_LW_PilotHelmet: H_LIB_HelmetB {
+    class H_LIB_Hat;
+    class H_LIB_GER_LW_PilotHelmet: H_LIB_Hat {
         ACE_Protection = 1;
         ace_hearing_protection = 0.50;
         ace_hearing_lowerVolume = 0.60;
     };
 
-    class H_LIB_SOV_TankHelmet: H_LIB_HelmetB {
+    class H_LIB_SOV_TankHelmet: H_LIB_Hat {
         ACE_Protection = 1;
         ace_hearing_protection = 0.50;
         ace_hearing_lowerVolume = 0.60;
     };
 
-    class H_LIB_SOV_PilotHelmet: H_LIB_HelmetB {
+    class H_LIB_SOV_PilotHelmet: H_LIB_Hat {
         ACE_Protection = 1;
         ace_hearing_protection = 0.50;
         ace_hearing_lowerVolume = 0.60;

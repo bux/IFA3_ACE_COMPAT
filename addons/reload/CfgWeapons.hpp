@@ -216,7 +216,7 @@ class CfgWeapons
 		reloadTime = 6;
 		magazineReloadTime = 6;
 	};
-	class LIB_LeFH18_base_L28: LIB_StuK40_L48_base
+	class LIB_LeFH18_base: LIB_StaticGunCannon_base {
 	{
 		reloadTime = 6;
 		magazineReloadTime = 6;

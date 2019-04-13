@@ -77,7 +77,7 @@ class CfgAmmo {
         ACE_standardAtmosphere = "ASM";
         ACE_dragModel = 1;
         ACE_muzzleVelocities[] = {748, 761, 765}; // muzzle velocity 764 m/s at 21°C, 756 m/s at 15°C (2440 fps +/-50 fps at 30 yards with a standart deviation of no more than 40 fps - The Accurate Lee Enfield by Stephen Redgwell)
-        ACE_barrelLengths[] = {508.0, 609.6, 660.4};
+        ACE_barrelLengths[] = {508.0, 609.6, 660.4}; // barrel length 640 mm
         airFriction = -0.00085112; // default -0.00105, ACE3 value -0.00085117 https://github.com/acemod/ACE3/blob/37daf3429dfd71a58a072d4198f094809dff66f6/extras/airFrictionAnalysis.txt#L194
         typicalSpeed = 761; // default 755
 	};

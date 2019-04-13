@@ -162,11 +162,13 @@ class CfgWeapons {
 	
 	class LIB_LeeEnfield_No4: LIB_RIFLE {
         ACE_barrelTwist = 254;
-        ACE_barrelLength = 210;
+        ACE_barrelLength = 640.08;
+        initSpeed = -1.017497 // 743*1.017497= 756 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
 	};
 	
 	class LIB_LeeEnfield_No1: LIB_LeeEnfield_No4 {
-        ACE_barrelLength = 210;
+        ACE_barrelLength = 640.08;
+        initSpeed = -1.017497 // 743*1.017497= 756 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
 	};
 	
 	class LIB_PIAT_Rifle: LIB_RIFLE {
@@ -272,9 +274,15 @@ class CfgWeapons {
         ACE_scopeHeightAboveRail = 3.8;
     };
 
-	class LIB_LeeEnfield_No4_Scoped: LIB_SRIFLE {
-        ACE_barrelTwist = 254;
-        ACE_barrelLength = 210;		
+	class LIB_LeeEnfield_No4_Scoped: LIB_SRIFLE { // Lee Enfield No32 Sniper's Scope http://www.allaboutenfields.co.nz/links-resouces/articles/from-no4mk-i-t-l42-ai/ http://www.rsmscope.com/report_pdf/RSM_No23MKII_Telescope.pdf https://www.youtube.com/watch?v=JlzIc4MzqPs
+        ACE_barrelTwist = 254; // 1:10"
+        ACE_barrelLength = 640.08; // 25.2"
+        ACE_scopeZeroRange = 100;
+        ACE_ScopeAdjust_Vertical[] = {0, 24}; // BDC turret 0-10 x100 yards with IPHY clicks (Inch Per Hundred Yard) for the oldest versions, MOA for the latest, total elevation before zeroing seems to be around 84 MOA approximately 24.43 mRad
+        ACE_ScopeAdjust_Horizontal[] = {-5, 5}; // turret 0-16, +- 16 MOA approximately 4.65 mRad
+        ACE_ScopeAdjust_VerticalIncrement = 0.1; // should be 1 inch at 50 yards http://photos.imageevent.com/badgerdog/britishservicerifles/britishmilitaryaccessories/no32mk1watsonscopeserial1302/sniper-6.jpg
+        ACE_ScopeAdjust_HorizontalIncrement = 0.1; // should be 2 MOA for the oldest versions, 1 MOA for the latest
+        initSpeed = -1.017497 // 743*1.017497= 756 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
 	};
 
     class MGun;

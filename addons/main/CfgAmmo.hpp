@@ -67,17 +67,19 @@ class CfgAmmo {
         ACE_barrelLengths[]={508.0, 609.6, 660.4};
     };
 	
-	class LIB_B_770x56_Ball: LIB_Bullet_base {
-        ACE_caliber=7.92;
-        ACE_bulletLength=34.366;
-        ACE_bulletMass=11.66;
-        ACE_ammoTempMuzzleVelocityShifts[]={-26.55, -25.47, -22.85, -20.12, -16.98, -12.80, -7.64, -1.53, 5.96, 15.17, 26.19};
-        ACE_ballisticCoefficients[]={0.268};
-        ACE_velocityBoundaries[]={};
-        ACE_standardAtmosphere="ICAO";
-        ACE_dragModel=7;
-        ACE_muzzleVelocities[]={865, 900, 924};
-        ACE_barrelLengths[]={508.0, 609.6, 660.4};
+	class LIB_B_770x56_Ball: LIB_Bullet_base { // ACE_303_Ball https://github.com/acemod/ACE3/blob/e5a15d200f44df5fccc0bc5575d18d80b35538dd/extras/CfgAmmoReference.hpp#L412
+        ACE_caliber = 7.92; // https://bobp.cip-bobp.org/uploads/tdcc/tab-ii/tabiical-en-page74.pdf
+        ACE_bulletLength = 31.166;
+        ACE_bulletMass = 11.275; // 174 grains
+        ACE_ammoTempMuzzleVelocityShifts[] = {-26.55, -25.47, -22.85, -20.12, -16.98, -12.80, -7.64, -1.53, 5.96, 15.17, 26.19};
+        ACE_ballisticCoefficients[] = {0.493};
+        ACE_velocityBoundaries[] = {};
+        ACE_standardAtmosphere = "ASM";
+        ACE_dragModel = 1;
+        ACE_muzzleVelocities[] = {748, 761, 765}; // muzzle velocity 764 m/s at 21°C, 756 m/s at 15°C (2440 fps +/-50 fps at 30 yards with a standart deviation of no more than 40 fps - The Accurate Lee Enfield by Stephen Redgwell)
+        ACE_barrelLengths[] = {508.0, 609.6, 660.4};
+        airFriction = -0.00085112; // default -0.00105, ACE3 value -0.00085117 https://github.com/acemod/ACE3/blob/37daf3429dfd71a58a072d4198f094809dff66f6/extras/airFrictionAnalysis.txt#L194
+        typicalSpeed = 761; // default 755
 	};
 	
 	class LIB_B_792x57_Ball: LIB_Bullet_base {

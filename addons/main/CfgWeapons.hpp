@@ -376,7 +376,8 @@ class CfgWeapons {
 		ace_reloadlaunchers_enabled = 0;
 	};
 	
-	class LIB_Bagpipes: LIB_LAUNCHER {
+	class Launcher_Base_F;
+	class LIB_Bagpipes: Launcher_Base_F {
         ace_overpressure_angle = 0;
         ace_overpressure_range = 0;
         ace_overpressure_damage = 0;

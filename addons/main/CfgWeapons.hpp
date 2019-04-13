@@ -284,7 +284,7 @@ class CfgWeapons {
         ACE_ScopeAdjust_HorizontalIncrement = 0.1; // should be 2 MOA for the oldest versions, 1 MOA for the latest
         discreteDistanceInitIndex = 0;
         initSpeed = -1.017497 // 743*1.017497= 756 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
-	};
+    };
 
     class MGun;
     class LIB_MLMG_base;

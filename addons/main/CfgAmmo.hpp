@@ -76,10 +76,10 @@ class CfgAmmo {
         ACE_velocityBoundaries[] = {};
         ACE_standardAtmosphere = "ASM";
         ACE_dragModel = 1;
-        ACE_muzzleVelocities[] = {748, 761, 765}; // muzzle velocity 764 m/s at 21°C, 756 m/s at 15°C (2440 fps +/-50 fps at 30 yards with a standart deviation of no more than 40 fps - The Accurate Lee Enfield by Stephen Redgwell)
+        ACE_muzzleVelocities[] = {751, 764, 768}; // muzzle velocity 767 m/s at 21°C, 759 m/s at 15°C (normal conditions), in-game exactly "2440 fps (743 m/s) +/-50 fps at 30 yards (27.43 m) with a standart deviation of no more than 40 fps" - The Accurate Lee Enfield by Stephen Redgwell)
         ACE_barrelLengths[] = {508.0, 609.6, 660.4}; // barrel length 640 mm
-        airFriction = -0.00085112; // default -0.00105, ACE3 value -0.00085117 https://github.com/acemod/ACE3/blob/37daf3429dfd71a58a072d4198f094809dff66f6/extras/airFrictionAnalysis.txt#L194
-        typicalSpeed = 761; // default 755
+        airFriction = -0.000865; // default -0.00105, ACE3 value -0.00085117 https://github.com/acemod/ACE3/blob/37daf3429dfd71a58a072d4198f094809dff66f6/extras/airFrictionAnalysis.txt#L194
+        typicalSpeed = 759; // default 755
     };
 
     class LIB_B_792x57_Ball: LIB_Bullet_base {
@@ -157,6 +157,7 @@ class CfgAmmo {
     class LIB_4x_SprGr_FlaK_38: LIB_Bullet_AA_base {
         ace_rearm_caliber = 20;
     };
+
     class LIB_SprGr_FlaK_38: LIB_4x_SprGr_FlaK_38 {
         ace_rearm_caliber = 20;
     };
@@ -633,12 +634,13 @@ class CfgAmmo {
         ace_rearm_caliber = 37;
         ace_frag_skip = 1;
     };
+
     class LIB_B_40mm_AP: LIB_Bullet_Plane_base {
         ace_rearm_caliber = 40;
         ace_frag_skip = 1;
     };
 
-    //I44
+    // I44
     class LIB_S_37L57_M74: LIB_Shell_base {
         ace_rearm_caliber = 37;
         ace_frag_skip = 1;
@@ -781,7 +783,7 @@ class CfgAmmo {
         ace_frag_gurney_k = "1/2";
     };
 
-    //I44
+    // I44
     class LIB_S_37L57_M63: LIB_ShellHE_base {
         ace_rearm_caliber = 37;
         ace_frag_enabled = 1;

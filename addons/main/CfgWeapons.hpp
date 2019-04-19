@@ -163,12 +163,12 @@ class CfgWeapons {
     class LIB_LeeEnfield_No4: LIB_RIFLE {
         ACE_barrelTwist = 254;
         ACE_barrelLength = 640.08;
-        initSpeed = -1.02153432; // 743*1.02153432= 759 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
+        initSpeed = -1.02288; // 743*1.02288= 760 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
     };
 
     class LIB_LeeEnfield_No1: LIB_LeeEnfield_No4 {
         ACE_barrelLength = 640.08;
-        initSpeed = -1.02153432; // 743*1.02153432= 759 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
+        initSpeed = -1.02288; // 743*1.02288= 760 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
     };
 
     class LIB_PIAT_Rifle: LIB_RIFLE {
@@ -282,7 +282,7 @@ class CfgWeapons {
         ACE_ScopeAdjust_Horizontal[] = {-5, 5}; // turret 0-16, +- 16 MOA approximately 4.65 mRad
         ACE_ScopeAdjust_VerticalIncrement = 0.1; // should be 1 inch at 50 yards http://photos.imageevent.com/badgerdog/britishservicerifles/britishmilitaryaccessories/no32mk1watsonscopeserial1302/sniper-6.jpg
         ACE_ScopeAdjust_HorizontalIncrement = 0.1; // should be 2 MOA for the oldest versions, 1 MOA for the latest
-        initSpeed = -1.02153432; // 743*1.02153432= 759 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
+        initSpeed = -1.02288; // 743*1.02288= 760 m/s, LIB_10Rnd_770x56 initSpeed according with the Lee-Enfield muzzle velocity at 15°C (normal conditions)
     };
 
     class MGun;

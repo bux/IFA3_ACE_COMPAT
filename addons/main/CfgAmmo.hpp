@@ -78,8 +78,6 @@ class CfgAmmo {
         ACE_dragModel = 1;
         ACE_muzzleVelocities[] = {752, 765, 769}; // muzzle velocity 768 m/s at 21°C, 760 m/s at 15°C (normal conditions), in-game exactly "2440 fps (743 m/s) +/-50 fps at 30 yards (27.43 m) with a standart deviation of no more than 40 fps" - The Accurate Lee Enfield by Stephen Redgwell)
         ACE_barrelLengths[] = {508.0, 609.6, 660.4}; // barrel length 640 mm
-        airFriction = -0.00085276; // default -0.00105, ACE3 value -0.00085117 https://github.com/acemod/ACE3/blob/37daf3429dfd71a58a072d4198f094809dff66f6/extras/airFrictionAnalysis.txt#L194
-        typicalSpeed = 760; // default 755
     };
 
     class LIB_B_792x57_Ball: LIB_Bullet_base {

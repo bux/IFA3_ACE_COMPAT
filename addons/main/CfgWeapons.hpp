@@ -335,24 +335,23 @@ class CfgWeapons {
 	
     class LIB_LAUNCHER;
     class LIB_PzFaust_30m: LIB_LAUNCHER {
-        ACE_UsedTube = "LIB_PzFaust_30m_used";
-        magazines[] = { "LIB_PzFaust_PreloadedMissileDummy" };  // The dummy magazine
+        // ACE_UsedTube = "LIB_PzFaust_30m_used";
+        // magazines[] = { "LIB_PzFaust_PreloadedMissileDummy" };
         ace_overpressure_angle = 45;
         ace_overpressure_range = 5;
         ace_overpressure_damage = 0.3;
     };
-    class LIB_PzFaust_60m: LIB_PzFaust_30m {
-        ACE_UsedTube = "LIB_PzFaust_60m_used";
-        // magazines[] = { "LIB_PzFaust_PreloadedMissileDummy" };  // The dummy magazine
-    };
+    // class LIB_PzFaust_60m: LIB_PzFaust_30m {
+        // ACE_UsedTube = "LIB_PzFaust_60m_used";
+    // };
     // class LIB_Faustpatrone: LIB_PzFaust_30m {};
 
-    class LIB_PzFaust_30m_used: LIB_PzFaust_30m {
-        scope = 1;
-        ACE_isUsedLauncher = 1;
-        magazines[] = { "LIB_PzFaust_FiredMissileDummy" };  // This will disable the used launcher class from being fired again
-        weaponPoolAvailable = 0;
-    };
+    // class LIB_PzFaust_30m_used: LIB_PzFaust_30m {
+        // scope = 1;
+        // ACE_isUsedLauncher = 1;
+        // magazines[] = { "LIB_PzFaust_FiredMissileDummy" };
+        // weaponPoolAvailable = 0;
+    // };
     // class LIB_PzFaust_60m_used: LIB_PzFaust_30m_used {};
 
     class LIB_RPzB: LIB_LAUNCHER {

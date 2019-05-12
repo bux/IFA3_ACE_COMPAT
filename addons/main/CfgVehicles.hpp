@@ -373,7 +373,8 @@ class CfgVehicles {
 
     class LIB_FlakPanzerIV_Wirbelwind: LIB_PzKpfwIV_H_base {
         ace_cookoff_cookoffSelections[] = { "engine_smoke" };
-		// ace_cookoff_turret[] = {"ace_cookoff_Turret_PzKpfwIV_H",{0,-1,0}};
+		ace_cookoff_turret[] = {"",{0,-1,0}};
+		ace_probability = 0.1;
     };	
 	
     class LIB_PzKpfwV_base: LIB_Tank_base {
@@ -445,7 +446,8 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 170;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "engine_smoke" };
-		ace_cookoff_turret[] = {"",{0,-1,0}};
+		ace_probability = 0.1;
+		// ace_cookoff_turret[] = {"",{0,-1,0}};
     };
 	
 	class LIB_Crusader_Base: LIB_Tank_base {};
@@ -464,6 +466,7 @@ class CfgVehicles {
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "engine_smoke" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};
+		ace_probability = 0.1;
     };
 	
 	class LIB_Cromwell_Base: LIB_Tank_base {
@@ -504,6 +507,7 @@ class CfgVehicles {
 	class LIB_UniversalCarrier_base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.37,-1.08}},{"HitEngine", {0,-4.28,-1}},{"HitFuel", {0,1.64,-1.47}},{"HitLTrack", {-1.3,-1.39,-1.6}},{"HitRTrack", {1.3,-1.39,-1.6}} };
         ace_refuel_fuelCapacity = 91;
+		ace_probability = 0;
         ace_cookoff_ammoLocation = "HitTurret";
         ace_cookoff_cookoffSelections[] = { "engine_smoke" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};

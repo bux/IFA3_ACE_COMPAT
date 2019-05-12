@@ -14,16 +14,16 @@ class CfgMagazines {
         ACE_isBelt = 1;
     };
 
-	class LIB_1Rnd_PzFaust_30m;
-	class LIB_PzFaust_PreloadedMissileDummy: LIB_1Rnd_PzFaust_30m {
-        scope = 1;
-        scopeArsenal = 1;
-        weaponPoolAvailable = 0;
-        mass = 0;
-    };
-    class LIB_PzFaust_FiredMissileDummy: LIB_PzFaust_PreloadedMissileDummy {
-        count = 0;
-    };
+	// class LIB_1Rnd_PzFaust_30m;
+	// class LIB_PzFaust_PreloadedMissileDummy: LIB_1Rnd_PzFaust_30m {
+        // scope = 1;
+        // scopeArsenal = 1;
+        // weaponPoolAvailable = 0;
+        // mass = 0;
+    // };
+    // class LIB_PzFaust_FiredMissileDummy: LIB_PzFaust_PreloadedMissileDummy {
+        // count = 0;
+    // };
 
     class LIB_Mine_Magazine: CA_Magazine {
         useAction = 0;

@@ -295,8 +295,8 @@ class CfgVehicles {
 		};
 	};
 
-	class NATO_Box_Base;
-	class LIB_AmmoOrd_F: NATO_Box_Base {
+	class LIB_ReammoBox_base;
+	class LIB_AmmoOrdnance_base: LIB_ReammoBox_base {
 		class TransportMagazines;
 		class eventHandlers {
 			init = "_this call compile preProcessFileLineNumbers ""\z\ifa3_comp_ace\addons\mortar\functions\fnc_init.sqf"";";
@@ -441,7 +441,9 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_82mm_Mo_HE: LIB_AmmoOrd_F {
+
+	class LIB_Box_82mm_Mo_base: LIB_AmmoOrdnance_base {};
+	class LIB_Box_82mm_Mo_HE: LIB_Box_82mm_Mo_base {
 		class TransportMagazines {
 			class _xx_LIB_1rnd_82mmHE_BM37
 			{
@@ -455,7 +457,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_82mm_Mo_Smoke: LIB_Box_82mm_Mo_HE {
+	class LIB_Box_82mm_Mo_Smoke: LIB_Box_82mm_Mo_base {
 		scope = 2;
 		scopeCurator = 2;
 		class TransportMagazines {
@@ -471,7 +473,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_82mm_Mo_Illum: LIB_Box_82mm_Mo_HE {
+	class LIB_Box_82mm_Mo_Illum: LIB_Box_82mm_Mo_base {
 		scope = 2;
 		scopeCurator = 2;
 		class ACE_Actions: ACE_Actions {
@@ -480,7 +482,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_81mm_Mo_HE: LIB_Box_82mm_Mo_HE {
+	class LIB_Box_81mm_Mo_HE: LIB_Box_82mm_Mo_base {
 		scope = 2;
 		class TransportMagazines {
 			class _xx_LIB_1rnd_81mmHE_GRWR34
@@ -520,7 +522,8 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_60mm_Mo_HE: LIB_Box_82mm_Mo_HE {
+	class LIB_Box_60mm_Mo_base: LIB_AmmoOrdnance_base {};
+	class LIB_Box_60mm_Mo_HE: LIB_Box_60mm_Mo_base {
 		scope = 2;
 		scopeCurator = 2;
 		class TransportMagazines {
@@ -536,7 +539,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_60mm_Mo_Smoke: LIB_Box_60mm_Mo_HE {
+	class LIB_Box_60mm_Mo_Smoke: LIB_Box_60mm_Mo_base {
 		scope = 2;
 		scopeCurator = 2;
 		class TransportMagazines {
@@ -552,7 +555,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_60mm_Mo_Illum: LIB_Box_60mm_Mo_HE {
+	class LIB_Box_60mm_Mo_Illum: LIB_Box_60mm_Mo_base {
 		scope = 2;
 		scopeCurator = 2;
 		class ACE_Actions: ACE_Actions {

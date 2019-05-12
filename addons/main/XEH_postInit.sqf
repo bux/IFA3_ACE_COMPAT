@@ -6,5 +6,5 @@ if (isServer) then {
         if (isClass (configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "AnimationSources" >> "ACE_Turret")) then {
             _vehicle animateSource ["ACE_Turret",1];
         };
-    }] call CBA_fnc_addClassEventHandler;
+    }] call CBA_fnc_addEventHandler;
 };

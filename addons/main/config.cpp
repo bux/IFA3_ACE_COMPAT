@@ -18,6 +18,7 @@ class CfgPatches {
     };
 };
 
+#include "Extended_PostInit_EventHandlers.hpp"
 #include "ACE_Triggers.hpp"
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"

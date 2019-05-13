@@ -457,7 +457,7 @@ class CfgVehicles {
         ace_refuel_fuelCapacity = 500;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
-		ace_cookoff_turret[] = {"",{0,-1,0}};
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_Crusader_Mk3",{0,-1,0}};
     };
 	
 	class LIB_Crusader_Mk1AA: LIB_Crusader_Base {

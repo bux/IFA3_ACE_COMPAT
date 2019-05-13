@@ -332,6 +332,30 @@ class CfgVehicles {
 		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\IF_T34_85_destruct_tower.p3d";
 		icon = "\ww2\assets_t\vehicles\icons_t\icon_T34_85_ca.paa";
 	};
+	class ace_cookoff_Turret_Cromwell: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_T34_85";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_Cromwell_Destruct_Tower.p3d";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_T34_85_ca.paa";
+	};
+	class ace_cookoff_Turret_Crusader_Mk3: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_T34_85";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Tanks_m\Proxy\WW2_Crusader_mk3_Destruct_Tower.p3d";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_T34_85_ca.paa";
+	};
+	class ace_cookoff_Turret_SdKfz234_2: ThingX {
+		author = "AWAR";
+		_generalMacro = "ace_cookoff_Turret_SdKfz234_2";
+		scope = 1;
+		displayName = "$STR_ace_cookoff_generic_turret_wreck";
+		model = "\WW2\Assets_m\Vehicles\Trucks_m\Proxy\DA_SdKfz234_2_Destruct_Turret.p3d";
+		icon = "\ww2\assets_t\vehicles\icons_t\icon_T34_85_ca.paa";
+	};
 
     class Tank: LandVehicle
 	{

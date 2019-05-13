@@ -471,7 +471,7 @@ class CfgVehicles {
 	
 	class LIB_Cromwell_Base: LIB_Tank_base {
         ace_repair_hitpointPositions[] = { {"HitHull", {0,1.62,-1.2}},{"HitEngine", {0,-2.7,-0.7}},{"HitFuel", {0,-2.2,-0.7}},{"HitLTrack", {-1.2,-1.1,-1.6}},{"HitRTrack", {1.2,-1.1,-1.6}} };
-        ace_refuel_fuelCapacity = c;
+        ace_refuel_fuelCapacity = 500;
         ace_cookoff_ammoLocation = "HitHull";
         ace_cookoff_cookoffSelections[] = { "hatch_commander" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};

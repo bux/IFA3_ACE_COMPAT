@@ -639,6 +639,12 @@ class CfgVehicles {
 	class LIB_SdKfz234_base: LIB_Truck_base {
         ace_refuel_fuelCapacity = 240;
     };
+	class LIB_SdKfz234_2: LIB_Sdkfz234_base
+	{
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
+		ace_cookoff_turret[] = {"ace_cookoff_Turret_SdKfz234_2",{0,-1,0}};
+	};
 
 	class LIB_AustinK5_base: LIB_Truck_base {
 		ace_refuel_fuelCapacity = 60;

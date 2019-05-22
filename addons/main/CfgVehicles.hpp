@@ -432,6 +432,20 @@ class CfgVehicles {
         ace_cookoff_cookoffSelections[] = { "engine_smoke" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};
 	};
+	
+	class LIB_Churchill_base: LIB_Tank_base {
+		ace_repair_hitpointPositions[] = { {"HitHull", {0,1.37,-1.08}},{"HitEngine", {0,-4.28,-1}},{"HitFuel", {0,1.64,-1.47}},{"HitLTrack", {-1.3,-1.39,-1.6}},{"HitRTrack", {1.3,-1.39,-1.6}} };
+        ace_refuel_fuelCapacity = 150;
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
+		ace_cookoff_turret[] = {"LIB_Churchill_Mk7_Destruct_Tower",{0,-1,0}};
+	};
+	class LIB_Churchill_Mk7_AVRE: LIB_Churchill_base {
+		ace_cookoff_turret[] = {"LIB_Churchill_Mk7_AVRE_Destruct_Tower",{0,-1,0}};
+	};
+	class LIB_Churchill_Mk7_Howitzer: LIB_Churchill_base {
+		ace_cookoff_turret[] = {"LIB_Churchill_Mk7_Howitzer_Destruct_Tower",{0,-1,0}};
+	};
 	// I44 end
 	
     class Car: LandVehicle {

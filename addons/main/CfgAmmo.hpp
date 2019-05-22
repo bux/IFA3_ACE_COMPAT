@@ -69,14 +69,14 @@ class CfgAmmo {
 	
 	class LIB_B_770x56_Ball: LIB_Bullet_base {
         ACE_caliber=7.92;
-        ACE_bulletLength=34.366;
-        ACE_bulletMass=11.66;
+        ACE_bulletLength=31.166;
+        ACE_bulletMass=11.275;
         ACE_ammoTempMuzzleVelocityShifts[]={-26.55, -25.47, -22.85, -20.12, -16.98, -12.80, -7.64, -1.53, 5.96, 15.17, 26.19};
-        ACE_ballisticCoefficients[]={0.268};
+        ACE_ballisticCoefficients[]={0.493};
         ACE_velocityBoundaries[]={};
         ACE_standardAtmosphere="ICAO";
-        ACE_dragModel=7;
-        ACE_muzzleVelocities[]={865, 900, 924};
+        ACE_dragModel=1;
+        ACE_muzzleVelocities[]={752, 765, 769};
         ACE_barrelLengths[]={508.0, 609.6, 660.4};
 	};
 	

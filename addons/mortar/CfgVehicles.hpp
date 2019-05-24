@@ -497,7 +497,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_81mm_Mo_Smoke: LIB_Box_81mm_Mo_HE {
+	class LIB_Box_81mm_Mo_Smoke: LIB_Box_82mm_Mo_base {
 		scope = 2;
 		scopeCurator = 2;
 		class TransportMagazines {
@@ -513,7 +513,7 @@ class CfgVehicles {
 			};
 		};
 	};
-	class LIB_Box_81mm_Mo_Illum: LIB_Box_81mm_Mo_HE {
+	class LIB_Box_81mm_Mo_Illum: LIB_Box_82mm_Mo_base {
 		scope = 2;
 		scopeCurator = 2;
 		class ACE_Actions: ACE_Actions {

@@ -87,34 +87,36 @@ class CfgVehicles
 	};
 	
 	//Mortar Boxes
-	class LIB_Box_82mm_Mo_HE;
-	class LIB_Box_60mm_Mo_HE : LIB_Box_82mm_Mo_HE {
+	class LIB_AmmoOrdnance_base;
+	class LIB_Box_60mm_Mo_base: LIB_AmmoOrdnance_base {};
+	class LIB_Box_82mm_Mo_base: LIB_AmmoOrdnance_base {};
+	class LIB_Box_60mm_Mo_HE : LIB_Box_60mm_Mo_base {
 		scope=2;
 		scopeCurator=2;
 		ace_cargo_size=0.5;
 		ace_cargo_canLoad=1;
 	};
-	class LIB_Box_60mm_Mo_Smoke : LIB_Box_60mm_Mo_HE {
+	class LIB_Box_60mm_Mo_Smoke : LIB_Box_60mm_Mo_base {
 		scope=2;
 		scopeCurator=2;
 		ace_cargo_size=0.5;
 		ace_cargo_canLoad=1;
 	};
-	class LIB_Box_60mm_Mo_Illum : LIB_Box_60mm_Mo_HE {
+	class LIB_Box_60mm_Mo_Illum : LIB_Box_60mm_Mo_base {
 		scope=2;
 		scopeCurator=2;
 		ace_cargo_size=0.5;
 		ace_cargo_canLoad=1;
 	};
-	class LIB_Box_81mm_Mo_HE : LIB_Box_82mm_Mo_HE {
+	class LIB_Box_81mm_Mo_HE : LIB_Box_82mm_Mo_base {
 		ace_cargo_size=1;
 		ace_cargo_canLoad=1;
 	};
-	class LIB_Box_81mm_Mo_Smoke : LIB_Box_81mm_Mo_HE {
+	class LIB_Box_81mm_Mo_Smoke : LIB_Box_82mm_Mo_base {
 		ace_cargo_size=1;
 		ace_cargo_canLoad=1;
 	};
-	class LIB_Box_81mm_Mo_Illum : LIB_Box_81mm_Mo_HE {
+	class LIB_Box_81mm_Mo_Illum : LIB_Box_82mm_Mo_base {
 		ace_cargo_size=1;
 		ace_cargo_canLoad=1;
 	};

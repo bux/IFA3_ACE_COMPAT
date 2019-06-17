@@ -432,6 +432,20 @@ class CfgVehicles {
         ace_cookoff_cookoffSelections[] = { "engine_smoke" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};
 	};
+	
+	class LIB_Churchill_base: LIB_Tank_base {
+		ace_repair_hitpointPositions[] = { {"HitHull", {0,1.37,-1.08}},{"HitEngine", {0,-4.28,-1}},{"HitFuel", {0,1.64,-1.47}},{"HitLTrack", {-1.3,-1.39,-1.6}},{"HitRTrack", {1.3,-1.39,-1.6}} };
+        ace_refuel_fuelCapacity = 150;
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
+		ace_cookoff_turret[] = {"LIB_Churchill_Mk7_Destruct_Tower",{0,-1,0}};
+	};
+	class LIB_Churchill_Mk7_AVRE: LIB_Churchill_base {
+		ace_cookoff_turret[] = {"LIB_Churchill_Mk7_AVRE_Destruct_Tower",{0,-1,0}};
+	};
+	class LIB_Churchill_Mk7_Howitzer: LIB_Churchill_base {
+		ace_cookoff_turret[] = {"LIB_Churchill_Mk7_Howitzer_Destruct_Tower",{0,-1,0}};
+	};
 	// I44 end
 	
     class Car: LandVehicle {
@@ -552,19 +566,6 @@ class CfgVehicles {
         ace_refuel_fuelCargo = 10000;
     };
 
-	class LIB_SdKfz222_base: LIB_Truck_base {
-        ace_refuel_fuelCapacity = 100;
-    };
-	
-	class LIB_SdKfz234_base: LIB_Truck_base {
-        ace_refuel_fuelCapacity = 240;
-    };
-	class LIB_SdKfz234_2: LIB_Sdkfz234_base {
-        ace_cookoff_ammoLocation = "HitHull";
-        ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
-		ace_cookoff_turret[] = {"LIB_SdKfz234_2_Destruct_Tower",{0,-1,0}};
-	};
-
 	class LIB_AustinK5_base: LIB_Truck_base {
 		ace_refuel_fuelCapacity = 60;
 	};
@@ -574,8 +575,24 @@ class CfgVehicles {
         MACRO_REARM_TRUCK_ACTIONS		
 	};
 	
+	class Wheeled_Apc_F;
+	class LIB_ArmouredCar_base: Wheeled_Apc_F {};
+	class LIB_SdKfz222_base: LIB_ArmouredCar_base {
+        ace_refuel_fuelCapacity = 100;
+    };
+	
+	class LIB_SdKfz234_base: LIB_ArmouredCar_base {
+        ace_refuel_fuelCapacity = 240;
+    };
+
+	class LIB_SdKfz234_2: LIB_Sdkfz234_base {
+        ace_cookoff_ammoLocation = "HitHull";
+        ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
+		ace_cookoff_turret[] = {"LIB_SdKfz234_2_Destruct_Tower",{0,-1,0}};
+	};
+
 	// I44
-	class LIB_M8_Greyhound_base: LIB_Truck_base {
+	class LIB_M8_Greyhound_base: LIB_ArmouredCar_base {
         ace_refuel_fuelCapacity = 224;
     };
 	// I44 end

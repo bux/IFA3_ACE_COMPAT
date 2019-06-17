@@ -162,12 +162,10 @@ class CfgWeapons {
 	
 	class LIB_LeeEnfield_No4: LIB_RIFLE {
         ACE_barrelTwist = 254;
-        ACE_barrelLength = 210;
+        ACE_barrelLength = 640.08;
 	};
 	
-	class LIB_LeeEnfield_No1: LIB_LeeEnfield_No4 {
-        ACE_barrelLength = 210;
-	};
+	class LIB_LeeEnfield_No1: LIB_LeeEnfield_No4 {};
 	
 	class LIB_PIAT_Rifle: LIB_RIFLE {
 		ACE_Overheating_JamChance = 0;
@@ -274,7 +272,12 @@ class CfgWeapons {
 
 	class LIB_LeeEnfield_No4_Scoped: LIB_SRIFLE {
         ACE_barrelTwist = 254;
-        ACE_barrelLength = 210;		
+        ACE_barrelLength = 640.08;
+        ACE_scopeZeroRange = 100;
+        ACE_ScopeAdjust_Vertical[] = {0, 24};
+        ACE_ScopeAdjust_Horizontal[] = {-5, 5};
+        ACE_ScopeAdjust_VerticalIncrement = 0.1;
+        ACE_ScopeAdjust_HorizontalIncrement = 0.1; 
 	};
 
     class MGun;

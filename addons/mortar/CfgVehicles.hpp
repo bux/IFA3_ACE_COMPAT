@@ -442,7 +442,15 @@ class CfgVehicles {
 		};
 	};
 
-	class LIB_Box_82mm_Mo_base: LIB_AmmoOrdnance_base {};
+	class LIB_Box_82mm_Mo_base: LIB_AmmoOrdnance_base {
+        ace_canCarry = 1;
+        ace_carryPosition[] = {0,1.2,0};
+        ace_carryDirection = 0;
+
+        ace_canDrag = 1;
+        ace_dragPosition[] = {0,1.2,0};
+		ace_dragDirection = 0;
+	};
 	class LIB_Box_82mm_Mo_HE: LIB_Box_82mm_Mo_base {
 		class TransportMagazines {
 			class _xx_LIB_1rnd_82mmHE_BM37

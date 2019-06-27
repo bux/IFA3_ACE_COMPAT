@@ -297,6 +297,14 @@ class CfgVehicles {
 
 	class LIB_ReammoBox_base;
 	class LIB_AmmoOrdnance_base: LIB_ReammoBox_base {
+        ace_dragging_cancarry = 1;
+        ace_dragging_carryposition[] = {0,1.2,0};
+        ace_dragging_carryDirection = 0;
+
+        ace_dragging_canDrag = 1;
+        ace_dragging_dragposition[] = {0,1.2,0};
+		ace_dragging_dragdirection = 0;
+		
 		class TransportMagazines;
 		class eventHandlers {
 			init = "_this call compile preProcessFileLineNumbers ""\z\ifa3_comp_ace\addons\mortar\functions\fnc_init.sqf"";";
@@ -442,15 +450,7 @@ class CfgVehicles {
 		};
 	};
 
-	class LIB_Box_82mm_Mo_base: LIB_AmmoOrdnance_base {
-        ace_canCarry = 1;
-        ace_carryPosition[] = {0,1.2,0};
-        ace_carryDirection = 0;
-
-        ace_canDrag = 1;
-        ace_dragPosition[] = {0,1.2,0};
-		ace_dragDirection = 0;
-	};
+	class LIB_Box_82mm_Mo_base: LIB_AmmoOrdnance_base {};
 	class LIB_Box_82mm_Mo_HE: LIB_Box_82mm_Mo_base {
 		class TransportMagazines {
 			class _xx_LIB_1rnd_82mmHE_BM37

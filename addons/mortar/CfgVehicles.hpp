@@ -236,12 +236,12 @@ class CfgVehicles {
 
 	class LIB_ReammoBox_base;
 	class LIB_AmmoOrdnance_base: LIB_ReammoBox_base {
-        ace_dragging_cancarry = 1;
-        ace_dragging_carryposition[] = {0,1.2,0};
-        ace_dragging_carryDirection = 0;
+		ace_dragging_cancarry = 1;
+		ace_dragging_carryposition[] = {0,1.2,0};
+		ace_dragging_carryDirection = 0;
 
-        ace_dragging_canDrag = 1;
-        ace_dragging_dragposition[] = {0,1.2,0};
+		ace_dragging_canDrag = 1;
+		ace_dragging_dragposition[] = {0,1.2,0};
 		ace_dragging_dragdirection = 0;
 
 		class TransportMagazines;

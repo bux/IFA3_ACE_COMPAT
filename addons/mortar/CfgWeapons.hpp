@@ -4,6 +4,7 @@ class CfgWeapons
 	class mortar_82mm: CannonCore {
 		class Single1;
 	};
+
 	class LIB_BM37_ACE: mortar_82mm {
 		author = "IFA3 Team";
 		displayname = "$STR_DN_LIB_BM37";
@@ -15,6 +16,7 @@ class CfgWeapons
 			reloadTime = 0.5;
 		};
 	};
+
 	class LIB_GrWr34_ACE: mortar_82mm {
 		author = "IFA3 Team";
 		displayname = "$STR_DN_LIB_GRWR34";
@@ -26,6 +28,7 @@ class CfgWeapons
 			reloadTime = 0.5;
 		};
 	};
+
 	class LIB_M2_60_ACE: mortar_82mm {
 		author = "IFA3 Team";
 		displayname = "$STR_DN_LIB_M2_60";

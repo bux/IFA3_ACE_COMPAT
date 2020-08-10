@@ -23,5 +23,6 @@ class BaseSoundModeType;
 
 #include "CfgAmmo.hpp"
 #include "CfgMagazines.hpp"
+#include "CfgMagazineGroups.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"

@@ -6,7 +6,12 @@ class CfgVehicles {
 	class LIB_US_Mortar_base;
 	class LIB_M2_60: LIB_US_Mortar_base {scope=1;};
 
-	class StaticWeapon;
+	class LandVehicle;
+	class StaticWeapon: LandVehicle {
+		class ACE_Actions {
+			class ACE_MainActions;
+		};
+	};
 	class StaticMortar: StaticWeapon
 	{
 		class Turrets;
@@ -66,6 +71,7 @@ class CfgVehicles {
 		};
 		class ACE_Actions;
 	};
+
 	class LIB_GrWr34_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
 		scopeCurator = 2;
@@ -87,51 +93,28 @@ class CfgVehicles {
 			class MainTurret: MainTurret
 			{
 				weapons[] = {"LIB_GrWr34_ACE"};
+				magazines[] = {};
 			};
 		};
+
+		// ACE CSW Compat
 		class ACE_Actions: ACE_Actions
 		{
-			class ace_mk6mortar_unloadMagazine
+			class ACE_MainActions;
+		};
+		class ace_csw
 			{
-				displayName = "$STR_ace_mk6mortar_unloadMortar";
-				distance = 2;
-				condition = "_this call ace_mk6mortar_fnc_canUnloadMagazine";
-				statement = "[_target,_player,5] call ace_mk6mortar_fnc_unloadMagazineTimer";
-				icon = "";
-				selection = "usti hlavne";
-			};
-			class ace_mk6mortar_LoadActions
-			{
-				displayName = "$STR_ace_mk6mortar_loadMortar";
-				distance = 2;
-				condition = "[_target,_player] call ace_mk6mortar_fnc_canLoadMagazine";
-				statement = "";
-				icon = "";
-				selection = "usti hlavne";
-				class ace_mk6mortar_loadMagazine_Illum
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_Illum";
-					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,5,'LIB_1Rnd_81mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-				class ace_mk6mortar_loadMagazine_Smoke
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_Smoke";
-					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'LIB_1Rnd_81mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-				class ace_mk6mortar_loadMagazine_HE
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_HE";
-					condition = "[_target,_player,'LIB_1Rnd_81mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'LIB_1Rnd_81mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-			};
+				enabled = 1;
+				magazineLocation = "_target selectionPosition 'otochlaven'";
+				proxyWeapon = "LIB_GrWr34_ACE";
+				disassembleWeapon = "LIB_GrWr34_Barrel"; // carry weapon [CfgWeapons]
+				disassembleTurret = "LIB_GrWr34_Tripod_Deployed"; // turret [CfgVehicles]
+				desiredAmmo = 1; // Ammo count when fully loaded
+				ammoLoadTime = 3; // Time to load ammo in
+				ammoUnloadTime = 5; // Time to retreive ammo from weapon
 		};
 	};
+
 	class LIB_BM37_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
 		scopeCurator = 2;
@@ -153,51 +136,28 @@ class CfgVehicles {
 			class MainTurret: MainTurret
 			{
 				weapons[] = {"LIB_BM37_ACE"};
+				magazines[] = {};
 			};
 		};
+
+		// ACE CSW Compat
 		class ACE_Actions: ACE_Actions
 		{
-			class ace_mk6mortar_unloadMagazine
+			class ACE_MainActions;
+		};
+		class ace_csw
 			{
-				displayName = "$STR_ace_mk6mortar_unloadMortar";
-				distance = 2;
-				condition = "_this call ace_mk6mortar_fnc_canUnloadMagazine";
-				statement = "[_target,_player,5] call ace_mk6mortar_fnc_unloadMagazineTimer";
-				icon = "";
-				selection = "usti hlavne";
-			};
-			class ace_mk6mortar_LoadActions
-			{
-				displayName = "$STR_ace_mk6mortar_loadMortar";
-				distance = 2;
-				condition = "[_target,_player] call ace_mk6mortar_fnc_canLoadMagazine";
-				statement = "";
-				icon = "";
-				selection = "usti hlavne";
-				class ace_mk6mortar_loadMagazine_Illum
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_Illum";
-					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,5,'LIB_1Rnd_82mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-				class ace_mk6mortar_loadMagazine_Smoke
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_Smoke";
-					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'LIB_1Rnd_82mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-				class ace_mk6mortar_loadMagazine_HE
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_HE";
-					condition = "[_target,_player,'LIB_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'LIB_1Rnd_82mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-			};
+				enabled = 1;
+				magazineLocation = "_target selectionPosition 'otochlaven'";
+				proxyWeapon = "LIB_BM37_ACE";
+				disassembleWeapon = "LIB_BM37_Barrel"; // carry weapon [CfgWeapons]
+				disassembleTurret = "LIB_BM37_Tripod_Deployed"; // turret [CfgVehicles]
+				desiredAmmo = 1;
+				ammoLoadTime = 3;
+				ammoUnloadTime = 5;
 		};
 	};
+
 	class LIB_M2_60_ACE: LIB_Mortar_base_ACE {
 		scope = 2;
 		scopeCurator = 2;
@@ -219,50 +179,26 @@ class CfgVehicles {
 			class MainTurret: MainTurret
 			{
 				weapons[] = {"LIB_M2_60_ACE"};
+				magazines[] = {};
 				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_M4_Mortar_Sight.p3d";
 			};
 		};
+
+		// ACE CSW Compat
 		class ACE_Actions: ACE_Actions
 		{
-			class ace_mk6mortar_unloadMagazine
+			class ACE_MainActions;
+		};
+		class ace_csw
 			{
-				displayName = "$STR_ace_mk6mortar_unloadMortar";
-				distance = 2;
-				condition = "_this call ace_mk6mortar_fnc_canUnloadMagazine";
-				statement = "[_target,_player,5] call ace_mk6mortar_fnc_unloadMagazineTimer";
-				icon = "";
-				selection = "usti hlavne";
-			};
-			class ace_mk6mortar_LoadActions
-			{
-				displayName = "$STR_ace_mk6mortar_loadMortar";
-				distance = 2;
-				condition = "[_target,_player] call ace_mk6mortar_fnc_canLoadMagazine";
-				statement = "";
-				icon = "";
-				selection = "usti hlavne";
-				class ace_mk6mortar_loadMagazine_Illum
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_Illum";
-					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_Illum'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,5,'LIB_1Rnd_60mm_Mo_Illum'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-				class ace_mk6mortar_loadMagazine_Smoke
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_Smoke";
-					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_Smoke'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'LIB_1Rnd_60mm_Mo_Smoke'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-				class ace_mk6mortar_loadMagazine_HE
-				{
-					displayName = "$STR_ace_mk6mortar_loadMagazine_HE";
-					condition = "[_target,_player,'LIB_1Rnd_60mm_Mo_HE'] call ace_mk6mortar_fnc_canLoadMagazine";
-					statement = "[_target,_player,2.5,'LIB_1Rnd_60mm_Mo_HE'] call ace_mk6mortar_fnc_loadMagazineTimer";
-					icon = "";
-				};
-			};
+				enabled = 1;
+				magazineLocation = "_target selectionPosition 'otochlaven'";
+				proxyWeapon = "LIB_M2_60_ACE";
+				disassembleWeapon = "LIB_M2_60_Barrel"; // carry weapon [CfgWeapons]
+				disassembleTurret = "LIB_M2_60_Tripod_Deployed"; // turret [CfgVehicles]
+				desiredAmmo = 1;
+				ammoLoadTime = 3;
+				ammoUnloadTime = 5;
 		};
 	};
 
@@ -277,6 +213,7 @@ class CfgVehicles {
 				assembleTo = "LIB_BM37_ACE";
 			};
 		};
+		class ace_csw { disassembleTo = "LIB_BM37_Tripod"; }; // What will be spawned when "Pickup Tripod" is selected
 	};
 	class LIB_GrWr34_Tripod_Deployed: LIB_Tripod_Bag {
 		class assembleInfo: assembleInfo {
@@ -285,6 +222,7 @@ class CfgVehicles {
 				assembleTo = "LIB_GrWr34_ACE";
 			};
 		};
+		class ace_csw { disassembleTo = "LIB_GrWr34_Tripod"; }; // What will be spawned when "Pickup Tripod" is selected
 	};
 	class LIB_M2_60_Tripod_Deployed: LIB_Tripod_Bag {
 		class assembleInfo: assembleInfo {
@@ -293,6 +231,7 @@ class CfgVehicles {
 				assembleTo = "LIB_M2_60_ACE";
 			};
 		};
+		class ace_csw { disassembleTo = "LIB_M2_60_Tripod"; }; // What will be spawned when "Pickup Tripod" is selected
 	};
 
 	class LIB_ReammoBox_base;

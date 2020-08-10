@@ -243,7 +243,7 @@ class CfgVehicles {
         ace_dragging_canDrag = 1;
         ace_dragging_dragposition[] = {0,1.2,0};
 		ace_dragging_dragdirection = 0;
-		
+
 		class TransportMagazines;
 		class eventHandlers {
 			init = "_this call compile preProcessFileLineNumbers ""\z\ifa3_comp_ace\addons\mortar\functions\fnc_init.sqf"";";

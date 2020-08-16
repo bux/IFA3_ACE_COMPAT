@@ -43,42 +43,9 @@ class CfgVehicles {
 		};	
 	};
 
-	class LIB_GrWr34_ACE: LIB_GrWr34 {
-		scope = 1;
-		// class Turrets: Turrets
-		// {
-			// class MainTurret: MainTurret
-			// {
-				// weapons[] = {"LIB_GrWr34_ACE"};
-				// magazines[] = {};
-			// };
-		// };
-	};
-
-	class LIB_BM37_ACE: LIB_BM37 {
-		scope = 1;
-		// class Turrets: Turrets
-		// {
-			// class MainTurret: MainTurret
-			// {
-				// weapons[] = {"LIB_BM37_ACE"};
-				// magazines[] = {};
-			// };
-		// };
-	};
-
-	class LIB_M2_60_ACE: LIB_M2_60 {
-		scope = 1;
-		// class Turrets: Turrets
-		// {
-			// class MainTurret: MainTurret
-			// {
-				// weapons[] = {"LIB_M2_60_ACE"};
-				// magazines[] = {};
-				// gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_M4_Mortar_Sight.p3d";
-			// };
-		// };
-	};
+	class LIB_GrWr34_ACE: LIB_GrWr34 {scope = 1;};
+	class LIB_BM37_ACE: LIB_BM37 {scope = 1;};
+	class LIB_M2_60_ACE: LIB_M2_60 {scope = 1;};
 
 	class B_LIB_AssaultPack_Base;
 	class LIB_Tripod_Bag: B_LIB_AssaultPack_Base {

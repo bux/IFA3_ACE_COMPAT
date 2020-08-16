@@ -34,7 +34,7 @@ class CfgVehicles {
 		class ace_csw {
 			enabled = 1;
 			magazineLocation = "_target selectionPosition 'usti hlavne'";
-			proxyWeapon = "LIB_M2_60_ACE";
+			proxyWeapon = "LIB_M2_60";
 			disassembleWeapon = "LIB_M2_60_Barrel";
 			disassembleTurret = "LIB_M2_60_Tripod_Deployed";
 			desiredAmmo = 1;

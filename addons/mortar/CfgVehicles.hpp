@@ -1,236 +1,159 @@
 class CfgVehicles {
-	class LIB_SU_Mortar_base;
-	class LIB_BM37: LIB_SU_Mortar_base {scope=1;};
-	class LIB_GER_Mortar_base;
-	class LIB_GrWr34: LIB_GER_Mortar_base {scope=1;};
-	class LIB_US_Mortar_base;
-	class LIB_M2_60: LIB_US_Mortar_base {scope=1;};
-
 	class LandVehicle;
 	class StaticWeapon: LandVehicle {
-		class ACE_Actions {
-			class ACE_MainActions;
-		};
+			class ACE_Actions {
+					class ACE_MainActions;
+			};
 	};
 	class StaticMortar: StaticWeapon
 	{
-		class Turrets;
+		class Eventhandlers;
 	};
-	class Mortar_01_base_F: StaticMortar
+	class LIB_StaticMortar_base: StaticMortar
 	{
-		class EventHandlers;
-		class Turrets: Turrets
+		class EventHandlers: EventHandlers
 		{
-			class MainTurret;
-		};
-	};
-	class LIB_Mortar_base_ACE: Mortar_01_base_F {
-		scope = 0;
-		expansion = 1;
-		transportSoldier = 1;
-		cargoAction[] = {"LIB_mortar_gunner_2"};
-		mapSize = 3;
-		class Library
-		{
-			libTextDesc = "";
-		};
-		class Eventhandlers: Eventhandlers
-		{
-			class IFA3_Weapons_Static_fnc_fired_EH
-			{
-				fired = "_this call LIB_Weapons_Static_fnc_fired_EH";
-			};
 			class IFA3_Weapons_Static
 			{
-				init = "[(_this select 0),[],true] spawn LIB_Weapons_Static_fnc_init_EH";
+				init = "";
 			};
-			class IFA3_Weapons_Static_fnc_GetOut_EH
+			class LIB_StaticWeaponsHandler
 			{
-				GetOut = "[(_this select 0),(_this select 1),(_this select 2),'AmovPknlMstpSnonWnonDnon'] call LIB_Weapons_Static_fnc_GetOut_EH";
+				init = "";
 			};
 		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"LIB_GrWr34_ACE"};
-				gunnerAction = "LIB_mortar_gunner_1";
-				discreteDistance[] = {};
-				discreteDistanceInitIndex = 0;
-				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\IF_Optika_Zis3.p3d";
-				gunnerOpticsEffect[] = {"TankGunnerOptics2","OpticsBlur1","OpticsCHAbera1"};
-			};
+	};
+	class LIB_SU_Mortar_base: LIB_StaticMortar_base {};
+	class LIB_BM37: LIB_SU_Mortar_base {
+		class ACE_Actions: ACE_Actions {
+				class ACE_MainActions: ACE_MainActions {
+						position = "";
+						selection = "gunnerview";
+				};
 		};
-		class assembleInfo
-		{
-			primary = 0;
-			base = "";
-			assembleTo = "";
-			dissasembleTo[] = {};
-			displayName = "";
+		class UserActions {
+			delete Reload;
+			delete Prepare_HE_Selected;
+			delete Prepare_Smoke_Selected;
+			delete Prepare_Smoke;
+			delete Prepare_HE;
+			delete Unload;
 		};
-		class ACE_Actions;
+		class ace_csw {
+			enabled = 1;
+			magazineLocation = "_target selectionPosition 'usti hlavne'";
+			proxyWeapon = "LIB_BM37";
+			disassembleWeapon = "LIB_BM37_Barrel";
+			disassembleTurret = "ACE_LIB_BM37_Tripod_Deployed";
+			desiredAmmo = 1;
+			ammoLoadTime = 3;
+			ammoUnloadTime = 5;
+		};
+	};
+	class LIB_GER_Mortar_base: LIB_StaticMortar_base {};
+	class LIB_GrWr34: LIB_GER_Mortar_base {
+		class ACE_Actions: ACE_Actions {
+				class ACE_MainActions: ACE_MainActions {
+						position = "";
+						selection = "gunnerview";
+				};
+		};
+		class UserActions {
+			delete Reload;
+			delete Prepare_HE_Selected;
+			delete Prepare_Smoke_Selected;
+			delete Prepare_Smoke;
+			delete Prepare_HE;
+			delete Unload;
+		};
+		class ace_csw {
+			enabled = 1;
+			magazineLocation = "_target selectionPosition 'usti hlavne'";
+			proxyWeapon = "LIB_GrWr34";
+			disassembleWeapon = "LIB_GrWr34_Barrel"; // carry weapon [CfgWeapons]
+			disassembleTurret = "ACE_LIB_GrWr34_Tripod_Deployed"; // turret [CfgVehicles]
+			desiredAmmo = 1; // Ammo count when fully loaded
+			ammoLoadTime = 3; // Time to load ammo in
+			ammoUnloadTime = 5; // Time to retreive ammo from weapon
+		};
+	};
+	class LIB_US_Mortar_base: LIB_StaticMortar_base {};
+	class LIB_M2_60: LIB_US_Mortar_base {
+		class ACE_Actions: ACE_Actions {
+				class ACE_MainActions: ACE_MainActions {
+						position = "";
+						selection = "gunnerview";
+				};
+		};
+		class UserActions {
+			delete Reload;
+			delete Prepare_HE_Selected;
+			delete Prepare_Smoke_Selected;
+			delete Prepare_WP_Selected;
+			delete Prepare_WP;
+			delete Prepare_Smoke;
+			delete Prepare_HE;
+			delete Unload;
+		};
+		class ace_csw {
+			enabled = 1;
+			magazineLocation = "_target selectionPosition 'usti hlavne'";
+			proxyWeapon = "LIB_M2_60";
+			disassembleWeapon = "LIB_M2_60_Barrel";
+			disassembleTurret = "ACE_LIB_M2_60_Tripod_Deployed";
+			desiredAmmo = 1;
+			ammoLoadTime = 3;
+			ammoUnloadTime = 5;
+		};
 	};
 
-	class LIB_GrWr34_ACE: LIB_Mortar_base_ACE {
+	class LIB_GrWr34_ACE: LIB_GrWr34 {scope = 1;};
+	class LIB_BM37_ACE: LIB_BM37 {scope = 1;};
+	class LIB_M2_60_ACE: LIB_M2_60 {scope = 1;};
+
+	class ThingX;
+	class ace_csw_baseTripod: ThingX {
+		class ACE_Actions {
+				class ACE_MainActions {};
+		};
+	};
+	class ACE_LIB_BM37_Tripod_Deployed: ace_csw_baseTripod {
+		class ACE_Actions: ACE_Actions {
+				class ACE_MainActions: ACE_MainActions {
+					displayName = "$STR_DN_LIB_BM37_TRI";
+				};
+		};
+		author = "AWAR";
 		scope = 2;
-		scopeCurator = 2;
-		side = 1;
-		faction = "LIB_WEHRMACHT";
-		crew = "LIB_GER_gun_crew";
-		typicalCargo[] = {"LIB_GER_gun_crew"};
-		displayName = "$STR_LIB_DN_GRWR34_ACE";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_GrWr34.p3d";
-		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_GrWr34_ca.paa";
-		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_GrWr34_ca.paa";
-		class assembleInfo: assembleInfo
-		{
-			LIB_dissasembleTo[] = {"LIB_GrWr34_Barrel","LIB_GrWr34_Tripod_Deployed"};
-			deployTime = 12;
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"LIB_GrWr34_ACE"};
-				magazines[] = {};
-			};
-		};
-
-		// ACE CSW Compat
-		class ACE_Actions: ACE_Actions
-		{
-			class ACE_MainActions;
-		};
-		class ace_csw
-			{
-				enabled = 1;
-				magazineLocation = "_target selectionPosition 'otochlaven'";
-				proxyWeapon = "LIB_GrWr34_ACE";
-				disassembleWeapon = "LIB_GrWr34_Barrel"; // carry weapon [CfgWeapons]
-				disassembleTurret = "LIB_GrWr34_Tripod_Deployed"; // turret [CfgVehicles]
-				desiredAmmo = 1; // Ammo count when fully loaded
-				ammoLoadTime = 3; // Time to load ammo in
-				ammoUnloadTime = 5; // Time to retreive ammo from weapon
-		};
-	};
-
-	class LIB_BM37_ACE: LIB_Mortar_base_ACE {
-		scope = 2;
-		scopeCurator = 2;
-		side = 0;
-		faction = "LIB_RKKA";
-		crew = "LIB_SOV_gun_crew";
-		typicalCargo[] = {"LIB_SOV_gun_crew"};
-		displayName = "$STR_LIB_DN_BM37_ACE";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_Bm37.p3d";
-		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_Bm37_ca.paa";
-		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_BM37_ca.paa";
-		class assembleInfo: assembleInfo
-		{
-			LIB_dissasembleTo[] = {"LIB_BM37_Barrel","LIB_BM37_Tripod_Deployed"};
-			deployTime = 13;
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"LIB_BM37_ACE"};
-				magazines[] = {};
-			};
-		};
-
-		// ACE CSW Compat
-		class ACE_Actions: ACE_Actions
-		{
-			class ACE_MainActions;
-		};
-		class ace_csw
-			{
-				enabled = 1;
-				magazineLocation = "_target selectionPosition 'otochlaven'";
-				proxyWeapon = "LIB_BM37_ACE";
-				disassembleWeapon = "LIB_BM37_Barrel"; // carry weapon [CfgWeapons]
-				disassembleTurret = "LIB_BM37_Tripod_Deployed"; // turret [CfgVehicles]
-				desiredAmmo = 1;
-				ammoLoadTime = 3;
-				ammoUnloadTime = 5;
-		};
-	};
-
-	class LIB_M2_60_ACE: LIB_Mortar_base_ACE {
-		scope = 2;
-		scopeCurator = 2;
-		side = 2;
-		faction = "LIB_US_ARMY";
-		crew = "LIB_US_corporal";
-		typicalCargo[] = {"LIB_US_corporal"};
-		displayName = "$STR_LIB_DN_M2_60_ACE";
-		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_M2.p3d";
-		icon = "\WW2\Assets_t\Weapons\Icons_t\Mortars\Icon_M2_ca.paa";
-		picture = "\WW2\Assets_t\Vehicles\Pictures_t\LIB_M2_60_ca.paa";
-		class assembleInfo: assembleInfo
-		{
-			LIB_dissasembleTo[] = {"LIB_M2_60_Barrel","LIB_M2_60_Tripod_Deployed"};
-			deployTime = 8;
-		};
-		class Turrets: Turrets
-		{
-			class MainTurret: MainTurret
-			{
-				weapons[] = {"LIB_M2_60_ACE"};
-				magazines[] = {};
-				gunnerOpticsModel = "\WW2\Assets_m\Vehicles\Optics_m\WW2_M4_Mortar_Sight.p3d";
-			};
-		};
-
-		// ACE CSW Compat
-		class ACE_Actions: ACE_Actions
-		{
-			class ACE_MainActions;
-		};
-		class ace_csw
-			{
-				enabled = 1;
-				magazineLocation = "_target selectionPosition 'otochlaven'";
-				proxyWeapon = "LIB_M2_60_ACE";
-				disassembleWeapon = "LIB_M2_60_Barrel"; // carry weapon [CfgWeapons]
-				disassembleTurret = "LIB_M2_60_Tripod_Deployed"; // turret [CfgVehicles]
-				desiredAmmo = 1;
-				ammoLoadTime = 3;
-				ammoUnloadTime = 5;
-		};
-	};
-
-	class B_LIB_AssaultPack_Base;
-	class LIB_Tripod_Bag: B_LIB_AssaultPack_Base {
-		class assembleInfo;
-	};
-	class LIB_BM37_Tripod_Deployed: LIB_Tripod_Bag {
-		class assembleInfo: assembleInfo {
-			class LIB_BM37_Barrel {
-				deployTime = 10;
-				assembleTo = "LIB_BM37_ACE";
-			};
-		};
+		displayName = "$STR_DN_LIB_BM37_TRI";
+		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_Bm37_Disas.p3d";
+		picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_BM37_Tripod_X_ca.paa";
 		class ace_csw { disassembleTo = "LIB_BM37_Tripod"; }; // What will be spawned when "Pickup Tripod" is selected
 	};
-	class LIB_GrWr34_Tripod_Deployed: LIB_Tripod_Bag {
-		class assembleInfo: assembleInfo {
-			class LIB_GrWr34_Barrel {
-				deployTime = 10;
-				assembleTo = "LIB_GrWr34_ACE";
-			};
+	class ACE_LIB_GrWr34_Tripod_Deployed: ace_csw_baseTripod {
+		class ACE_Actions: ACE_Actions {
+				class ACE_MainActions: ACE_MainActions {
+					displayName = "$STR_DN_LIB_GRWR34_TRI";
+				};
 		};
+		author = "AWAR";
+		scope = 2;
+		displayName = "$STR_DN_LIB_GRWR34_TRI";
+		picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_GrWr34_Tripod_X_ca.paa";
+		model = "\WW2\Assets_m\Weapons\Mortars_m\IF_GrWr34_Disas.p3d";
 		class ace_csw { disassembleTo = "LIB_GrWr34_Tripod"; }; // What will be spawned when "Pickup Tripod" is selected
 	};
-	class LIB_M2_60_Tripod_Deployed: LIB_Tripod_Bag {
-		class assembleInfo: assembleInfo {
-			class LIB_M2_60_Barrel {
-				deployTime = 8;
-				assembleTo = "LIB_M2_60_ACE";
-			};
+	class ACE_LIB_M2_60_Tripod_Deployed: ace_csw_baseTripod {
+		class ACE_Actions: ACE_Actions {
+				class ACE_MainActions: ACE_MainActions {
+					displayName = "$STR_DN_LIB_M2_60_TRI";
+				};
 		};
+		author = "IFA3 Team";
+		scope = 2;
+		displayName = "$STR_DN_LIB_M2_60_TRI";
+		picture = "\WW2\Assets_t\Weapons\Equipment_t\Weapons\Launchers\Gear_M2_Tripod_X_ca.paa";
+		model = "\WW2\Assets_m\Weapons\Mortars_m\WW2_M2_Disas.p3d";
 		class ace_csw { disassembleTo = "LIB_M2_60_Tripod"; }; // What will be spawned when "Pickup Tripod" is selected
 	};
 

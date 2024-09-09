@@ -197,16 +197,49 @@ class CfgVehicles {
         ace_dragging_dragDirection = 0;
     };
 
+    //Backpacks
 
     class B_LIB_AssaultPack_Base;
+    class B_LIB_US_Backpack_RocketBag;
+    class B_LIB_GER_Backpack;
+
+    class B_LIB_GER_SapperBackpack_empty: B_LIB_GER_Backpack {
+        ace_trenches_entrenchingTool = 1;
+    };
+    class B_LIB_US_Backpack: B_LIB_AssaultPack_Base {
+        ace_trenches_entrenchingTool = 1;
+    };
+    class B_LIB_US_Backpack_Bandoleer: B_LIB_US_Backpack {
+        ace_trenches_entrenchingTool = 1;
+    };
+    class B_LIB_US_Backpack_dday: B_LIB_US_Backpack {
+        ace_trenches_entrenchingTool = 1;
+    };
+    class B_LIB_US_Backpack_Mk2: B_LIB_US_Backpack {
+        ace_trenches_entrenchingTool = 1;
+    };
+    class B_LIB_US_Backpack_RocketBag_Empty: B_LIB_US_Backpack_RocketBag {
+        ace_trenches_entrenchingTool = 1;
+    };
+   
     class B_LIB_GER_LW_Paradrop: B_LIB_AssaultPack_Base {
         ace_hasReserveParachute = 1;
-        ace_reserveParachute = "ACE_ReserveParachute";
+        ace_reserveParachute = "ACE_NonSteerableParachute";
+    };
+
+    class B_LIB_US_Type5: B_LIB_AssaultPack_Base {
+        ace_hasReserveParachute = 1;
+        ace_reserveParachute = "ACE_NonSteerableParachute";
+    };
+
+    class B_LIB_US_TypeA3: B_LIB_AssaultPack_Base {
+        ace_hasReserveParachute = 1;
+        ace_reserveParachute = "ACE_NonSteerableParachute";
     };
 
     class B_LIB_SOV_RA_Paradrop: B_LIB_AssaultPack_Base {
         ace_hasReserveParachute = 1;
-        ace_reserveParachute = "ACE_ReserveParachute";
+        ace_reserveParachute = "ACE_NonSteerableParachute";
     };
 	class Thing;
 	class LIB_ParachuteLanded_base: Thing
@@ -215,6 +248,8 @@ class CfgVehicles {
         ace_reserveParachute = "";
 	};
 	
+
+    // Planes
     class LIB_Plane_base;
     class LIB_SU_Plane_base: LIB_Plane_base {};
     class LIB_GER_Plane_base: LIB_Plane_base {};
@@ -407,7 +442,7 @@ class CfgVehicles {
 	class LIB_M5A1_Stuart: LIB_M3A3_Stuart {};
 	
 	class LIB_M4A3_76: LIB_M4A3_75 {
-        ace_repair_hitpointPositions[] = { {"HitHull", [0,2.4,-0.2]},{"HitEngine", [0,-2.4,0.15]},{"HitFuel", [0,-1.8,0.15]},{"HitLTrack", [-1.1,0,-0.6]},{"HitRTrack", [1.1,0,-0.6]} };
+        ace_repair_hitpointPositions[] = { {"HitHull", {0,2.4,-0.2}},{"HitEngine", {0,-2.4,0.15}},{"HitFuel", {0,-1.8,0.15}},{"HitLTrack", {-1.1,0,-0.6}},{"HitRTrack", {1.1,0,-0.6}} };
         ace_cookoff_cookoffSelections[] = { "hatchFire_commander" };
 		ace_cookoff_turret[] = {"",{0,-1,0}};
     };
@@ -577,19 +612,6 @@ class CfgVehicles {
 	
 	class Wheeled_Apc_F;
 	class LIB_ArmouredCar_base: Wheeled_Apc_F {};
-	class LIB_SdKfz222_base: LIB_ArmouredCar_base {
-        ace_refuel_fuelCapacity = 100;
-    };
-	
-	class LIB_SdKfz234_base: LIB_ArmouredCar_base {
-        ace_refuel_fuelCapacity = 240;
-    };
-
-	class LIB_SdKfz234_2: LIB_Sdkfz234_base {
-        ace_cookoff_ammoLocation = "HitHull";
-        ace_cookoff_cookoffSelections[] = { "ace_cookoff_pos" };
-		ace_cookoff_turret[] = {"LIB_SdKfz234_2_Destruct_Tower",{0,-1,0}};
-	};
 
 	// I44
 	class LIB_M8_Greyhound_base: LIB_ArmouredCar_base {

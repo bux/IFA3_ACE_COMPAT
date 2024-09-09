@@ -65,11 +65,11 @@ class CfgWeapons
 		magazines[] = {"LIB_5x_61k","LIB_5x_61kAP"};
 	};
 
-	class LIB_TankMGun_base: Mgun
+	class LIB_TankMGun_base: MGun
 	{
 		class manual;
 	};
-	class Lib_dt29: Lib_tankmgun_base
+	class LIB_DT29: LIB_TankMGun_base
 {
 		magazines[] = {"lib_63Rnd_762x54"};
 		autoReload = true;
@@ -216,7 +216,7 @@ class CfgWeapons
 		reloadTime = 6;
 		magazineReloadTime = 6;
 	};
-	class LIB_LeFH18_base: LIB_StaticGunCannon_base {
+	class LIB_LeFH18_base: LIB_StaticGunCannon_base 
 	{
 		reloadTime = 6;
 		magazineReloadTime = 6;

@@ -34,7 +34,7 @@ class CfgWeapons
 			type = "mount"; // What type of carry it is. Must always be "mount" for the tripod
 			deployTime = 4; // How long it takes to deploy the tripod
 			pickupTime = 4; // How long it takes to pickup the tripod
-			deploy = "ACE_LIB_GrWr34_Tripod_Deployed"; // what vehicle will spawn when the tripod is deployed
+			deploy = "ACE_LIB_BM37_Tripod_Deployed"; // what vehicle will spawn when the tripod is deployed
 		};
 	};
 	class LIB_BM37_Barrel: LIB_Slung_Static_Weapon_Base {

@@ -11,7 +11,7 @@ class CfgPatches {
             "ace_main","ace_interaction","ace_repair","ace_refuel","ace_frag" // TODO: add more ace addons that are required
         };
         author = CSTRING(Team);
-        authors[] = { "bux", "El Tyranos" };
+        authors[] = { "bux", "El Tyranos", "Coldfront15" };
         authorUrl = CSTRING(Url);
         url = CSTRING(Url);
         VERSION_CONFIG;

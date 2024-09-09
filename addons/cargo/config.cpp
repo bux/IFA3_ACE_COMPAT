@@ -27,24 +27,42 @@ class CfgPatches {
 class CfgVehicles
 {
 	// Planes
-	class LIB_US_Plane_base;
+	class LIB_Plane_base;
+	class LIB_US_Plane_base: LIB_Plane_base {};
+	class LIB_GER_Plane_base: LIB_Plane_base {};
+	class LIB_SU_Plane_base: LIB_Plane_base {};
+	class LIB_P47: LIB_US_Plane_base {
+    	EGVAR(refuel,fuelCapacity) = 1155;
+	};
+	class LIB_P39: LIB_US_Plane_base {
+		EGVAR(refuel,fuelCapacity) = 454;
+	};
+	class LIB_Pe2: LIB_SU_Plane_base {
+		EGVAR(refuel,fuelCapacity) = 1086;
+	};
 	class LIB_C47_Skytrain : LIB_US_Plane_base {
+		EGVAR(refuel,fuelCapacity) = 3043;
+		GVAR(loadmasterTurrets)[] = {{17}};
 		ace_cargo_space=7;
 		ace_cargo_hasCargo=1;
 	};
 	class LIB_HORSA : LIB_US_Plane_base {
+		EGVAR(refuel,fuelCapacity) = 0;
 		ace_cargo_space=7;
 		ace_cargo_hasCargo=1;
 	};
 	class LIB_CG4_WACO : LIB_US_Plane_base {
+		EGVAR(refuel,fuelCapacity) = 0;
 		ace_cargo_space=7;
 		ace_cargo_hasCargo=1;
 	};
-	
-	class LIB_GER_Plane_base;
-	class LIB_JU52 : LIB_GER_Plane_base {
+	class LIB_Ju87 : LIB_GER_Plane_base {
+		EGVAR(refuel,fuelCapacity) = 1155;
 		ace_cargo_space=7;
 		ace_cargo_hasCargo=1;
+	};
+	class LIB_FW190F8: LIB_GER_Plane_base {
+    	EGVAR(refuel,fuelCapacity) = 639;
 	};
 	
 	//Ammoboxes
